@@ -1,0 +1,21 @@
+/// Is Number
+///
+/// @param {Value} - The value to check if it is a number
+/// @returns {Bool} - Return true/false if the unit is a number
+@function isNumber ($value) {
+  @return type-of($value) == "number";
+}
+/// Is Fixed Unit
+///
+/// @param {Value} - The unit to check
+/// @return {Bool} - Returns true / false if the unit arg is a fixed unit
+@function isFixedUnit ($value) {
+  @return is-number($value) and index('cm' 'mm' 'in' 'px' 'pt' 'pc', unit($value)) != null;
+}
+/// Is Relative Unit
+///
+/// @param {Value} - The unit to check
+/// @return {Bool} - Returns true / false if the unit arg is a fixed unit
+@function isRelativeUnit ($value) {
+  @return is-number($value) and index('em' 'rem', unit($value)) != null;
+}

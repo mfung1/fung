@@ -1,0 +1,83 @@
+////
+///@group settings/colours
+////
+
+
+/// Colour palette
+///
+/// This exists only because you cannot easily set a !default variable
+/// conditionally (thanks to the way scope works in Sass) so we set
+/// `$mf-colour-palette` using the 'if' function.
+///
+///@access private
+
+$_mfung-colour-palette: (
+  "primary": (
+    "darker": #101120,
+    "dark": #1F213D,
+    "default": #26284A,
+    "light": #4D4F66,
+    "lighter": #C7C8CF,
+    "lightest": #E9E9EC,
+  ),
+  "accent1": (
+    "darker": #794347,
+    "dark": #B6646A,
+    "default": #F2858E,
+    "light": #F9C2C7,
+    "lighter": #FCE1E3,
+    "lightest": #FEF3F4
+  ),
+  "accent2": (
+    "darker": #474D57,
+    "dark": #6A7382,
+    "default": #8D99AE,
+    "light": #C6CCD7,
+    "lighter": #E3E5EB,
+    "lightest": #F4F5F7
+  ),
+  "success": (
+    "darker": #1E611D,
+    "dark": #2D912C,
+    "default": #3CC13B,
+    "light": #9DE09D,
+    "lighter": #CEEFCE,
+    "lightest": #EBF9EB
+  ),
+  "warning": (
+    "darker": #1E611D,
+    "dark": #2D912C,
+    "default": #3CC13B,
+    "light": #9DE09D,
+    "lighter": #CEEFCE,
+    "lightest": #EBF9EB
+  ),
+  "error": (
+    "darker": #781B1C,
+    "dark": #B4292A,
+    "default": #F03738,
+    "light": #F89B9B,
+    "lighter": #FBCDCD,
+    "lightest": #FDEBEB
+  ),
+  "grey": (
+    "darker": #616569,
+    "dark": #92979D,
+    "default": #C2C9D1,
+    "light": #F0F2F3,
+    "lighter": #F0F2F3,
+    "lightest": #F9FAFA
+  ),
+  "black": (
+    "default": #333333,
+    "light": #808080,
+    "lighter": #BFBFBF,
+    "lightest": #E5E5E5 
+  ),
+  "white": (
+    "default": #FFFFFF,
+    "dark": #B2B2B2,
+    "darker": #808080,
+    "darkest": #595959 
+  )
+);

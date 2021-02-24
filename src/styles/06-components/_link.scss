@@ -1,0 +1,31 @@
+.#{$namespace}-navlink {
+  border-left: 1px solid rgba($mfung-nav-text-colour, .2);
+  padding: 10px 20px;
+
+  &:nth-last-child(2),
+  &:nth-last-child(1) {
+    display: none;
+  }
+  &:last-of-type {
+    display: block;
+  }
+  @include breakpoint('md') {
+    &:nth-last-child(2),
+    &:nth-last-child(1) {
+      display: block;
+    }
+    &:last-of-type {
+      display: none;
+    }
+  }
+  
+  &_text {
+    display: block;
+    color: $mfung-nav-text-colour;
+    font-family: $mfung-text-fonts;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 20px;
+    text-decoration: none;
+  }
+}

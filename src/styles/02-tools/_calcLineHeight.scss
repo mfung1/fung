@@ -1,0 +1,11 @@
+/// Calculate Line Height
+///
+/// @param {fontSize} - The font size of the text 
+///
+/// @param {lineHeight} - The intended line height of the text
+///
+///
+/// @returns {Number} - Returns a decimal value for line height.
+@function calcLineHeight($fontSize, $lineHeight) {
+  @return $lineHeight / $fontSize;
+}

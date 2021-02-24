@@ -1,0 +1,27 @@
+/// Strip unit
+///
+/// @param {Number} - Value to remove the unit from
+///
+/// @return {Number} Returns just the number so math can be applied
+
+@function strip-unit($number) {
+	@if type-of($number) == 'number' and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+	@return $number;
+}
+
+/// PX to Rem
+///
+/// @param {Number} - Value of px to convert, escapes any "px" string
+///                   attached to it as well
+///
+/// @return {Number} Returns value in rem based on root size specified in
+///                  settings.
+
+@function px-to-rem($size: 16px) {
+	$targetSize: strip-unit($size);
+	$rootSize: strip-unit($base-font-size);
+	$remSize: $targetSize / $rootSize;
+	@return #{$remSize}rem;
+}

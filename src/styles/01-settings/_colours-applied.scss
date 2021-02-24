@@ -1,0 +1,52 @@
+//// 
+/// @group settings/colours
+////
+
+@import "../02-tools/colour";
+
+//============================
+// Generic
+//============================
+
+/// Background
+///
+/// @type Colour
+/// @access public
+$mfung-background-colour: mf-colour("white", "default") !default;
+
+/// Brand colour
+///
+/// @type Colour
+/// @access public
+
+$mfung-brand-colour: mf-colour("primary", "default") !default;
+
+/// Text Colour
+///
+/// @type Colour
+/// @access public
+$mfung-text-colour: mf-colour("black", "default") !default;
+
+/// Nav Text Colour
+///
+/// @type Colour
+/// @access public
+$mfung-nav-text-colour: mf-colour("white", "default") !default;
+
+/// Nav Colour
+///
+/// @type Colour
+/// @access public
+$mfung-nav-colour: mf-colour("primary", "default") !default;
+
+/// Accent Colour
+///
+/// @type Colour
+/// @access public
+$mfung-accent-colour: mf-colour("accent1", "default") !default;
+
+/// Accent Colour
+///
+/// @type Colour
+/// @access public
+$mfung-secondary-colour: mf-colour("accent2", "default") !default;

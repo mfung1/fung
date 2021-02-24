@@ -1,5 +1,14 @@
----
-layout: layouts/base.njk
-title: Title Strings
----
-<h1>This is global data: {{siteData.name}}</h1>
+{# Layout #}
+{% extends "./_includes/layouts/base.njk" %}
+
+{% block header %}
+  {% include "./_includes/layouts/components/organisms/header.njk"%}
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+{% block footer %}
+  {% include "./_includes/layouts/components/organisms/footer.njk"%}
+{% endblock %}
