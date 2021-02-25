@@ -11,14 +11,19 @@
     font-weight: bold;
     font-size: 1rem;
     line-height: 20px;
+    height: 20px;
+    padding: 0;
     text-decoration: none;
   }
   span {
     margin-right: 10px;
+    vertical-align: top;
   }
   span,
   svg {
     display: inline-block;
+  }
+  svg {
     vertical-align: middle;
   }
 }

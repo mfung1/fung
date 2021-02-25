@@ -38,6 +38,11 @@ $mfung-nav-text-colour: mf-colour("white", "default") !default;
 /// @type Colour
 /// @access public
 $mfung-nav-colour: mf-colour("primary", "default") !default;
+/// Nav Colour
+///
+/// @type Colour
+/// @access public
+$mfung-mobile-nav-colour: mf-colour("grey", "lighter") !default;
 
 /// Accent Colour
 ///
