@@ -1,5 +1,6 @@
 h1,h2,h3,h4 {
   font-family: $mfung-heading-fonts;
+  color: $mfung-heading-color;
 }
 
 p, blockquote, pre,
@@ -8,14 +9,5 @@ form, legend,
 figure,
 table, th, td, caption {
   font-family: $mfung-text-fonts;
-}
-
-h1 {
-  margin-bottom: $mf-spacing-base * 9;
-}
-h2 {
-  margin-bottom: $mf-spacing-base * 6;
-}
-h3, h4, p {
-  margin-bottom: $mf-spacing-base * 3;
+  color: $mfung-text-color;
 }

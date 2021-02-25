@@ -25,7 +25,13 @@ $mfung-brand-colour: mf-colour("primary", "default") !default;
 ///
 /// @type Colour
 /// @access public
-$mfung-text-colour: mf-colour("black", "default") !default;
+$mfung-heading-color: mf-colour("black", "default") !default;
+
+/// Text Colour
+///
+/// @type Colour
+/// @access public
+$mfung-text-color: mf-colour("black", "light") !default;
 
 /// Nav Text Colour
 ///
@@ -44,6 +50,12 @@ $mfung-nav-colour: mf-colour("primary", "default") !default;
 /// @access public
 $mfung-mobile-nav-colour: mf-colour("grey", "lighter") !default;
 
+/// Primary Colour
+///
+/// @type Colour
+/// @access public
+$mfung-primary-color: mf-colour("primary", "default") !default;
+
 /// Accent 1 Colour
 ///
 /// @type Colour
@@ -55,6 +67,12 @@ $mfung-accent-one: mf-colour("accent1", "default") !default;
 /// @type Colour
 /// @access public
 $mfung-accent-two: mf-colour("accent2", "default") !default;
+
+/// Contrasting Text Colour
+///
+/// @type Colour
+/// @access public
+$mfung-contrast-text-color: mf-colour("white", "default") !default;
 
 /// Divider Colour
 ///

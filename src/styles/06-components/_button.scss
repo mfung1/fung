@@ -1,0 +1,19 @@
+.#{$namespace}-button {
+  width: auto;
+  border-radius: 25px;
+  font-family: $mfung-text-fonts;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  vertical-align: center;
+  text-decoration: none;
+  margin-bottom: 50px;
+
+  &-primary {
+    background-color: $mfung-primary-color;
+    color: $mfung-contrast-text-color;
+  }
+}

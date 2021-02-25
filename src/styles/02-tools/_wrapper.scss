@@ -8,7 +8,7 @@
     margin: 0 auto;
   }
 }
-@mixin wrapper-bottom-margin {
+@mixin bottom-margin {
   margin: 0 20px 50px;
   @include breakpoint('sm') {
     margin: 0 40px 50px;
