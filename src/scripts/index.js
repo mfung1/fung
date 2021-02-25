@@ -1,3 +1,5 @@
-import list from './modules/list'
+import toggleMenu from './modules/menu';
 
-console.log(`Hello ${list[0]}`)
+document.addEventListener('DOMContentLoaded', () => {
+  toggleMenu();
+});

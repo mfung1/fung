@@ -1,0 +1,41 @@
+.#{$namespace}-header {
+  background-color: $mfung-nav-colour;
+  max-height: 40px;
+
+  &_links {
+    max-height: 40px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .#{$namespace}-navlink:nth-last-child(2),
+  .#{$namespace}-navlink:nth-last-child(1) {
+    display: none;
+  }
+  .#{$namespace}-navlink:last-of-type {
+    display: block;
+  }
+  @include breakpoint('md') {
+    .#{$namespace}-navlink:nth-last-child(2),
+    .#{$namespace}-navlink:nth-last-child(1) {
+      display: block;
+    }
+    .#{$namespace}-navlink:last-of-type {
+      display: none;
+    }
+  }
+  
+}
+
+.#{$namespace}-mobile {
+  background-color: $mfung-nav-colour;
+  padding: 20px;
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+
+  &[data-open="true"] {
+    display: grid;
+  }
+}
