@@ -1,0 +1,12 @@
+.#{$namespace}-divider {
+  height: 2px;
+  width: 100%;
+  max-width: calc(100% - 80px);
+  @include wrapper-bottom-margin;
+  background-color: $mfung-divider-colour;
+
+  &--full-width {
+    max-width: 100%;
+    margin: 0 0 50px;
+  }
+}

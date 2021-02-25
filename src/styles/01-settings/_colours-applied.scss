@@ -44,14 +44,20 @@ $mfung-nav-colour: mf-colour("primary", "default") !default;
 /// @access public
 $mfung-mobile-nav-colour: mf-colour("grey", "lighter") !default;
 
-/// Accent Colour
+/// Accent 1 Colour
 ///
 /// @type Colour
 /// @access public
-$mfung-accent-colour: mf-colour("accent1", "default") !default;
+$mfung-accent-one: mf-colour("accent1", "default") !default;
 
-/// Accent Colour
+/// Accent 2 Colour
 ///
 /// @type Colour
 /// @access public
-$mfung-secondary-colour: mf-colour("accent2", "default") !default;
+$mfung-accent-two: mf-colour("accent2", "default") !default;
+
+/// Divider Colour
+///
+/// @type Colour
+/// @access public
+$mfung-divider-colour: mf-colour("grey", "light") !default;

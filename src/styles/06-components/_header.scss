@@ -3,6 +3,7 @@
   max-height: 40px;
 
   &_links {
+    @include wrapper;
     max-height: 40px;
     display: flex;
     list-style-type: none;
@@ -45,6 +46,8 @@
 
   &-links {
     display: grid;
+    max-width: 1260px;
+    margin: 0 auto;
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     list-style-type: none;

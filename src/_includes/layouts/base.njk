@@ -12,9 +12,15 @@
 </head>
 <body id="top" itemscope itemtype="http://schema.org/WebPage">
   {% include "./_svgs.njk" %}
+  <header>
   {% block header %}{% endblock %}
+  </header>
+  <main>
   {% block content %}{% endblock %}
+  </main>
+  <footer>
   {% block footer %}{% endblock %}
+  </footer>
   {% include "./_scripts.njk" %}
 </body>
 </html>
