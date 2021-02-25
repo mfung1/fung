@@ -1,0 +1,7 @@
+.#{$namespace}-h1 {
+  font-size: 36px;
+  line-height: 50px;
+  padding-bottom: 30px;
+  max-width: 480px;
+  @include wrapper;
+}
