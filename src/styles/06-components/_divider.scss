@@ -2,6 +2,7 @@
   height: 2px;
   width: 100%;
   max-width: calc(100% - 80px);
+  border: 0;
   @include bottom-margin;
   background-color: $mfung-divider-colour;
 
