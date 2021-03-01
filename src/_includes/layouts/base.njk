@@ -10,17 +10,13 @@
   <title>{{ renderData.title or title or metadata.title }}</title>
   {% include "./_styles.njk" %}
 </head>
-<body id="top" itemscope itemtype="http://schema.org/WebPage">
+<body>
   {% include "./_svgs.njk" %}
-  <header>
   {% block header %}{% endblock %}
-  </header>
   <main>
   {% block content %}{% endblock %}
   </main>
-  <footer>
   {% block footer %}{% endblock %}
-  </footer>
   {% include "./_scripts.njk" %}
 </body>
 </html>
