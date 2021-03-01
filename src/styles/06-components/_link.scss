@@ -11,6 +11,7 @@
     font-weight: bold;
     font-size: 1rem;
     line-height: 20px;
+    margin-top: -1px; // Necessary evil as the glyphs pop out the bottom of the line-height
     height: 20px;
     padding: 0;
     text-decoration: none;
