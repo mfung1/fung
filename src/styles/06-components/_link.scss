@@ -27,3 +27,16 @@
     vertical-align: middle;
   }
 }
+
+.#{$namespace}-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $mfung-accent-one;
+
+  &-inline {
+    font-size: inherit;
+    line-height: inherit;
+    display: inline;
+  }
+}
