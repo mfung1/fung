@@ -23,7 +23,7 @@ layout: 'layouts/base.njk'
     {% for post in latestPosts.slice(0, 6) %}
     <li>
       <a href="{{post.url}}" class="mf-post">
-        <img src="https://picsum.photos/328/200" alt="" class="mf-post_image"/>
+        <img src="{{post.data.featuredImage}}" alt="" class="mf-post_image"/>
         <div class="mf-post_copy">
           <p class="mf-caption">{{post.data.topics}}</p>
           <h2 class="mf-h2" data-matchHeights="postHeading">{{post.data.pageHeading}}</h2>
