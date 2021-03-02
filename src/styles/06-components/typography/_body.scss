@@ -13,4 +13,7 @@
     font-weight: 600;
     color: $mfung-heading-color;
   }
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
 }
