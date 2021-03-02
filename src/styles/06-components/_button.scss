@@ -16,4 +16,10 @@
     background-color: $mfung-primary-color;
     color: $mfung-contrast-text-color;
   }
+
+  &-center {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 50px;
+  }
 }

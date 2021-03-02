@@ -1,3 +1,7 @@
 .#{$namespace}-section {
   @include wrapper;
+
+  &:last-child {
+    @include bottom-margin;
+  }
 }
