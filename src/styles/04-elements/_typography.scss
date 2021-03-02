@@ -11,3 +11,7 @@ table, th, td, caption {
   font-family: $mfung-text-fonts;
   color: $mfung-text-color;
 }
+
+p:last-child {
+  margin-bottom: 0;
+}
