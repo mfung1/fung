@@ -3,10 +3,8 @@ pageTitle: "Blog - Matt Fung - Lincoln UK"
 description: "Articles about front-end web development, design and the web industry and anything I find interesting."
 title: "Blog"
 tags: page
+layout: 'layouts/base.njk'
 ---
-
-{# Layout #}
-{% extends "./_includes/layouts/base.njk" %}
 
 {# Imports #}
 {% from './_includes/layouts/components/atoms/_skill-point.njk' import skillPoint %}
@@ -21,46 +19,19 @@ tags: page
 <section class="mf-section">
   <h2 class="mf-h2">Latest</h2>
   <ul class="mf-posts">
+    {% set latestPosts = collections.post|reverse %}
+    {% for post in latestPosts.slice(0, 6) %}
     <li>
-      <a href="#" class="mf-post">
+      <a href="{{post.url}}" class="mf-post">
         <img src="https://picsum.photos/328/200" alt="" class="mf-post_image"/>
         <div class="mf-post_copy">
-          <p class="mf-caption">html</p>
-          <h2 class="mf-h2">Semantic elements you probably haven’t heard of</h2>
-          <span href="#" class="mf-cta"><span>View post</span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" fill="none" viewBox="0 0 15 30"><use xlink:href="#chevron"/></svg></span>
+          <p class="mf-caption">{{post.data.topics}}</p>
+          <h2 class="mf-h2" data-matchHeights="postHeading">{{post.data.pageHeading}}</h2>
+          <span class="mf-cta"><span>View post</span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" fill="none" viewBox="0 0 15 30"><use xlink:href="#chevron"/></svg></span>
         </div>
       </a>
     </li>
-    <li>
-      <a href="#" class="mf-post">
-        <img src="https://picsum.photos/328/200" alt="" class="mf-post_image"/>
-        <div class="mf-post_copy">
-          <p class="mf-caption">html</p>
-          <h2 class="mf-h2">Semantic elements you probably haven’t heard of</h2>
-          <span href="#" class="mf-cta"><span>View post</span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" fill="none" viewBox="0 0 15 30"><use xlink:href="#chevron"/></svg></span>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="mf-post">
-        <img src="https://picsum.photos/328/200" alt="" class="mf-post_image"/>
-        <div class="mf-post_copy">
-          <p class="mf-caption">html</p>
-          <h2 class="mf-h2">Semantic elements you probably haven’t heard of</h2>
-          <span href="#" class="mf-cta"><span>View post</span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" fill="none" viewBox="0 0 15 30"><use xlink:href="#chevron"/></svg></span>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="mf-post">
-        <img src="https://picsum.photos/328/200" alt="" class="mf-post_image"/>
-        <div class="mf-post_copy">
-          <p class="mf-caption">html</p>
-          <h2 class="mf-h2">Semantic elements you probably haven’t heard of</h2>
-          <span href="#" class="mf-cta"><span>View post</span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" fill="none" viewBox="0 0 15 30"><use xlink:href="#chevron"/></svg></span>
-        </div>
-      </a>
-    </li>
+    {% endfor %}
   </ul>
   <a class="mf-button mf-button-primary mf-button-center" href="#">See all posts</a>
 </section>
