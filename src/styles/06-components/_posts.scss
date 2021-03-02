@@ -1,0 +1,36 @@
+.#{$namespace}-posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  margin-bottom: 50px;
+  list-style-type: none;
+
+  @include breakpoint('sm') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint('md') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.#{$namespace}-post {
+  display: block;
+  background-color: $mfung-primary-color;
+  text-decoration: none;
+  .mf-caption,
+  .mf-h2 {
+    color: $mfung-contrast-text-color;
+  }
+  &_image {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: 200px;
+    max-height: 200px;
+    display: block;
+  }
+  &_copy {
+    padding: 20px;
+  }
+}

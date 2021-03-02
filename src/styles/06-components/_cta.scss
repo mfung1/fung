@@ -1,0 +1,17 @@
+.#{$namespace}-cta {
+  color: $mfung-accent-one;
+  font-weight: bold;
+  display: inline-block;
+  font-family: $mfung-text-fonts;
+  text-decoration: none;
+  vertical-align:middle;
+
+  span {
+    margin-right: 10px;
+    text-decoration: underline;
+  }
+  span, svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
