@@ -12,11 +12,11 @@
 </head>
 <body>
   {% include "./_svgs.njk" %}
-  {% block header %}{% endblock %}
+  {% include "./components/organisms/header.njk"%}
   <main>
-  {% block content %}{% endblock %}
+  {{content|safe}}
   </main>
-  {% block footer %}{% endblock %}
+  {% include "./components/organisms/footer.njk"%}
   {% include "./_scripts.njk" %}
 </body>
 </html>

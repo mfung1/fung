@@ -10,12 +10,6 @@ tags: page
 
 {# Imports #}
 {% from './_includes/layouts/components/atoms/_skill-point.njk' import skillPoint %}
-
-{% block header %}
-  {% include "./_includes/layouts/components/organisms/header.njk"%}
-{% endblock %}
-
-{% block content %}
 <section class="mf-hero">
   <h1 class="mf-h1">Hi, my name is Matt. I&rsquo;m a <span class="col-accent-one">Senior Web Developer</span> with 4+ years of experience in the digital world.</h1>
   <a class="mf-button mf-button-primary" href="#">Download CV</a>
@@ -163,8 +157,3 @@ tags: page
     </table>
   </div>
 </section>
-{% endblock %}
-
-{% block footer %}
-  {% include "./_includes/layouts/components/organisms/footer.njk"%}
-{% endblock %}

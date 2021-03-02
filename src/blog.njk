@@ -11,11 +11,7 @@ tags: page
 {# Imports #}
 {% from './_includes/layouts/components/atoms/_skill-point.njk' import skillPoint %}
 
-{% block header %}
-  {% include "./_includes/layouts/components/organisms/header.njk"%}
-{% endblock %}
-
-{% block content %}
+{% block pageContent %}
 <section class="mf-hero">
   <h1 class="mf-h1">Blog</h1>
   <p class="mf-body col-black-light">I like to write about whatever springs to mind but it’s usually web industry related (design, development, culture etc.). You can also find my posts over on <a href="#" class="mf-link mf-link-inline">Medium</a>.</p>
@@ -66,10 +62,17 @@ tags: page
       </a>
     </li>
   </ul>
+  <a class="mf-button mf-button-primary mf-button-center" href="#">See all posts</a>
 </section>
 <hr class="mf-divider"/>
-{% endblock %}
-
-{% block footer %}
-  {% include "./_includes/layouts/components/organisms/footer.njk"%}
+<section class="mf-section">
+  <h2 class="mf-h2">Archive</h2>
+  {# {% if colletions.post %} #}
+  <ul class="mf-list">
+    {# {% for post in collections.post %} #}
+    <li class="mf-list-item"><a href="#" class="mf-link">2020</a></li>
+    {# {% endfor %} #}
+  </ul>
+  {# {% endif %} #}
+</section>
 {% endblock %}
