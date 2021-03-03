@@ -3,17 +3,13 @@ layout: layouts/base.njk
 ---
 <section class="mf-section">
   <article>
-  <p class="mf-caption col-accent-one">{{topics}}</p>
-  <h1 class="mf-h1">{{pageHeading}}</h1>
-  <p class="mf-caption">{{page.date|postDate}}</p>
-  <img class="mf-image" src="{{featuredImage}}" alt=""/>
-  {{content|safe}}
+    <div class="mb-30">
+      <img class="mf-image" src="{{featuredImage}}" alt=""/>
+      <p class="mf-caption col-accent-one">{{topics}}</p>
+      <h1 class="mf-h1">{{pageHeading}}</h1>
+      <p class="mf-caption">{{page.date|postDate}} - {{length}} minute read</p>
+    </div>
+    {{content|safe}}
   </article>
   <hr class="mf-divider">
-  <div class="mf-signature">
-    <img class="mf-signature_avatar" src="" alt=""/>
-    <div class="mf-signature_details">
-      
-    </div>
-  </div>
 </section>
