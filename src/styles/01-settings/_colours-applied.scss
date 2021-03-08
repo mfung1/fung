@@ -79,3 +79,21 @@ $mfung-contrast-text-color: mf-colour("white", "default") !default;
 /// @type Colour
 /// @access public
 $mfung-divider-colour: mf-colour("grey", "light") !default;
+
+/// Focus Colour
+///
+/// @type Colour
+/// @access public
+$mfung-focus: mf-colour("focus", "default") !default;
+
+/// Success Colour
+///
+/// @type Colour
+/// @access public
+$mfung-success: mf-colour("success", "default") !default;
+
+/// Error Colour
+///
+/// @type Colour
+/// @access public
+$mfung-error: mf-colour("error", "default") !default;

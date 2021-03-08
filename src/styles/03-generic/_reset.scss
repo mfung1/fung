@@ -42,22 +42,23 @@ button {
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
-  transition: background 250ms ease-in-out, 
-              transform 150ms ease;
+  transition: background 0.2s ease-in-out;
+  @media (prefers-reduced-motion) {
+    transition: none;  
+  }
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-button:hover,
-button:focus {
-  background: mfung-shade($mfung-background-colour, 5%);
-}
+// button:hover {
+//   background: mfung-shade($mfung-background-colour, 5%);
+// }
 
-button:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px;
-}
+// button:focus {
+//   outline: 1px solid #fff;
+//   outline-offset: -4px;
+// }
 
-button:active {
-  transform: scale(0.99);
-}
+// button:active {
+//   transform: scale(0.99);
+// }

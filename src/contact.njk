@@ -1,0 +1,29 @@
+---
+pageTitle: "Contact - mfung"
+description: "A front-end web developer with 4 years experience in the web industry"
+title: "Contact"
+tags: page
+layout: 'layouts/base.njk'
+---
+
+<section class="mf-section">
+  <form class="mf-form" name="contact" method="POST" data-netlify="true">
+    <fieldset>
+      <legend>
+      <h1 class="mf-h1 mb-15">Contact me</h1>
+      <p class="mf-body mb-30">Got a question or want to chat about something you're struggling with? Fill out the following details and let's talk!</p>
+      </legend>
+      <div class="mf-field-group">
+        <label for="your_name" class="mf-label">What is your name?</label>
+        <input class="mf-field" id="your_name" />
+      </div>
+      <div class="mf-field-group">
+        <label for="message" class="mf-label">What would you like to say?</label>
+        <textarea width="600" height="400" class="mf-field" id="message"></textarea>
+      </div>
+      <div class="mf-field-group">
+        <button class="mf-button mf-button-primary">Send message</button>
+      </div>
+    </fieldset>
+  </form>
+</section>

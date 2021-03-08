@@ -1,20 +1,51 @@
 .#{$namespace}-button {
   width: auto;
-  border-radius: 25px;
+  // border-radius: 5px;
   font-family: $mfung-text-fonts;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px 18px;
   text-align: center;
   vertical-align: center;
   text-decoration: none;
   margin-bottom: 50px;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
 
   &-primary {
     background-color: $mfung-primary-color;
     color: $mfung-contrast-text-color;
+
+    &:hover {
+      background-color: mf-tint($mfung-primary-color, 15);
+    }
+
+    &:focus {
+      background-color: $mfung-focus;
+      border: 2px solid $mfung-focus;
+      outline: 2px solid transparent;
+      box-shadow: 0 2px 0 $mfung-primary-color;
+      color: $mfung-primary-color;
+      outline-offset: 0;
+      @media (prefers-reduced-motion: reduced) {
+        transition: none;
+      }
+    }
+  }
+
+  &-accent-one {
+    background-color: $mfung-accent-one;
+    color: $mfung-contrast-text-color;
+
+    &:hover {
+      background-color: mf-shade($mfung-accent-one, 5);
+      transition: none;
+    }
+    // &:focus {
+    //   background-color: 
+    // }
   }
 
   &-center {

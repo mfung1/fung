@@ -12,7 +12,9 @@
 </head>
 <body>
   {% include "./_svgs.njk" %}
-  {% include "./components/organisms/header.njk"%}
+  <header>
+    {% include "./components/organisms/header.njk"%}
+  </header>
   <main id="swup" class="transition-fade">
   {{content|safe}}
   </main>
