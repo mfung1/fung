@@ -10,6 +10,7 @@
     flex-direction: row;
     justify-content: flex-end;
   }
+  
   .#{$namespace}-navlink:nth-last-child(3),
   .#{$namespace}-navlink:nth-last-child(2),
   .#{$namespace}-navlink:nth-last-child(1) {

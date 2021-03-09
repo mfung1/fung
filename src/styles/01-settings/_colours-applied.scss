@@ -84,13 +84,19 @@ $mfung-divider-colour: mf-colour("grey", "light") !default;
 ///
 /// @type Colour
 /// @access public
-$mfung-focus: mf-colour("focus", "default") !default;
+$mfung-focus: mf-colour("accent1", "default") !default;
 
 /// Success Colour
 ///
 /// @type Colour
 /// @access public
 $mfung-success: mf-colour("success", "default") !default;
+
+/// Success Colour
+///
+/// @type Colour
+/// @access public
+$mfung-success: mf-colour("warning", "default") !default;
 
 /// Error Colour
 ///
