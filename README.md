@@ -1,6 +1,10 @@
-# Deventy
 
-A minimal 11ty starting point for building static websites with modern tools. Preferring the CLI of each development tool, allowing for an easier upgrade path.
+![The website logo, 'Fung' with text underneath which says 'A website built using Eleventy'](/docs/cover.png)
+# Fung
+
+My personal site, built using Eleventy, SCSS and hosting on Netlify. The purpose of the site is to showcase my work, blog posts I've written and about me as a developer.
+
+This build is forked from [Deventy](https://github.com/ianrose/deventy) by Ian Rose as it had everything that I needed, already configured.
 
 Features:
 - [11ty](https://www.11ty.io/)
@@ -12,7 +16,13 @@ Features:
 - [CSSnano](https://cssnano.co/)
 - [Autoprefixer](https://github.com/postcss/autoprefixer)
 
-## Getting Started
+## Design
+The design for this site has been created in Figma, and can be seen here:
+[Figma Design](https://www.figma.com/file/ta2lqg6ok8aQk4DxogNcul/fung)
+
+All components have been designed in following Brad Frost's Atomic Design principles, and is set out using components and styles.
+
+## Get Started
 
 Install all dependencies using npm:
 
@@ -21,7 +31,7 @@ $ nvm use
 $ npm install
 ```
 
-### To Develop
+### Start local server
 
 ```
 $ npm run dev
