@@ -16,6 +16,7 @@
 
   &:hover {
     background-color: $mfung-accent-one;
+    border-left-color: transparent;
     transition: background-color .3s ease-in-out;
 
     .#{$namespace}-navlink_text {
