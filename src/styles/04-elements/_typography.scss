@@ -1,0 +1,17 @@
+h1,h2,h3,h4 {
+  font-family: $mfung-heading-fonts;
+  color: $mfung-heading-color;
+}
+
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, legend,
+figure,
+table, th, td, caption {
+  font-family: $mfung-text-fonts;
+  color: $mfung-text-color;
+}
+
+p + p:last-child {
+  margin-bottom: 0;
+}

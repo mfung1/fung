@@ -1,0 +1,26 @@
+/// Breakpoint
+///
+/// @param {Breakpoint} - The breakpoint to apply the media query at, 
+///
+/// @param {Type} - Min or Max width
+
+@mixin breakpoint($point, $type: "min") {
+  $point: quote($point);
+  $type: quote($type);
+  $breakpoint: map-get($mfung-breakpoints, $point);
+  @if not $breakpoint {
+    @error "Unknown breakpoint #{$point}";
+  } @else if isNumber($point) {
+    @if isRelativeUnit($point) or isFixedUnit($point) {
+      @if $type == "min" {
+        @media (min-width: #{$point}) { @content ; }
+      } @else if $type == "max" {
+        @media (min-width: #{$point}) { @content ; }
+      } @else {
+        @error "Unknown type #{$type}"
+      }
+    }
+  } @else {
+    @media (min-width: #{$breakpoint}px) { @content ; }
+  }
+}

@@ -1,0 +1,8 @@
+/// TypeScale
+///
+/// @param {Step} - How many steps to scale
+/// @returns {Number} - Returns the size based on perfect fourth, 1.414
+
+@function typeScale($step) {
+  @return #{1 * pow($perfect-fourth, $step)}rem;
+}

@@ -1,0 +1,12 @@
+.#{$namespace}-terms {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    max-width: 640px;
+    color: $mfung-text-color;
+  
+    @include breakpoint('sm') {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }

@@ -1,0 +1,10 @@
+.#{$namespace}-skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px 107px;
+    align-items: start;
+    
+    @include breakpoint('md') {
+        grid-template-columns: repeat(2, 241px);
+    }
+}

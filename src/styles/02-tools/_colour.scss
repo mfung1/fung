@@ -1,0 +1,51 @@
+/// Get colour
+///
+/// @param {String} $colour - Name of colour from the colour palette
+///
+/// @returns {Colour} Repesentation of named colour
+///
+/// @example
+
+@function mf-colour ($keys...) {
+  $map: $_mfung-colour-palette;
+  @each $key in $keys {
+    // Iterate though each key
+    // Check if the map has the key param
+    @if map-has-key($map, $key) {
+      // Ensure key is quoted
+      $key: quote($key);
+      // Return map with the key, if the map is nested, i.e:
+      // $map: (
+      //  $values: ( ... )
+      // )
+      $map: map-get($map, $key);
+    } @else {
+      // Return error if the key doesn't exist
+      @error "Unknown key`#{$key}`";
+    }
+  }
+  @return $map;
+}
+
+/// Make a colour darker by mixing it with black
+///
+/// @param {Colour} $colour - colour to shade
+/// @param {Number} $percentage - percetange of `$colour` in returned colour
+/// @return {Colour}
+/// @access public
+
+@function mf-shade($colour, $percentage) {
+  @return mix(#000000, $colour, $percentage);
+}
+
+/// Make a colour lighter by mixing it with white
+///
+/// @param {Colour} $colour - colour to tint
+/// @param {Number} $percentage - percetange of `$colour` in returned colour
+/// @return {Colour}
+/// @access public
+
+@function mf-tint($colour, $percentage) {
+  @return mix(#ffffff, $colour, $percentage);
+}
+

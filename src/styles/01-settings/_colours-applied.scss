@@ -1,0 +1,105 @@
+//// 
+/// @group settings/colours
+////
+
+@import "../02-tools/colour";
+
+//============================
+// Generic
+//============================
+
+/// Background
+///
+/// @type Colour
+/// @access public
+$mfung-background-colour: mf-colour("white", "default") !default;
+
+/// Brand colour
+///
+/// @type Colour
+/// @access public
+
+$mfung-brand-colour: mf-colour("primary", "default") !default;
+
+/// Text Colour
+///
+/// @type Colour
+/// @access public
+$mfung-heading-color: mf-colour("black", "default") !default;
+
+/// Text Colour
+///
+/// @type Colour
+/// @access public
+$mfung-text-color: mf-colour("black", "light") !default;
+
+/// Nav Text Colour
+///
+/// @type Colour
+/// @access public
+$mfung-nav-text-colour: mf-colour("white", "default") !default;
+
+/// Nav Colour
+///
+/// @type Colour
+/// @access public
+$mfung-nav-colour: mf-colour("primary", "default") !default;
+/// Nav Colour
+///
+/// @type Colour
+/// @access public
+$mfung-mobile-nav-colour: mf-colour("grey", "lighter") !default;
+
+/// Primary Colour
+///
+/// @type Colour
+/// @access public
+$mfung-primary-color: mf-colour("primary", "default") !default;
+
+/// Accent 1 Colour
+///
+/// @type Colour
+/// @access public
+$mfung-accent-one: mf-colour("accent1", "default") !default;
+
+/// Accent 2 Colour
+///
+/// @type Colour
+/// @access public
+$mfung-accent-two: mf-colour("accent2", "default") !default;
+
+/// Contrasting Text Colour
+///
+/// @type Colour
+/// @access public
+$mfung-contrast-text-color: mf-colour("white", "default") !default;
+
+/// Divider Colour
+///
+/// @type Colour
+/// @access public
+$mfung-divider-colour: mf-colour("grey", "light") !default;
+
+/// Focus Colour
+///
+/// @type Colour
+/// @access public
+$mfung-focus: mf-colour("accent1", "default") !default;
+
+/// Success Colour
+///
+/// @type Colour
+/// @access public
+$mfung-success: mf-colour("success", "default") !default;
+
+/// Success Colour
+///
+/// @type Colour
+/// @access public
+$mfung-success: mf-colour("warning", "default") !default;
+
+/// Error Colour
+///
+/// @type Colour
+/// @access public
+$mfung-error: mf-colour("error", "default") !default;

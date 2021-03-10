@@ -1,0 +1,22 @@
+.#{$namespace}-body {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  max-width: 640px;
+  color: $mfung-text-color;
+
+  @include breakpoint('sm') {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &-heavy {
+    font-weight: 600;
+    color: $mfung-heading-color;
+  }
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+  & + h2 {
+    margin-top: 30px;
+  }
+}

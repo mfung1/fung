@@ -1,0 +1,64 @@
+.#{$namespace}-navlink {
+  border-left: 1px solid rgba($mfung-nav-text-colour, .2);
+  
+  &_text {
+    display: block;
+    background: none;
+    outline: none;
+    color: $mfung-nav-text-colour;
+    font-family: $mfung-text-fonts;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $mfung-accent-one;
+    border-left-color: transparent;
+    transition: background-color .3s ease-in-out;
+
+    .#{$namespace}-navlink_text {
+      color: $mfung-heading-color;
+      transition: color .3s ease-in-out;
+    }
+  }
+  .#{$namespace}-navlink_text:focus {
+    background-color: $mfung-accent-one;
+    transition: background-color .3s ease-in-out;
+    box-shadow: inset 0 2px 0 -2px $mfung-primary-color;
+    color: $mfung-heading-color;
+    transition: color .3s ease-in-out;
+  }
+  span {
+    margin-right: 10px;
+    vertical-align: top;
+  }
+  span,
+  svg {
+    display: inline-block;
+  }
+  svg {
+    vertical-align: middle;
+  }
+}
+
+.#{$namespace}-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $mfung-accent-one;
+
+  &:focus {
+    outline: 0;
+    background-color: $mfung-accent-one;
+    color: $mfung-heading-color;
+  }
+
+  &-inline {
+    font-size: inherit;
+    line-height: inherit;
+    display: inline;
+  }
+}

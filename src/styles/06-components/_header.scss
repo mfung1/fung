@@ -1,0 +1,63 @@
+.#{$namespace}-header {
+  background-color: $mfung-nav-colour;
+  max-height: 40px;
+
+  &_links {
+    @include wrapper;
+    max-height: 40px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .#{$namespace}-navlink:nth-last-child(3),
+  .#{$namespace}-navlink:nth-last-child(2),
+  .#{$namespace}-navlink:nth-last-child(1) {
+    display: none;
+  }
+  .#{$namespace}-navlink:last-of-type {
+    display: block;
+  }
+  @include breakpoint('sm') {
+    .#{$namespace}-navlink:nth-last-child(3),
+    .#{$namespace}-navlink:nth-last-child(2),
+    .#{$namespace}-navlink:nth-last-child(1) {
+      display: block;
+    }
+    .#{$namespace}-navlink:last-of-type {
+      display: none;
+    }
+  }
+  
+}
+
+.#{$namespace}-mobile {
+  background-color: $mfung-mobile-nav-colour;
+  padding: 20px;
+  display: none;
+
+  &[data-open="true"] {
+    display: block;
+
+    @include breakpoint('sm') {
+      display: none;
+    }
+  }
+
+  &-links {
+    display: grid;
+    max-width: 1260px;
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+  }
+  .#{$namespace}-navlink {
+    padding: 10px;
+  }
+  .#{$namespace}-navlink_text {
+    padding: 0px;
+    color: $mfung-text-color;
+  }
+}

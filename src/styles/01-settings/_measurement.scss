@@ -1,0 +1,63 @@
+////
+/// @group settings/measurements
+////
+
+// =========================
+// Page Layout
+// =========================
+
+/// Width of main container
+///
+/// @type Number
+/// @access public
+
+$mfung-page-width: 1260px !default;
+
+/// Map of grid column widths
+///
+/// @type Map
+/// @access public
+
+$mfung-grid-widths: (
+  one-quarter: 25%,
+  one-third: 33.3333%,
+  one-half: 50%,
+  two-thirds: 66.6666%,
+  three-quarters: 75%,
+  full: 100%
+) !default;
+
+/// Width of gutter between grid columns
+///
+/// @type Number
+/// @access public
+
+$mfung-gutter: 30px !default;
+
+/// Width of half the gutter between grid columns
+///
+/// @type Number
+/// @access public
+
+$mfung-gutter-half: $mfung-gutter / 2;
+
+// ===============
+// Borders
+// ===============
+
+/// Standard border width
+///
+/// @type Number
+/// @access public
+
+$mfung-border-width-wide: 10px !default;
+
+// ===============
+// Breakpoints
+// ===============
+$mfung-breakpoints: (
+  sm: 504,
+  md: 756,
+  lg: 1008,
+  xl: 1260
+)

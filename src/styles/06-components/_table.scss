@@ -1,0 +1,22 @@
+.#{$namespace}-table {
+    border: 0;
+    text-align: left;
+    tbody td:first-of-type,
+    thead th:first-of-type {
+        width: 129px;
+        padding-right: 10px;
+    }
+    &_cell {
+        color: $mfung-heading-color;
+        padding-bottom: 10px;
+    }
+    &_header {
+        font-weight: bold;
+        color: mf-colour("grey", "darker");
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 20px;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+}

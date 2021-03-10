@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: px-to-rem($base-font-size);
+}
+
+body {
+  background-color: $mfung-background-colour;
+  margin: 0;
+}
+main, section {
+  display: block; // Not block level in IE..
+}
+
+
+p,a {
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, legend,
+figure,
+table, th, td, caption {
+  margin: 0;
+  padding: 0;
+}
+
+
+button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s ease-in-out;
+  @media (prefers-reduced-motion) {
+    transition: none;  
+  }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+// button:hover {
+//   background: mfung-shade($mfung-background-colour, 5%);
+// }
+
+// button:focus {
+//   outline: 1px solid #fff;
+//   outline-offset: -4px;
+// }
+
+// button:active {
+//   transform: scale(0.99);
+// }
