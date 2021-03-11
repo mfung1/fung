@@ -16,11 +16,11 @@
 
 .#{$namespace}-post {
   display: block;
-  background-color: $mfung-primary-color;
+  background-color: $fung-primary-default;
   text-decoration: none;
   .mf-caption,
   .mf-h2 {
-    color: $mfung-contrast-text-color;
+    color: $fung-white-default;
   }
   &_image {
     width: 100%;

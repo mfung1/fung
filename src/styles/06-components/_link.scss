@@ -1,11 +1,11 @@
 .#{$namespace}-navlink {
-  border-left: 1px solid rgba($mfung-nav-text-colour, .2);
+  border-left: 1px solid rgba($fung-white-default, .2);
   
   &_text {
     display: block;
     background: none;
     outline: none;
-    color: $mfung-nav-text-colour;
+    color: $fung-white-default;
     font-family: $mfung-text-fonts;
     font-weight: bold;
     font-size: 1rem;
@@ -15,20 +15,20 @@
   }
 
   &:hover {
-    background-color: $mfung-accent-one;
+    background-color: $fung-accent-one-default;
     border-left-color: transparent;
     transition: background-color .3s ease-in-out;
 
     .#{$namespace}-navlink_text {
-      color: $mfung-heading-color;
+      color: $fung-black-default;
       transition: color .3s ease-in-out;
     }
   }
   .#{$namespace}-navlink_text:focus {
-    background-color: $mfung-accent-one;
+    background-color: $fung-accent-one-default;
     transition: background-color .3s ease-in-out;
-    box-shadow: inset 0 2px 0 -2px $mfung-primary-color;
-    color: $mfung-heading-color;
+    box-shadow: inset 0 2px 0 -2px $fung-primary-default;
+    color: $fung-black-default;
     transition: color .3s ease-in-out;
   }
   span {
@@ -48,12 +48,12 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
-  color: $mfung-accent-one;
+  color: $fung-accent-one-default;
 
   &:focus {
     outline: 0;
-    background-color: $mfung-accent-one;
-    color: $mfung-heading-color;
+    background-color: $fung-accent-one-default;
+    color: $fung-black-default;
   }
 
   &-inline {

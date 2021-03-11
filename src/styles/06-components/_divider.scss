@@ -4,7 +4,7 @@
   max-width: calc(100% - 80px);
   border: 0;
   @include bottom-margin;
-  background-color: $mfung-divider-colour;
+  background-color: $fung-grey-light;
 
   &--full-width {
     max-width: 100%;

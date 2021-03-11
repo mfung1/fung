@@ -1,6 +1,6 @@
 h1,h2,h3,h4 {
   font-family: $mfung-heading-fonts;
-  color: $mfung-heading-color;
+  color: $fung-black-default;
 }
 
 p, blockquote, pre,
@@ -9,7 +9,7 @@ form, legend,
 figure,
 table, th, td, caption {
   font-family: $mfung-text-fonts;
-  color: $mfung-text-color;
+  color: $fung-black-default;
 }
 
 p + p:last-child {

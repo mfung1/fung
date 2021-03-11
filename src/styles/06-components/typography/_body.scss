@@ -3,7 +3,7 @@
   line-height: 25px;
   margin-bottom: 10px;
   max-width: 640px;
-  color: $mfung-text-color;
+  color: $fung-black-light;
 
   @include breakpoint('sm') {
     font-size: 20px;
@@ -11,7 +11,7 @@
   }
   &-heavy {
     font-weight: 600;
-    color: $mfung-heading-color;
+    color: $fung-black-default;
   }
   &:last-of-type {
     margin-bottom: 30px;

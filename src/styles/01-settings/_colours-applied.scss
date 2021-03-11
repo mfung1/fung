@@ -5,101 +5,290 @@
 @import "../02-tools/colour";
 
 //============================
-// Generic
+// Primary
 //============================
 
-/// Background
+/// Primary - Darker
 ///
 /// @type Colour
 /// @access public
-$mfung-background-colour: mf-colour("white", "default") !default;
+$fung-primary-darker: mf-colour("primary", "darker") !default;
 
-/// Brand colour
+/// Primary - Default
 ///
 /// @type Colour
 /// @access public
+$fung-primary-default: mf-colour("primary", "default") !default;
 
-$mfung-brand-colour: mf-colour("primary", "default") !default;
+/// Primary - Light
+///
+/// @type Colour
+/// @access public
+$fung-primary-light: mf-colour("primary", "light") !default;
 
-/// Text Colour
+/// Primary - Lighter
 ///
 /// @type Colour
 /// @access public
-$mfung-heading-color: mf-colour("black", "default") !default;
+$fung-primary-lighter: mf-colour("primary", "lighter") !default;
 
-/// Text Colour
-///
-/// @type Colour
-/// @access public
-$mfung-text-color: mf-colour("black", "light") !default;
+//============================
+// Accent One
+//============================
 
-/// Nav Text Colour
+/// Accent One - Darker
 ///
 /// @type Colour
 /// @access public
-$mfung-nav-text-colour: mf-colour("white", "default") !default;
+$fung-accent-one-darker: mf-colour("accent-one", "darker") !default;
 
-/// Nav Colour
+/// Accent One - Default
 ///
 /// @type Colour
 /// @access public
-$mfung-nav-colour: mf-colour("primary", "default") !default;
-/// Nav Colour
-///
-/// @type Colour
-/// @access public
-$mfung-mobile-nav-colour: mf-colour("grey", "lighter") !default;
+$fung-accent-one-default: mf-colour("accent-one", "default") !default;
 
-/// Primary Colour
+/// Accent One - Light
 ///
 /// @type Colour
 /// @access public
-$mfung-primary-color: mf-colour("primary", "default") !default;
+$fung-accent-one-light: mf-colour("accent-one", "light") !default;
 
-/// Accent 1 Colour
+/// Accent One - Lighter
 ///
 /// @type Colour
 /// @access public
-$mfung-accent-one: mf-colour("accent1", "default") !default;
+$fung-accent-one-light: mf-colour("accent-one", "lighter") !default;
 
-/// Accent 2 Colour
-///
-/// @type Colour
-/// @access public
-$mfung-accent-two: mf-colour("accent2", "default") !default;
 
-/// Contrasting Text Colour
+/// Accent One - Lightest
 ///
 /// @type Colour
 /// @access public
-$mfung-contrast-text-color: mf-colour("white", "default") !default;
+$fung-accent-one-lightest: mf-colour("accent-one", "lightest") !default;
 
-/// Divider Colour
-///
-/// @type Colour
-/// @access public
-$mfung-divider-colour: mf-colour("grey", "light") !default;
+//============================
+// Accent Two
+//============================
 
-/// Focus Colour
+/// Accent Two - Darker
 ///
 /// @type Colour
 /// @access public
-$mfung-focus: mf-colour("accent1", "default") !default;
+$fung-accent-two-darker: mf-colour("accent-two", "darker") !default;
 
-/// Success Colour
+/// Accent Two - Default
 ///
 /// @type Colour
 /// @access public
-$mfung-success: mf-colour("success", "default") !default;
+$fung-accent-two-default: mf-colour("accent-two", "default") !default;
 
-/// Success Colour
+/// Accent Two - Light
 ///
 /// @type Colour
 /// @access public
-$mfung-success: mf-colour("warning", "default") !default;
+$fung-accent-two-light: mf-colour("accent-two", "light") !default;
 
-/// Error Colour
+/// Accent Two - Lighter
 ///
 /// @type Colour
 /// @access public
-$mfung-error: mf-colour("error", "default") !default;
+$fung-accent-two-light: mf-colour("accent-two", "lighter") !default;
+
+
+/// Accent Two - Lightest
+///
+/// @type Colour
+/// @access public
+$fung-accent-two-lightest: mf-colour("accent-two", "lightest") !default;
+
+//============================
+// Success
+//============================
+
+/// Success - Darker
+///
+/// @type Colour
+/// @access public
+$fung-success-darker: mf-colour("success", "darker") !default;
+
+/// Success - Default
+///
+/// @type Colour
+/// @access public
+$fung-success-default: mf-colour("success", "default") !default;
+
+/// Success - Light
+///
+/// @type Colour
+/// @access public
+$fung-success-light: mf-colour("success", "light") !default;
+
+/// Success - Lighter
+///
+/// @type Colour
+/// @access public
+$fung-success-light: mf-colour("success", "lighter") !default;
+
+
+/// Success - Lightest
+///
+/// @type Colour
+/// @access public
+$fung-success-lightest: mf-colour("success", "lightest") !default;
+
+//============================
+// Warning
+//============================
+
+/// Warning - Darker
+///
+/// @type Colour
+/// @access public
+$fung-warning-darker: mf-colour("warning", "darker") !default;
+
+/// Warning - Default
+///
+/// @type Colour
+/// @access public
+$fung-warning-default: mf-colour("warning", "default") !default;
+
+/// Warning - Light
+///
+/// @type Colour
+/// @access public
+$fung-warning-light: mf-colour("warning", "light") !default;
+
+/// Warning - Lighter
+///
+/// @type Colour
+/// @access public
+$fung-warning-light: mf-colour("warning", "lighter") !default;
+
+
+/// Warning - Lightest
+///
+/// @type Colour
+/// @access public
+$fung-warning-lightest: mf-colour("warning", "lightest") !default;
+
+//============================
+// Error
+//============================
+
+/// Error - Darker
+///
+/// @type Colour
+/// @access public
+$fung-error-darker: mf-colour("error", "darker") !default;
+
+/// Error - Default
+///
+/// @type Colour
+/// @access public
+$fung-error-default: mf-colour("error", "default") !default;
+
+/// Error - Light
+///
+/// @type Colour
+/// @access public
+$fung-error-light: mf-colour("error", "light") !default;
+
+/// Error - Lighter
+///
+/// @type Colour
+/// @access public
+$fung-error-light: mf-colour("error", "lighter") !default;
+
+
+/// Error - Lightest
+///
+/// @type Colour
+/// @access public
+$fung-error-lightest: mf-colour("error", "lightest") !default;
+
+//============================
+// Grey
+//============================
+
+/// Grey - Darker
+///
+/// @type Colour
+/// @access public
+$fung-grey-darker: mf-colour("grey", "darker") !default;
+
+/// Grey - Default
+///
+/// @type Colour
+/// @access public
+$fung-grey-default: mf-colour("grey", "default") !default;
+
+/// Grey - Light
+///
+/// @type Colour
+/// @access public
+$fung-grey-light: mf-colour("grey", "light") !default;
+
+/// Grey - Lighter
+///
+/// @type Colour
+/// @access public
+$fung-grey-lighter: mf-colour("grey", "lighter") !default;
+
+
+/// Grey - Lightest
+///
+/// @type Colour
+/// @access public
+$fung-grey-lightest: mf-colour("grey", "lightest") !default;
+
+//============================
+// Black
+//============================
+
+/// Black - Default
+///
+/// @type Colour
+/// @access public
+$fung-black-default: mf-colour("black", "default") !default;
+
+/// Black - Light
+///
+/// @type Colour
+/// @access public
+$fung-black-light: mf-colour("black", "light") !default;
+
+/// Black - Lighter
+///
+/// @type Colour
+/// @access public
+$fung-black-lighter: mf-colour("black", "lighter") !default;
+
+
+/// Black - Lightest
+///
+/// @type Colour
+/// @access public
+$fung-black-lightest: mf-colour("black", "lightest") !default;
+
+//============================
+// White
+//============================
+
+/// White - Default
+///
+/// @type Colour
+/// @access public
+$fung-white-default: mf-colour("white", "default") !default;
+
+/// White - Dark
+///
+/// @type Colour
+/// @access public
+$fung-white-dark: mf-colour("white", "dark") !default;
+
+/// White - Darker
+///
+/// @type Colour
+/// @access public
+$fung-white-darker: mf-colour("white", "darker") !default;

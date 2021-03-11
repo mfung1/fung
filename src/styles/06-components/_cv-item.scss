@@ -1,3 +1,6 @@
+.#{$namespace}-cv-intro {
+  @include wrapper;
+}
 .#{$namespace}-cv-item {
   @include mb-50;
 }

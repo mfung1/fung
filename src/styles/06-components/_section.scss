@@ -1,7 +1,11 @@
 .#{$namespace}-section {
-  @include wrapper;
+  // @include wrapper;
 
   &:last-child {
     @include bottom-margin;
+  }
+
+  &--pink {
+    background-color: $fung-accent-one-lightest;
   }
 }
