@@ -1,3 +1,51 @@
 .#{$namespace}-hero {
-  @include wrapper;
+  // @include wrapper;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: calc(100vh - 120px); // Header is 120px tall
+  max-height: calc(100vh - 120px);
+  &_inner {
+    @include wrapper;
+    position: relative;
+    z-index: 2;
+
+    @include breakpoint('md') {
+      width: 100%;
+    }
+  }
+  &--pink {
+    background: linear-gradient(45deg, rgba($fung-accent-one-lighter,.7), rgba($fung-accent-one-light,.7), rgba($fung-accent-one-lightest,.7)) 0 0 / 1000%, no-repeat;
+    @media (prefers-reduced-motion: no-preference) {
+      animation: gradientAnimation 40s ease infinite;
+    }
+    padding: 50px 0;
+    color: $fung-accent-two-light;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 0;
+
+    .#{$namespace}-h1 {
+      color: $fung-primary-default;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      opacity: 0.05;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:  url('/images/topography.svg') 0 0 / cover no-repeat;
+    }
+  }
+}
+
+@keyframes gradientAnimation {
+  0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
 }
