@@ -4,6 +4,7 @@
   margin-bottom: 10px;
   max-width: 640px;
   color: $fung-black-light;
+  @include wrapper;
 
   @include breakpoint('sm') {
     font-size: 20px;
@@ -18,5 +19,20 @@
   }
   & + h2 {
     margin-top: 30px;
+  }
+}
+
+.#{$namespace}-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  max-height: 640px;
+  color: $fung-black-light;
+  @include wrapper;
+
+  @include breakpoint('sm') {
+    font-size: 24px;
+    line-height: 30px;
   }
 }

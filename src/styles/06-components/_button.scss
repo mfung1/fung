@@ -33,12 +33,12 @@
     }
   }
 
-  &-accent-one {
-    background-color: $fung-accent-one-default;
+  &-accent-one-darker {
+    background-color: $fung-accent-one-dark;
     color: $fung-white-default;
 
     &:hover {
-      background-color: mf-shade($fung-accent-one-default, 5);
+      background-color: mf-shade($fung-accent-one-dark, 5);
       transition: none;
     }
     // &:focus {

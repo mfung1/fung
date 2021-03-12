@@ -2,10 +2,28 @@
   // @include wrapper;
 
   &:last-child {
-    @include bottom-margin;
+    margin-bottom: 50px;
   }
 
-  &--pink {
-    background-color: $fung-accent-one-lightest;
+  &--primary {
+    background-color: $fung-primary-default;
+    padding: 50px 0;
+    margin: 50px 0;
+
+    .#{$namespace}-h2,
+    .#{$namespace}-title {
+      color: $fung-white-default;
+    }
+
+    .#{$namespace}-caption {
+      color: $fung-accent-one-light;
+    }
+    .#{$namespace}-body {
+      color: $fung-accent-two-light;
+    }
+    .#{$namespace}-body-heavy {
+      color: $fung-accent-two-lighter;
+    }
   }
+
 }
