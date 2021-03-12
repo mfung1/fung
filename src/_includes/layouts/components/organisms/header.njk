@@ -1,25 +1,29 @@
 <nav class="mf-header">
   <ul class="mf-header_links">
-    {% for page in collections.page %}
-    <li class="mf-navlink"><a href="{{page.url}}" class="mf-navlink_text">{{page.data.title}}</a></li>
+    {% for webpage in collections.webpage %}  
+    <li class="mf-navlink" {% if webpage.url == page.url %}aria-current="true"{% endif %}><a href="{{webpage.url}}" class="mf-navlink_text">{{webpage.data.title}}</a></li>
     {% endfor %}
     <li class="mf-navlink"><button class="mf-navlink_text" role="button" aria-haspopup="true" aria-expanded="false" aria-label="mobile-menu"><span>More</span><svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="mf-navlink_arrow"><use xlink:href="#menu-arrow"/></svg></button></li>
   </ul>
 </nav>
 <div class="mf-mobile" id="mobile-menu" data-open="false">
   <ul class="mf-mobile-links">
-    {% for page in collections.page %}
-      <li class="mf-navlink"><a href="{{page.url}}" class="mf-navlink_text">{{page.data.title}}</a></li>
+    {% for webpage in collections.webpage %}
+      <li class="mf-navlink"><a href="{{webpage.url}}" class="mf-navlink_text">{{webpage.data.title}}</a></li>
     {% endfor %}
   </ul>
 </div>
 <div class="mf-logo">
   <a href="/">
-    <span class="visually-hidden">Homepage"</span>
+    <span class="visually-hidden">Homepage</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="90" height="40" fill="none" viewBox="0 0 180 80" aria-hidden="true">
       <use xlink:href="#text" />
       <use xlink:href="#dot" />
     </svg>
   </a>
 </div>
-<div class="mf-divider mf-divider--full-width" aria-hidden="true"></div>
+{% if page.url !== '/' %}
+  <div class="mf-divider mf-divider--full-width" aria-hidden="true"></div>
+{% endif %}
+
+{# {% endif %} #}
