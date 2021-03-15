@@ -19,6 +19,7 @@
     background: linear-gradient(45deg, rgba($fung-accent-one-lighter,.7), rgba($fung-accent-one-light,.7), rgba($fung-accent-one-lightest,.7)) 0 0 / 1000%, no-repeat;
     @media (prefers-reduced-motion: no-preference) {
       animation: gradientAnimation 40s ease infinite;
+      animation-play-state: paused;
     }
     padding: 50px 0;
     color: $fung-accent-two-light;

@@ -8,13 +8,13 @@ layout: 'layouts/base.njk'
 {# Imports #}
 {% from './_includes/layouts/components/atoms/_skill-point.njk' import skillPoint %}
 
-<section class="mf-hero mf-hero--pink">
+<section class="mf-hero mf-hero--pink" data-callback="playAnimation">
   <div class="mf-hero_inner">
     <h1 class="mf-h1">Hi, my name is Matt. I&rsquo;m a <span class="col-accent-one-dark">Senior Web Developer</span> with 4+ years of experience in the digital world.</h1>
     <a class="mf-button mf-button-accent-one-darker mb-0" href="#">Download CV</a>
   </div>
 </section>
-<section class="mf-section" data-fade-up>
+<section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
   <div class="mf-cv-intro">
     <p class="mf-caption col-accent-one">#01</p>
     <h2 class="mf-h2">Experience</h2>
@@ -38,7 +38,7 @@ layout: 'layouts/base.njk'
     <p class="mf-body col-black-light mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo expedita doloribus laudantium asperiores molestiae nisi magni vero voluptate, placeat nulla! Est nobis laborum architecto impedit facere accusantium sint praesentium.</p>
   </div>
 </section>
-<section class="mf-section mf-section--primary" data-fade-up>
+<section class="mf-section mf-section--primary" data-callback="fadeUpEffect" data-fade-up>
   <div class="mf-cv-intro">
     <p class="mf-caption col-accent-one">#02</p>
     <h2 class="mf-h2">Education</h2>
@@ -50,7 +50,7 @@ layout: 'layouts/base.njk'
     <p class="mf-body col-black-light mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo expedita doloribus laudantium asperiores molestiae nisi magni vero voluptate, placeat nulla! Est nobis laborum architecto impedit facere accusantium sint praesentium.</p>
   </div>
 </section>
-<section class="mf-section" data-fade-up>
+<section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
   <div class="mf-cv-intro mb-50">
     <p class="mf-caption col-accent-one">#03</p>
     <h2 class="mf-h2">Skills</h2>
