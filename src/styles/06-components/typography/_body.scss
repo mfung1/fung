@@ -1,14 +1,14 @@
 .#{$namespace}-body {
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 24px;
+  line-height: 30px;
   margin-bottom: 10px;
   max-width: 640px;
   color: $fung-black-light;
-  @include wrapper;
 
   @include breakpoint('sm') {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 100%;
   }
   &-heavy {
     font-weight: 600;
@@ -29,7 +29,6 @@
   font-weight: 600;
   max-height: 640px;
   color: $fung-black-light;
-  @include wrapper;
 
   @include breakpoint('sm') {
     font-size: 24px;

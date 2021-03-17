@@ -1,29 +1,32 @@
 .#{$namespace}-section {
   // @include wrapper;
+  padding: 100px 0;
 
   &:last-child {
     margin-bottom: 50px;
   }
 
+  &_inner {
+    @include wrapper;
+  }
+
   &--primary {
     background-color: $fung-primary-default;
-    padding: 50px 0;
-    margin: 50px 0;
 
-    .#{$namespace}-h2,
-    .#{$namespace}-title {
-      color: $fung-white-default;
-    }
+    // .#{$namespace}-h2,
+    // .#{$namespace}-title {
+    //   color: $fung-white-default;
+    // }
 
-    .#{$namespace}-caption {
-      color: $fung-accent-one-light;
-    }
-    .#{$namespace}-body {
-      color: $fung-accent-two-light;
-    }
-    .#{$namespace}-body-heavy {
-      color: $fung-accent-two-lighter;
-    }
+    // .#{$namespace}-caption {
+    //   color: $fung-accent-one-light;
+    // }
+    // .#{$namespace}-body {
+    //   color: $fung-accent-two-light;
+    // }
+    // .#{$namespace}-body-heavy {
+    //   color: $fung-accent-two-lighter;
+    // }
   }
 
 }

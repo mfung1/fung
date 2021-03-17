@@ -1,10 +1,11 @@
 @mixin wrapper {
   margin: 0 20px;
-  @include breakpoint('sm') {
+  @include breakpoint('lg') {
+    max-width: 1008px;
     margin: 0 40px;
   }
   @include breakpoint('xl') {
-    max-width: 1008px;
+    max-width: 1180px;
     margin: 0 auto;
   }
 }
