@@ -2,7 +2,7 @@ import config from '../config';
 import observer from './observer';
 
 const observeItems = () => {
-  const sections = document.querySelectorAll('section');
+  const sections = document.querySelectorAll('[data-callback]');
   sections.forEach(section => {
     if (section.classList.contains('.mf-section')) {
       const nodes = [...section.children];
