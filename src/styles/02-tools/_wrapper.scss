@@ -2,7 +2,7 @@
   margin: 0 20px;
   @include breakpoint('lg') {
     max-width: 1008px;
-    margin: 0 40px;
+    margin: 0 auto;
   }
   @include breakpoint('xl') {
     max-width: 1180px;
