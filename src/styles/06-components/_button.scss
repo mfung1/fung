@@ -46,6 +46,16 @@
     // }
   }
 
+  &-white-default {
+    background-color: $fung-white-default;
+    color: $fung-black-default;
+
+    &:hover {
+      background-color: mf-shade($fung-white-default, 5);
+      transition: none;
+    }
+  }
+
   &-center {
     display: block;
     max-width: 200px;

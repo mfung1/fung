@@ -9,6 +9,17 @@
     @include wrapper;
   }
 
+  &--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .#{$namespace}-section_inner {
+      max-width: 580px;
+    }
+  }
+
   &--primary {
     background-color: $fung-primary-default;
 

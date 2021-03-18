@@ -4,6 +4,9 @@
 .col-accent-one-dark {
   color: $fung-accent-one-dark;
 }
+.col-accent-one-lightest {
+  color: $fung-accent-one-lightest;
+}
 .col-hotspur {
   color: $fung-primary-default;
 }
@@ -12,4 +15,14 @@
 }
 .col-white-dark {
   color: $fung-white-dark;
+}
+
+.bg-col-primary-default {
+  background-color: $fung-primary-default;
+}
+.bg-col-accent-two-lightest {
+  background-color: $fung-accent-two-lightest;
+}
+.bg-col-accent-one-dark {
+  background-color: $fung-accent-one-dark;
 }

@@ -24,10 +24,10 @@ layout: 'layouts/base.njk'
     <p class="mf-callout col-white">I have 4 years of experience building websites in different industries. <span class="col-white-dark">I am a creative developer based in Lincoln, UK. Passsionate about excellent user experiences.</span></p>
   </div>
 </section>
-<section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
-  <div class="mf-section_inner">
-    <h2 class="mf-headline mb-100">Latest posts</h2>
-    <ul class="mf-posts">
+<section class="mf-section bg-col-accent-two-lightest">
+  <div class="mf-section_inner" data-callback="fadeUpEffect" data-fade-up>
+    <h2 class="mf-headline mb-50">Latest posts</h2>
+    <ul class="mf-posts mb-100">
       {% set latestPosts = collections.post|reverse %}
       {% for post in latestPosts.slice(0, 6) %}
       <li>
@@ -42,15 +42,11 @@ layout: 'layouts/base.njk'
       </li>
       {% endfor %}
     </ul>
-  </div>
-</section>
-<section class="mf-section mf-section--accent-two-lightest" data-callback="fadeUpEffect" data-fade-up>
-  <div class="mf-section_inner">
-    <h2 class="mf-headline mb-100">Featured Projects</h2>
+    <h2 class="mf-headline mb-50">Featured Projects</h2>
     <ul class="mf-projects">
       {% set featuredProjects = collections.featuredProjects %}
       {% for project in featuredProjects.slice(0, 3) %}
-      <li>
+      <li data-callback="fadeUpEffect" data-fade-up>
         <a href="{{project.url}}" class="mf-banner{% if loop.index == 2 %} mf-banner-reverse{% endif %}">
           <img class="mf-banner_img" src="{{project.data.featuredImage}}" alt="" height="350" width="580"/>
           <div class="mf-banner_copy">
@@ -62,6 +58,14 @@ layout: 'layouts/base.njk'
       </li>
       {% endfor %}
     </ul>
+  </div>
+</section>
+<section class="mf-section mf-section--center bg-col-accent-one-dark">
+  <div class="mf-section_inner">
+    <svg class="mb-20" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><use xlink:href="#mail"/></svg>
+    <h2 class="mf-headline col-accent-one-lightest mb-30">Get in touch</h2>
+    <p class="mf-subheader col-accent-one-lightest mb-50">Got a burning question or want to chat about the web? I'd be happy to talk shop.</p>
+    <a href="/contact" class="mf-button mf-button-white-default mb-0">Send message</a>
   </div>
 </section>
 
