@@ -19,6 +19,13 @@ module.exports = function(eleventyConfig) {
     }).toLocaleString(DateTime.DATE_MED);
   });
 
+  eleventyConfig.addCollection("featuredProjects", function(collectionApi) {
+    let projects = collectionApi.getFilteredByTags("project", "featured");
+    let pens = collectionApi.getFilteredByTags("pen", "featured");
+    let collection = projects.concat(pens);
+    return collection;
+  });
+
   return {
     dir: { input: 'src', output: 'dist', data: '_data' },
     passthroughFileCopy: true,

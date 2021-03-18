@@ -18,13 +18,13 @@ layout: 'layouts/base.njk'
     </div>
   </div>
 </section>
-<section class="mf-section mf-section--primary">
+<section class="mf-section mf-section--primary" >
   <div class="mf-section_inner">
     <h2 class="mf-caption mf-caption-lg col-accent-one">About</h2>
     <p class="mf-callout col-white">I have 4 years of experience building websites in different industries. <span class="col-white-dark">I am a creative developer based in Lincoln, UK. Passsionate about excellent user experiences.</span></p>
   </div>
 </section>
-<section class="mf-section">
+<section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
   <div class="mf-section_inner">
     <h2 class="mf-headline mb-100">Latest posts</h2>
     <ul class="mf-posts">
@@ -44,20 +44,23 @@ layout: 'layouts/base.njk'
     </ul>
   </div>
 </section>
-<section class="mf-section mf-section--accent-two-lightest">
+<section class="mf-section mf-section--accent-two-lightest" data-callback="fadeUpEffect" data-fade-up>
   <div class="mf-section_inner">
     <h2 class="mf-headline mb-100">Featured Projects</h2>
     <ul class="mf-projects">
+      {% set featuredProjects = collections.featuredProjects %}
+      {% for project in featuredProjects.slice(0, 3) %}
       <li>
-        <a href="#" class="mf-banner">
-          <img class="mf-banner_img" src="" alt="" height="350" width="580"/>
+        <a href="{{project.url}}" class="mf-banner{% if loop.index == 2 %} mf-banner-reverse{% endif %}">
+          <img class="mf-banner_img" src="{{project.data.featuredImage}}" alt="" height="350" width="580"/>
           <div class="mf-banner_copy">
-            <p class="mf-caption col-accent-one">Tesco</p>
-            <h3 class="mf-title">UI Prototype</h3>
-            <p class="mf-body mb-0">I built a prototype of what Tesco Groceries could look like in the near future in a 2 week sprint.</p>
+            <p class="mf-caption col-accent-one">{{project.data.company}}</p>
+            <h3 class="mf-title">{{project.data.pageTitle}}</h3>
+            <p class="mf-body mb-0">{{project.data.description}}</p>
           </div>
         </a>
       </li>
+      {% endfor %}
     </ul>
   </div>
 </section>
