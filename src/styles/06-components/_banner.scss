@@ -1,0 +1,53 @@
+.#{$namespace}-projects li {
+  list-style-type: none;
+}
+.#{$namespace}-banner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-decoration: none;
+  flex: 1 0 auto;
+
+  &-reverse {
+    flex-direction: column;
+  }
+
+  &_copy {
+    display: flex;
+    background-color: $fung-white-default;
+    flex-direction: column;
+    text-align: left;
+    justify-content:center;
+    flex: 1 0 calc(50% + 10px);
+    padding: 50px 20px 50px 50px;
+  }
+
+  &_img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 169px;
+    max-height: 169px;
+
+    @include breakpoint('md') {
+      height: 350px;
+      max-height: 350px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &-reverse {
+    flex-direction: column;
+  }
+
+  @include breakpoint('md') {
+    flex-direction: row-reverse;
+
+    &-reverse {
+      flex-direction: row;
+    }
+  }
+
+}

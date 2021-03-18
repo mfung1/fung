@@ -12,7 +12,7 @@ layout: 'layouts/base.njk'
 
 <section class="mf-hero mf-hero--pink" data-callback="playAnimation">
   <div class="mf-hero_inner">
-    <h1 class="mf-o1 col-primary-default">Hey, I’m <span class="col-accent-one">Matt Fung</span>. Senior Front-End Developer at the <span class="col-accent-one">University of Lincoln</span>.</h1>
+    <h1 class="mf-oversized col-primary-default">Hey, I’m <span class="col-accent-one">Matt Fung</span>. Senior Front-End Developer at the <span class="col-accent-one">University of Lincoln</span>.</h1>
     <div class="mf-social">
       {% for socialIcon in socialIcons %}<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 30 30"><use xlink:href="#{{socialIcon}}" /></svg>{% endfor %}
     </div>
@@ -26,7 +26,7 @@ layout: 'layouts/base.njk'
 </section>
 <section class="mf-section">
   <div class="mf-section_inner">
-    <h2 class="mf-h2 mb-50">Latest posts</h2>
+    <h2 class="mf-headline mb-100">Latest posts</h2>
     <ul class="mf-posts">
       {% set latestPosts = collections.post|reverse %}
       {% for post in latestPosts.slice(0, 6) %}
@@ -35,12 +35,29 @@ layout: 'layouts/base.njk'
           <img src="{{post.data.featuredImage}}" width="380" height="210" alt="" class="mf-post_image"/>
           <div class="mf-post_copy">
             <p class="mf-caption{%if post.data.topics%} mf-caption-{{post.data.topics}}{%endif%}">{{post.data.topics}}</p>
-            <h3 class="mf-h3" data-matchHeights="postHeading">{{post.data.pageHeading}}</h3>
+            <h3 class="mf-subheader" data-matchHeights="postHeading">{{post.data.pageHeading}}</h3>
             <p class="mf-body">{{post.data.length}} minutes – {{post.data.date|postDate}}</p>
           </div>
         </a>
       </li>
       {% endfor %}
+    </ul>
+  </div>
+</section>
+<section class="mf-section mf-section--accent-two-lightest">
+  <div class="mf-section_inner">
+    <h2 class="mf-headline mb-100">Featured Projects</h2>
+    <ul class="mf-projects">
+      <li>
+        <a href="#" class="mf-banner">
+          <img class="mf-banner_img" src="" alt="" height="350" width="580"/>
+          <div class="mf-banner_copy">
+            <p class="mf-caption col-accent-one">Tesco</p>
+            <h3 class="mf-title">UI Prototype</h3>
+            <p class="mf-body mb-0">I built a prototype of what Tesco Groceries could look like in the near future in a 2 week sprint.</p>
+          </div>
+        </a>
+      </li>
     </ul>
   </div>
 </section>
