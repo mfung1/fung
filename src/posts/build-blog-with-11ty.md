@@ -8,7 +8,7 @@ description: "Test"
 length: 5
 date: 2021-03-01
 topics:
-  - js
+  - javascript
 tags:
   - post
 ---
