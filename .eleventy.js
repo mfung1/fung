@@ -19,6 +19,10 @@ module.exports = function(eleventyConfig) {
     }).toLocaleString(DateTime.DATE_MED);
   });
 
+  eleventyConfig.addCollection("latest", function(collectionApi) {
+    return collectionApi.getFilteredByGlob(["./src/posts/*.md", "./src/projects/**/*.md"]);
+  })
+
   eleventyConfig.addCollection("featuredProjects", function(collectionApi) {
     let projects = collectionApi.getFilteredByTags("project", "featured");
     let pens = collectionApi.getFilteredByTags("pen", "featured");
