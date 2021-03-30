@@ -11,47 +11,30 @@ layout: 'layouts/base.njk'
 {% from './_includes/layouts/components/atoms/_skill-point.njk' import skillPoint %}
 
 {% block pageContent %}
-<div class="mf-divider mf-divider--full-width" aria-hidden="true"></div>
+<hr class="mf-divider mf-divider--full-width" aria-hidden="true"/>
 <section class="mf-section">
   <div class="mf-section_inner">
-    <h1 class="mf-h1">Blog</h1>
-    <p class="mf-body col-black-light">I like to write about whatever springs to mind but it’s usually web industry related (design, development, culture etc.). You can also find my posts over on <a href="#" class="mf-link mf-link-inline">Medium</a>.</p>
-    <a class="mf-button mf-button-primary" href="#">Subscribe to RSS</a>
+    <h1 class="mf-display">Latest</h1>
+    <p class="mf-callout col-black-light">I like to write about whatever springs to mind but it’s usually web industry related (design, development, culture etc.). You can also find my posts over on <a href="#" class="mf-link mf-link-inline">Medium</a>.</p>
   </div>
 </section>
-<hr class="mf-divider"/>
-<section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
+<section class="mf-section bg-col-accent-two-lightest" data-callback="fadeUpEffect" data-fade-up>
   <div class="mf-section_inner">
-    <h2 class="mf-h2">Latest</h2>
-    <ul class="mf-posts">
-      {% set latestPosts = collections.post|reverse %}
-      {% for post in latestPosts.slice(0, 6) %}
+    <ul class="mf-posts mf-posts-all">
+      {% set latestPosts = collections.latest|reverse %}
+      {% for post in latestPosts %}
       <li>
         <a href="{{post.url}}" class="mf-post">
-          <img src="{{post.data.featuredImage}}" alt="" class="mf-post_image"/>
+          <img src="{{post.data.featuredImage}}" width="380" height="210" alt="" class="mf-post_image"/>
           <div class="mf-post_copy">
-            <p class="mf-caption">{{post.data.topics}}</p>
-            <h2 class="mf-h2" data-matchHeights="postHeading">{{post.data.pageHeading}}</h2>
-            <span class="mf-cta"><span>View post</span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" fill="none" viewBox="0 0 15 30"><use xlink:href="#chevron"/></svg></span>
+            <p class="mf-caption{%if post.data.topics%} mf-caption-{{post.data.topics}}{%endif%}">{{post.data.topics}}</p>
+            <h3 class="mf-subheader" data-matchHeights="postHeading">{{post.data.pageHeading}}</h3>
+            <p class="mf-body">{{post.data.length}} minutes – {{post.data.date|postDate}}</p>
           </div>
         </a>
       </li>
       {% endfor %}
     </ul>
-    <a class="mf-button mf-button-primary mf-button-center" href="#">See all posts</a>
-  </div>
-</section>
-<hr class="mf-divider"/>
-<section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
-  <div class="mf-section_inner">
-    <h2 class="mf-h2">Archive</h2>
-    {# {% if colletions.post %} #}
-    <ul class="mf-list">
-      {# {% for post in collections.post %} #}
-      <li class="mf-list-item"><a href="#" class="mf-link">2020</a></li>
-      {# {% endfor %} #}
-    </ul>
-    {# {% endif %} #}
   </div>
 </section>
 {% endblock %}
