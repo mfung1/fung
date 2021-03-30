@@ -6,6 +6,11 @@
   @include bottom-margin;
   background-color: $fung-grey-light;
 
+  margin-bottom: 0;
+  &+.#{$namespace}-section {
+    padding-top: 50px;
+  }
+
   &--full-width {
     max-width: 100%;
     margin: 0 0 50px;
