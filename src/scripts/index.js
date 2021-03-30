@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
       toggleMenu();
       matchHeights();
       observeItems();
-      window.addEventListener("resize", debounce(matchHeights, 100, false), false);
-    })
+    });
+    window.addEventListener("resize", debounce(matchHeights, 100, false), false);
   }
 });
