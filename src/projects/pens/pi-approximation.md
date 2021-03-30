@@ -4,6 +4,7 @@ featuredImage: "https://images.unsplash.com/photo-1600493033157-eed3fbe95d96?ixi
 pageTitle: "Pi Approximation"
 company: "Personal"
 pageHeading: "Pi Approximation"
+length: 2
 description: "A fun pen to approximate Pi from two random numbers between 0 and 1."
 date: 2021-03-02
 topics:
