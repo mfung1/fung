@@ -1,15 +1,17 @@
 ---
 layout: layouts/base.njk
 ---
-<section class="mf-section">
-  <article>
+<section class="mf-section mf-section--post">
+  <img class="mf-image" src="{{featuredImage}}" alt=""/>
+  <article class="mf-section_inner">
     <div class="mb-30">
-      <img class="mf-image" src="{{featuredImage}}" alt=""/>
       <p class="mf-caption col-accent-one">{{topics}}</p>
-      <h1 class="mf-h1">{{pageHeading}}</h1>
+      <h1 class="mf-display">{{pageHeading}}</h1>
       <p class="mf-caption">{{page.date|postDate}} - {{length}} minute read</p>
     </div>
-    {{content|safe}}
   </article>
   <hr class="mf-divider">
+  <article class="mf-section_inner">
+  {{content|safe}}
+  </article>
 </section>

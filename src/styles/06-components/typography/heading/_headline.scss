@@ -1,9 +1,9 @@
 .#{$namespace}-headline{
-  font-size: 42px;
-  line-height: 50px;
+  font-size: 36px;
+  line-height: 42px;
   max-width: 640px;
   @include breakpoint('md') {
-    font-size: 64px;
-    line-height: 70px;
+    font-size: 42px;
+    line-height: 48px;
   } 
 }

@@ -20,6 +20,10 @@
     }
   }
 
+  &--post {
+    padding-top: 0;
+  }
+
   &--primary {
     background-color: $fung-primary-default;
 

@@ -10,14 +10,16 @@ html {
 }
 
 body {
-  background-color: $fung-white-default;
+  background-color: $fung-grey-lightest;
   margin: 0;
 }
 main, section {
   display: block; // Not block level in IE..
 }
 
-
+header {
+  background-color: $fung-white-default;
+}
 p,a {
   font-size: 1rem;
   line-height: 20px;
