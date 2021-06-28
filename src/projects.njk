@@ -31,7 +31,7 @@ layout: 'layouts/base.njk'
             <img src="{{project.data.featuredImage}}" alt="" class="mf-post_image"/>
           </div>
           <div class="mf-post_copy">
-            <p class="mf-caption{%if project.data.topics%} mf-caption-{{project.data.topics}}{%endif%}">{{project.data.topics}}</p>
+            <p class="mf-badge{%if project.data.topics%} mf-badge-{{project.data.topics}}{%endif%}">{{project.data.topics}}</p>
             <h2 class="mf-subheader" data-matchHeights="clientHeading">{{project.data.pageHeading}}</h2>
           </div>
         </a>
@@ -53,7 +53,7 @@ layout: 'layouts/base.njk'
             <img src="{{pen.data.featuredImage}}" alt="" class="mf-post_image"/>
           </div>
           <div class="mf-post_copy">
-            <p class="mf-caption{%if pen.data.topics%} mf-caption-{{pen.data.topics}}{%endif%}">{{pen.data.topics}}</p>
+            <p class="mf-badge{%if pen.data.topics%} mf-badge-{{pen.data.topics}}{%endif%}">{{pen.data.topics}}</p>
             <h2 class="mf-subheader" data-matchHeights="penHeading">{{pen.data.pageHeading}}</h2>
           </div>
         </a>
