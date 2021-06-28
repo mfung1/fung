@@ -1,8 +1,7 @@
 .#{$namespace}-display {
   font-size: 42px;
   line-height: 50px;
-  padding-bottom: 30px;
-  max-width: 640px;
+  margin-bottom: 10px;
   @include breakpoint('md') {
     font-size: 64px;
     line-height: 70px;

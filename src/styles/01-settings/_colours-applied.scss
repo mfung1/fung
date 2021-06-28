@@ -83,6 +83,12 @@ $fung-accent-one-lightest: mf-colour("accent-one", "lightest") !default;
 /// @access public
 $fung-accent-two-darker: mf-colour("accent-two", "darker") !default;
 
+/// Accent Two - Darker
+///
+/// @type Colour
+/// @access public
+$fung-accent-two-dark: mf-colour("accent-two", "dark") !default;
+
 /// Accent Two - Default
 ///
 /// @type Colour
@@ -118,6 +124,12 @@ $fung-accent-two-lightest: mf-colour("accent-two", "lightest") !default;
 /// @access public
 $fung-success-darker: mf-colour("success", "darker") !default;
 
+/// Success - Dark
+///
+/// @type Colour
+/// @access public
+$fung-success-dark: mf-colour("success", "dark") !default;
+
 /// Success - Default
 ///
 /// @type Colour
@@ -134,7 +146,7 @@ $fung-success-light: mf-colour("success", "light") !default;
 ///
 /// @type Colour
 /// @access public
-$fung-success-light: mf-colour("success", "lighter") !default;
+$fung-success-lighter: mf-colour("success", "lighter") !default;
 
 
 /// Success - Lightest
@@ -153,6 +165,12 @@ $fung-success-lightest: mf-colour("success", "lightest") !default;
 /// @access public
 $fung-warning-darker: mf-colour("warning", "darker") !default;
 
+/// Warning - Dark
+///
+/// @type Colour
+/// @access public
+$fung-warning-dark: mf-colour("warning", "dark") !default;
+
 /// Warning - Default
 ///
 /// @type Colour
@@ -169,7 +187,7 @@ $fung-warning-light: mf-colour("warning", "light") !default;
 ///
 /// @type Colour
 /// @access public
-$fung-warning-light: mf-colour("warning", "lighter") !default;
+$fung-warning-lighter: mf-colour("warning", "lighter") !default;
 
 
 /// Warning - Lightest
@@ -210,7 +228,7 @@ $fung-error-light: mf-colour("error", "light") !default;
 ///
 /// @type Colour
 /// @access public
-$fung-error-light: mf-colour("error", "lighter") !default;
+$fung-error-lighter: mf-colour("error", "lighter") !default;
 
 
 /// Error - Lightest

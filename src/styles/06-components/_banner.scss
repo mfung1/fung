@@ -10,14 +10,18 @@
   flex-direction: column;
   text-decoration: none;
   flex: 1 0 auto;
-  box-shadow: 0 0 2px 0 rgba($fung-black-default, 0.25);
+  box-shadow: 0 2px 4px 0 rgba($fung-black-default, 0.15);
   transition: box-shadow .3s ease-in-out;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba($fung-black-default, 0.15);
+  }
   &:focus {
     outline: 2px solid $fung-accent-one-default;
   }
-  &:hover .#{$namespace}-banner_img {
+  &:hover .#{$namespace}-banner_img,
+  &:focus .#{$namespace}-banner_img {
     opacity: 0.9;
-    transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out, box-shadow .3s ease-in-out;
   }
 
   &-reverse {

@@ -1,5 +1,5 @@
 ---
-pageTitle: "mfung - Web Developer - Lincoln UK"
+pageTitle: "Home - Fung"
 description: "A front-end web developer with 4 years experience in the web industry"
 title: "Homepage"
 layout: 'layouts/base.njk'
@@ -34,7 +34,7 @@ layout: 'layouts/base.njk'
         <a href="{{post.url}}" class="mf-post">
           <img src="{{post.data.featuredImage}}" width="380" height="210" alt="" class="mf-post_image"/>
           <div class="mf-post_copy">
-            <p class="mf-caption{%if post.data.topics%} mf-caption-{{post.data.topics}}{%endif%}">{{post.data.topics}}</p>
+            <p class="mf-badge{%if post.data.topics%} mf-badge-{{post.data.topics}}{%endif%}">{{post.data.topics}}</p>
             <h3 class="mf-subheader" data-matchHeights="postHeading">{{post.data.pageHeading}}</h3>
             <p class="mf-body">{{post.data.length}} minutes – {{post.data.date|postDate}}</p>
           </div>
@@ -50,7 +50,6 @@ layout: 'layouts/base.njk'
         <a href="{{project.url}}" class="mf-banner{% if loop.index == 2 %} mf-banner-reverse{% endif %}">
           <img class="mf-banner_img" src="{{project.data.featuredImage}}" alt="" height="350" width="580"/>
           <div class="mf-banner_copy">
-            <p class="mf-caption col-accent-one">{{project.data.company}}</p>
             <h3 class="mf-title">{{project.data.pageTitle}}</h3>
             <p class="mf-body mb-0">{{project.data.description}}</p>
           </div>

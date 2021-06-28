@@ -4,22 +4,36 @@
 .col-accent-one-dark {
   color: $fung-accent-one-dark;
 }
+.col-accent-two {
+  color: $fung-accent-two-darker;
+}
+.col-accent-one-darker {
+  color: $fung-accent-one-darker;
+}
 .col-accent-one-lightest {
   color: $fung-accent-one-lightest;
 }
-.col-white {
+.col-white-default {
   color: $fung-white-default;
 }
 .col-white-dark {
   color: $fung-white-dark;
 }
+.col-white-darker {
+  color: $fung-white-darker;
+}
 .col-black-default {
   color: $fung-black-default;
+}
+.col-black-light {
+  color: $fung-black-light;
 }
 .col-black-lighter {
   color: $fung-black-lighter;
 }
-
+.col-primary-lighter {
+  color: $fung-primary-lighter;
+}
 .bg-col-primary-default {
   background-color: $fung-primary-default;
 }

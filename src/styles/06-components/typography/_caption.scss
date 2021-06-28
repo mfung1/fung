@@ -1,29 +1,44 @@
-.#{$namespace}-caption {
+@mixin shared {
+  display: inline-block;
   font-weight: bold;
-  font-size: 16px;
   color: $fung-black-default;
-  line-height: 25px;
   margin-bottom: 5px;
   text-transform: uppercase;
+}
+.#{$namespace}-caption {
+  @include shared;
+  font-size: 16px;
+  line-height: 24px;
 
   &-lg {
     font-size: 20px;
     line-height: 35px;
   }
+}
+.#{$namespace}-badge {
+  @include shared;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 2px 4px;
+  border-radius: 5px;
 
   &-html {
-    color: $fung-error-default;
+    color: $fung-error-darker;
+    background-color: $fung-error-lighter;
   }
 
   &-css {
-    color: $fung-success-default;
+    color: $fung-success-darker;
+    background-color: $fung-success-lighter;
   }
 
   &-react {
-    color: $fung-accent-two-default;
+    color: $fung-accent-two-darker;
+    background-color: $fung-accent-two-lighter;
   }
 
   &-javascript {
-    color: $fung-warning-default;
+    color: $fung-warning-darker;
+    background-color: $fung-warning-lighter;
   }
 }

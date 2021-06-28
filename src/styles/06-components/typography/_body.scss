@@ -2,16 +2,16 @@
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
-  max-width: 640px;
+  max-width: 100%;
   color: $fung-black-light;
 
   @include breakpoint('sm') {
     font-size: 18px;
     line-height: 25px;
-    max-width: 100%;
+    max-width: 640px;
   }
   &-heavy {
-    font-weight: 600;
+    font-weight: 500;
     color: $fung-black-default;
   }
   & + .#{$namespace}-body:last-of-type {
@@ -26,9 +26,5 @@
   line-height: 40px;
   font-weight: 600;
   margin-bottom: 30px;
-
-  @include breakpoint('md') {
-    font-size: 48px;
-    line-height: 60px;
-  }
+  color: $fung-black-light;
 }

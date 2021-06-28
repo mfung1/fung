@@ -2,3 +2,6 @@
 .#{$namespace}-cv-item {
   @include wrapper;
 }
+.#{$namespace}-cv-intro {
+  margin-bottom: 50px;
+}

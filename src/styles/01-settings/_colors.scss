@@ -38,7 +38,7 @@ $_mfung-colour-palette: (
   ),
   "success": (
     "darker": #1E611D,
-    "dark": #2D912C,
+    "dark": #2A8729,
     "default": #3CC13B,
     "light": #9DE09D,
     "lighter": #CEEFCE,
@@ -46,7 +46,7 @@ $_mfung-colour-palette: (
   ),
   "warning": (
     "darker": #7A5E0E,
-    "dark": #B68C15,
+    "dark": #AA8314,
     "default": #F3BB1C,
     "light": #F9DD8D,
     "lighter": #FCEEC6,
@@ -54,7 +54,7 @@ $_mfung-colour-palette: (
   ),
   "error": (
     "darker": #781B1C,
-    "dark": #B4292A,
+    "dark": #A82727,
     "default": #F03738,
     "light": #F89B9B,
     "lighter": #FBCDCD,
@@ -69,15 +69,15 @@ $_mfung-colour-palette: (
     "lightest": #F9FAFA
   ),
   "black": (
-    "default": #333333,
-    "light": #808080,
-    "lighter": #BFBFBF,
-    "lightest": #E5E5E5 
+    "default": #111827,
+    "light": #374151,
+    "lighter": #6B7280,
+    "lightest": #9CA3AF 
   ),
   "white": (
     "default": #FFFFFF,
-    "dark": #B2B2B2,
-    "darker": #808080,
-    "darkest": #595959 
+    "dark": #F9FAFB,
+    "darker": #E5E7EB,
+    "darkest": #D1D5DB 
   )
 );

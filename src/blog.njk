@@ -14,12 +14,14 @@ layout: 'layouts/base.njk'
 <hr class="mf-divider mf-divider--full-width" aria-hidden="true"/>
 <section class="mf-section">
   <div class="mf-section_inner">
-    <h1 class="mf-display">Latest</h1>
+    <h1 class="mf-display">{{title}}</h1>
     <p class="mf-callout col-black-light">I like to write about whatever springs to mind but it’s usually web industry related (design, development, culture etc.). You can also find my posts over on <a href="#" class="mf-link mf-link-inline">Medium</a>.</p>
   </div>
 </section>
+<hr class="mf-divider" aria-hidden="true"/>
 <section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
   <div class="mf-section_inner">
+    <h2 class="mf-headline mb-30">Latest</h2>
     <ul class="mf-posts mf-posts-all">
       {% set latestPosts = collections.latest|reverse %}
       {% for post in latestPosts %}
@@ -27,7 +29,7 @@ layout: 'layouts/base.njk'
         <a href="{{post.url}}" class="mf-post">
           <img src="{{post.data.featuredImage}}" width="380" height="210" alt="" class="mf-post_image"/>
           <div class="mf-post_copy">
-            <p class="mf-caption{%if post.data.topics%} mf-caption-{{post.data.topics}}{%endif%}">{{post.data.topics}}</p>
+            <p class="mf-badge{%if post.data.topics%} mf-badge-{{post.data.topics}}{%endif%}">{{post.data.topics}}</p>
             <h3 class="mf-subheader" data-matchHeights="postHeading">{{post.data.pageHeading}}</h3>
             <p class="mf-body">{{post.data.length}} minutes – {{post.data.date|postDate}}</p>
           </div>
