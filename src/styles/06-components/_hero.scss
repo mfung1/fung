@@ -4,14 +4,17 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: calc(100vh - 120px); // Header is 120px tall
-  max-height: calc(100vh - 120px);
+  @include breakpoint('md') {
+    height: calc(100vh - 120px); // Header is 120px tall
+    max-height: calc(100vh - 120px);
+  }
   &_inner {
-    @include wrapper;
+    
     position: relative;
     z-index: 2;
 
-    @include breakpoint('md') {
+    @include breakpoint('lg') {
+      @include wrapper;
       width: 100%;
     }
   }
