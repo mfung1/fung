@@ -8,23 +8,25 @@ layout: 'layouts/base.njk'
 ---
 <hr class="mf-divider mf-divider--full-width" aria-hidden="true"/>
 <section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
-  <form class="mf-form" name="contact" method="POST" data-netlify="true">
-    <fieldset>
-      <legend>
-      <h1 class="mf-h1 mb-15">Contact me</h1>
-      <p class="mf-body mb-30">Got a question or want to chat about something you're struggling with? Fill out the following details and let's talk!</p>
-      </legend>
-      <div class="mf-field-group">
-        <label for="your_name" class="mf-label">What is your name?</label>
-        <input class="mf-field" id="your_name" />
-      </div>
-      <div class="mf-field-group">
-        <label for="message" class="mf-label">What would you like to say?</label>
-        <textarea width="600" height="400" class="mf-field" id="message"></textarea>
-      </div>
-      <div class="mf-field-group">
-        <button class="mf-button mf-button-primary">Send message</button>
-      </div>
-    </fieldset>
-  </form>
+  <article class="mf-section_inner">
+    <form class="mf-form" name="contact" method="POST" data-netlify="true">
+      <fieldset>
+        <legend>
+        <h1 class="mf-display mb-15">Contact me</h1>
+        <p class="mf-standfirst mb-30">Got a question or want to chat about something you're struggling with? Fill out the following details and let's talk!</p>
+        </legend>
+        <div class="mf-field-group">
+          <label for="your_name" class="mf-label">What is your name?</label>
+          <input class="mf-field" id="your_name" />
+        </div>
+        <div class="mf-field-group">
+          <label for="message" class="mf-label">What would you like to say?</label>
+          <textarea width="600" height="400" class="mf-field" id="message"></textarea>
+        </div>
+        <div class="mf-field-group">
+          <button class="mf-button mf-button-primary">Send message</button>
+        </div>
+      </fieldset>
+    </form>
+  </article>
 </section>

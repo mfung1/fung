@@ -21,6 +21,19 @@
     margin-top: 30px;
   }
 }
+.#{$namespace}-standfirst {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  color: $fung-black-light;
+
+  @include breakpoint("sm") {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 640px;
+  }
+}
 .#{$namespace}-callout {
   font-size: 32px;
   line-height: 40px;
