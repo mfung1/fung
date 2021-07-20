@@ -328,3 +328,57 @@ $fung-white-dark: mf-colour("white", "dark") !default;
 /// @type Colour
 /// @access public
 $fung-white-darker: mf-colour("white", "darker") !default;
+
+$css-vars-use-native: true;
+
+@import '../02-tools/css-vars';
+
+@include css-vars((
+  --fung-primary-darker: $fung-primary-darker,
+  --fung-primary-default: $fung-primary-default,
+  --fung-primary-light: $fung-primary-light,
+  --fung-primary-lighter: $fung-primary-lighter,
+  --fung-accent-one-darker: $fung-accent-one-darker,
+  --fung-accent-one-dark: $fung-accent-one-dark,
+  --fung-accent-one-default: $fung-accent-one-default,
+  --fung-accent-one-light: $fung-accent-one-light,
+  --fung-accent-one-lighter: $fung-accent-one-lighter,
+  --fung-accent-one-lightest: $fung-accent-one-lightest,
+  --fung-accent-two-darker: $fung-accent-two-darker,
+  --fung-accent-two-dark: $fung-accent-two-dark,
+  --fung-accent-two-default: $fung-accent-two-default,
+  --fung-accent-two-light: $fung-accent-two-light,
+  --fung-accent-two-lighter: $fung-accent-two-lighter,
+  --fung-accent-two-lightest: $fung-accent-two-lightest,
+  --fung-success-darker: $fung-success-darker,
+  --fung-success-dark: $fung-success-dark,
+  --fung-success-default: $fung-success-default,
+  --fung-success-light: $fung-success-light,
+  --fung-success-lighter: $fung-success-lighter,
+  --fung-success-lightest: $fung-success-lightest,
+  --fung-warning-darker: $fung-warning-darker,
+  --fung-warning-dark: $fung-warning-dark,
+  --fung-warning-default: $fung-warning-default,
+  --fung-warning-light: $fung-warning-light,
+  --fung-warning-lighter: $fung-warning-lighter,
+  --fung-warning-lightest: $fung-warning-lightest,
+  --fung-error-darker: $fung-error-darker,
+  --fung-error-dark: $fung-error-dark,
+  --fung-error-default: $fung-error-default,
+  --fung-error-light: $fung-error-light,
+  --fung-error-lighter: $fung-error-lighter,
+  --fung-error-lightest: $fung-error-lightest,
+  --fung-grey-darker: $fung-grey-darker,
+  --fung-grey-dark: $fung-grey-dark,
+  --fung-grey-default: $fung-grey-default,
+  --fung-grey-light: $fung-grey-light,
+  --fung-grey-lighter: $fung-grey-lighter,
+  --fung-grey-lightest: $fung-grey-lightest,
+  --fung-black-default: $fung-black-default,
+  --fung-black-light: $fung-black-light,
+  --fung-black-lighter: $fung-black-lighter,
+  --fung-black-lightest: $fung-black-lightest,
+  --fung-white-darker: $fung-white-darker,
+  --fung-white-dark: $fung-white-dark,
+  --fung-white-default: $fung-white-default,
+));

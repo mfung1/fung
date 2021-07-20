@@ -60,5 +60,9 @@
     font-size: inherit;
     line-height: inherit;
     display: inline;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

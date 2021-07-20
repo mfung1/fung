@@ -1,0 +1,88 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--fung-primary-darker);
+  }
+  .mf-header {
+    background-color: var(--fung-black-light);
+  }
+  .mf-navlink {
+    border-left: 1px solid hsla(0,0%,0%,.2);
+    &:hover {
+      background-color: var(--fung-black-lighter);
+    }
+
+    &:hover .mf-navlink_text {
+      color: var(--fung-white-dark)
+    }
+  }
+  .mf-logo a, .mf-logo a use:first-of-type {
+    color: var(--fung-white-default);
+  }
+  .mf-navlink_text {
+    color: var(--fung-white-default);
+  }
+  h1,h2,h3,h4 {
+    color: var(--fung-white-default);
+  }
+  main .mf-divider {
+    background-color: var(--fung-primary-light);
+  }
+  header {
+    background-color: var(--fung-primary-darker);
+  }
+  p, blockquote, pre,
+  dl, dd, ol, ul,
+  form, legend,
+  figure,
+  table, th, td, caption {
+    color: var(--fung-white-dark);
+  }
+  .mf-image {
+    filter: brightness(0.6)
+  }
+  .mf-body {
+    color: var(--fung-white-darker);
+  }
+  .mf-hero--pink {
+
+    background-color: var(--fung-black-default);
+    background-image: none;
+    animation-play-state: paused;
+
+    &::before {
+      background-image: url('/images/topography-dark.svg');
+    }
+
+    h1, svg {
+      color: var(--fung-white-dark);
+    }
+  }
+  .col-black-light {
+    color: var(--fung-white-darker);
+  }
+  .mf-table_header {
+    color: var(--fung-white-default);
+  }
+  .mf-table_cell {
+    color: var(--fung-grey-default);
+  }
+  .mf-section {
+    background-color: var(--fung-primary-darker);
+  }
+  .mf-section--primary {
+    background-color: var(--fung-black-light);
+    .mf-callout {
+      color: var(--fung-grey-default);
+    }
+  }
+  
+  .col-black-default {
+    color: var(--fung-white-default);
+  }
+  .mf-post_copy {
+    background-color: var(--fung-black-light);
+  }
+  .mf-footer {
+    background-color: var(--fung-black-light);
+  }
+}

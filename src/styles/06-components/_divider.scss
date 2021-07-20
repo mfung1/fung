@@ -5,8 +5,8 @@
   border: 0;
   @include bottom-margin;
   background-color: $fung-grey-light;
+  margin-bottom: 50px;
 
-  margin-bottom: 0;
   &+.#{$namespace}-section {
     padding-top: 50px;
   }
