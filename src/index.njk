@@ -26,9 +26,10 @@ layout: 'layouts/base.njk'
 </section>
 <section class="mf-section bg-col-accent-two-lightest">
   <div class="mf-section_inner" data-callback="fadeUpEffect" data-fade-up>
+  {% set latestPosts = collections.post|reverse %}
+    {% if latestPosts.length > 0 %}
     <h2 class="mf-headline mb-50">Latest posts</h2>
-    <ul class="mf-posts mb-100">
-      {% set latestPosts = collections.post|reverse %}
+    <ul class="mf-posts mb-100">  
       {% for post in latestPosts.slice(0, 6) %}
       <li>
         <a href="{{post.url}}" class="mf-post">
@@ -42,21 +43,27 @@ layout: 'layouts/base.njk'
       </li>
       {% endfor %}
     </ul>
-    {# <h2 class="mf-headline mb-50">Featured Projects</h2>
-    <ul class="mf-projects">
-      {% set featuredProjects = collections.featuredProjects %}
+    {% endif %}
+    <h2 class="mf-headline mb-50">Featured Projects</h2>
+    {% set featuredProjects = collections.featuredProjects %}
+    {% if featuredProjects.length > 0 %} 
+    <ul class="mf-posts mb-100">  
       {% for project in featuredProjects.slice(0, 3) %}
-      <li data-callback="fadeUpEffect" data-fade-up>
-        <a href="{{project.url}}" class="mf-banner{% if loop.index == 2 %} mf-banner-reverse{% endif %}">
-          <img class="mf-banner_img" src="{{project.data.featuredImage}}" alt="" height="350" width="580"/>
-          <div class="mf-banner_copy">
-            <h3 class="mf-title">{{project.data.pageTitle}}</h3>
-            <p class="mf-body mb-0">{{project.data.description}}</p>
+      <li>
+        <a href="{{project.url}}" class="mf-post">
+          <img src="{{project.data.featuredImage}}" width="380" height="210" alt="" class="mf-post_image"/>
+          <div class="mf-post_copy">
+            <p class="mf-badge{%if project.data.topics%} mf-badge-{{project.data.topics}}{%endif%}">{{project.data.topics}}</p>
+            <h3 class="mf-subheader" data-matchHeights="postHeading">{{project.data.pageHeading}}</h3>
+            <p class="mf-body">{{project.data.length}} minutes – {{project.data.date|postDate}}</p>
           </div>
         </a>
       </li>
       {% endfor %}
-    </ul> #}
+    </ul>
+    {% else %}
+      <p class="mf-body">No projects yet, because Matt ran out of coffee.</p>
+    {% endif %}
   </div>
 </section>
 

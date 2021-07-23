@@ -40,8 +40,15 @@
   .mf-image {
     filter: brightness(0.6)
   }
-  .mf-body {
+  .mf-body,
+  .mf-caption:not([class*="col-"]) {
     color: var(--fung-white-darker);
+  }
+  .#{$namespace}-mobile {
+    background-color: var(--fung-black-lighter);
+    .#{$namespace}-navlink_text {
+      color: var(--fung-white-default)
+    }
   }
   .mf-hero--pink {
 
