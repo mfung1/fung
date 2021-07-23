@@ -1,7 +1,7 @@
 import toggleMenu from './modules/menu';
 import debounce from './modules/debounce';
 import matchHeights from './modules/match-heights';
-import fadeUp from './modules/fade-up';
+import observeItems from './modules/observeItems';
 import Swup from 'swup';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const swup = new Swup();
     toggleMenu();
     matchHeights();
-    fadeUp();
+    observeItems();
     swup.on('pageView', () => {
       window.scrollTo({
         top: 0,
@@ -19,8 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
       })
       toggleMenu();
       matchHeights();
-      fadeUp();
-      window.addEventListener("resize", debounce(matchHeights, 100, false), false);
-    })
+      observeItems();
+    });
+    window.addEventListener("resize", debounce(matchHeights, 100, false), false);
   }
 });

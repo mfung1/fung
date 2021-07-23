@@ -1,2 +1,11 @@
-@import './h1',
-        './h2';
+@import './display',
+        './headline',
+        './subheader',
+        './title',
+        './oversized';
+
+.#{$namespace}-headline:hover .#{$namespace}-heading-link,
+.#{$namespace}-subheader:hover .#{$namespace}-heading-link,
+.#{$namespace}-title:hover .#{$namespace}-heading-link {
+  display: inline;
+}

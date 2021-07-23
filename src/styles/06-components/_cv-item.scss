@@ -1,3 +1,7 @@
+.#{$namespace}-cv-intro,
 .#{$namespace}-cv-item {
-  @include mb-50;
+  @include wrapper;
+}
+.#{$namespace}-cv-intro {
+  margin-bottom: 50px;
 }

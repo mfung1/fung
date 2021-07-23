@@ -1,0 +1,70 @@
+.#{$namespace}-projects li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.#{$namespace}-banner {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  flex: 1 0 auto;
+  box-shadow: 0 2px 4px 0 rgba($fung-black-default, 0.15);
+  transition: box-shadow .3s ease-in-out;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba($fung-black-default, 0.15);
+  }
+  &:focus {
+    outline: 2px solid $fung-accent-one-default;
+  }
+  &:hover .#{$namespace}-banner_img,
+  &:focus .#{$namespace}-banner_img {
+    opacity: 0.9;
+    transition: opacity .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+  &-reverse {
+    flex-direction: column;
+  }
+
+  &_copy {
+    display: flex;
+    background-color: $fung-white-default;
+    flex-direction: column;
+    text-align: left;
+    justify-content:center;
+    flex: 1 0 calc(50% + 10px);
+    padding: 50px 20px;
+    @include breakpoint('md') {
+      padding: 50px 20px 50px 50px;
+    }
+  }
+
+  &_img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 169px;
+    max-height: 169px;
+    transition: opacity .3s ease-in-out;
+
+    @include breakpoint('md') {
+      height: 350px;
+      max-height: 350px;
+    }
+  }
+
+  &-reverse {
+    flex-direction: column;
+  }
+
+  @include breakpoint('md') {
+    flex-direction: row-reverse;
+
+    &-reverse {
+      flex-direction: row;
+    }
+  }
+
+}

@@ -9,21 +9,21 @@
     display: inline-block;
   }
   a {
-    color: $mfung-primary-color;
+    color: $fung-primary-default;
     max-height: 40px;
     use:first-of-type {
-      color: $mfung-primary-color;
+      color: $fung-primary-default;
     }
     use:last-of-type {
-      color: $mfung-accent-one;
+      color: $fung-accent-one-default;
     }
   }
   a:focus {
     outline: 0;
-    background-color: $mfung-accent-one;
+    background-color: $fung-accent-one-default;
     use:first-of-type,
     use:last-of-type {
-      color: $mfung-heading-color;
+      color: $fung-black-default;
     }
   }
 }

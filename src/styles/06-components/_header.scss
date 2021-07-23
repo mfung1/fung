@@ -1,5 +1,5 @@
 .#{$namespace}-header {
-  background-color: $mfung-nav-colour;
+  background-color: $fung-primary-default;
   max-height: 40px;
 
   &_links {
@@ -33,7 +33,7 @@
 }
 
 .#{$namespace}-mobile {
-  background-color: $mfung-mobile-nav-colour;
+  background-color: $fung-grey-lighter;
   padding: 20px;
   display: none;
 
@@ -58,6 +58,6 @@
   }
   .#{$namespace}-navlink_text {
     padding: 0px;
-    color: $mfung-text-color;
+    color: $fung-black-light;
   }
 }

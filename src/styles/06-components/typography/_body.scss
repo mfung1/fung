@@ -1,22 +1,43 @@
 .#{$namespace}-body {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 20px;
   margin-bottom: 10px;
-  max-width: 640px;
-  color: $mfung-text-color;
+  max-width: 100%;
+  color: $fung-black-light;
 
   @include breakpoint('sm') {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 640px;
   }
   &-heavy {
-    font-weight: 600;
-    color: $mfung-heading-color;
+    font-weight: 500;
+    color: $fung-black-default;
   }
-  &:last-of-type {
+  & + .#{$namespace}-body:last-of-type {
     margin-bottom: 30px;
   }
   & + h2 {
     margin-top: 30px;
   }
+}
+.#{$namespace}-standfirst {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  color: $fung-black-light;
+
+  @include breakpoint("sm") {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 640px;
+  }
+}
+.#{$namespace}-callout {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: $fung-black-light;
 }

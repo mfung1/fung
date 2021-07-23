@@ -6,17 +6,20 @@
 
 html {
   font-size: px-to-rem($base-font-size);
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: $mfung-background-colour;
+  background-color: var(--fung-grey-lightest);
   margin: 0;
 }
 main, section {
   display: block; // Not block level in IE..
 }
 
-
+header {
+  background-color: var(--fung-white-default);
+}
 p,a {
   font-size: 1rem;
   line-height: 20px;
@@ -49,16 +52,3 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-
-// button:hover {
-//   background: mfung-shade($mfung-background-colour, 5%);
-// }
-
-// button:focus {
-//   outline: 1px solid #fff;
-//   outline-offset: -4px;
-// }
-
-// button:active {
-//   transform: scale(0.99);
-// }

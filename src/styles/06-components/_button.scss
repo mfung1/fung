@@ -14,17 +14,17 @@
   border: 2px solid transparent;
 
   &-primary {
-    background-color: $mfung-primary-color;
-    color: $mfung-contrast-text-color;
+    background-color: $fung-primary-default;
+    color: $fung-white-default;
 
     &:hover {
-      background-color: mf-tint($mfung-primary-color, 15);
+      background-color: mf-tint($fung-primary-default, 15);
     }
 
     &:focus {
-      background-color: $mfung-accent-one;
-      box-shadow: 0 0 0 2px $mfung-heading-color;
-      color: $mfung-heading-color;
+      background-color: $fung-accent-one-default;
+      box-shadow: 0 0 0 2px $fung-black-default;
+      color: $fung-black-default;
       outline:0;
       outline-offset: 0;
       @media (prefers-reduced-motion: reduced) {
@@ -33,17 +33,27 @@
     }
   }
 
-  &-accent-one {
-    background-color: $mfung-accent-one;
-    color: $mfung-contrast-text-color;
+  &-accent-one-darker {
+    background-color: $fung-accent-one-dark;
+    color: $fung-white-default;
 
     &:hover {
-      background-color: mf-shade($mfung-accent-one, 5);
+      background-color: mf-shade($fung-accent-one-dark, 5);
       transition: none;
     }
     // &:focus {
     //   background-color: 
     // }
+  }
+
+  &-white-default {
+    background-color: $fung-white-default;
+    color: $fung-black-default;
+
+    &:hover {
+      background-color: mf-shade($fung-white-default, 5);
+      transition: none;
+    }
   }
 
   &-center {

@@ -1,7 +1,50 @@
 .#{$namespace}-section {
-  @include wrapper;
-
-  &:last-child {
-    @include bottom-margin;
+  // @include wrapper;
+  padding: 50px 0;
+  @include breakpoint('sm') {
+    padding: 100px 0;
   }
+
+  &_inner {
+    @include wrapper;
+  }
+
+  &--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .#{$namespace}-section_inner {
+      max-width: 580px;
+    }
+  }
+
+  &--post {
+    padding-top: 0;
+  }
+
+  &--primary {
+    background-color: $fung-primary-default;
+
+    // .#{$namespace}-h2,
+    // .#{$namespace}-title {
+    //   color: $fung-white-default;
+    // }
+
+    // .#{$namespace}-caption {
+    //   color: $fung-accent-one-light;
+    // }
+    .#{$namespace}-callout {
+      color: $fung-accent-two-default;
+    }
+    // .#{$namespace}-body-heavy {
+    //   color: $fung-accent-two-lighter;
+    // }
+  }
+
+  &--accent-two-lightest {
+    background-color: $fung-accent-two-lightest;
+  }
+
 }

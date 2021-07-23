@@ -1,0 +1,163 @@
+---
+pageTitle: "About - Matt Fung - Lincoln UK"
+description: "Information and details about Matt Fung"
+title: "About"
+date: "2021-02-23"
+tags: webpage
+layout: 'layouts/base.njk'
+---
+{% from './_includes/layouts/components/atoms/_skill-point.njk' import skillPoint %}
+<hr class="mf-divider mf-divider--full-width" aria-hidden="true"/>
+<section class="mf-section">
+  <div class="mf-section_inner">
+    <h1 class="mf-display">About me</h1>
+    <p class="mf-standfirst col-black-light">I like to write about whatever springs to mind but it’s usually web industry related (design, development, culture etc.). You can also find my posts over on <a href="#" class="mf-link mf-link-inline">Medium</a>.</p>
+  </div>
+</section>
+<hr class="mf-divider" aria-hidden="true"/>
+
+<section id="experience" class="mf-section" data-callback="fadeUpEffect" data-fade-up>
+  <article class="mf-cv-intro">
+    <p class="mf-caption col-accent-one">#01</p>
+    <h2 class="mf-headline">Experience</h2>
+  </article>
+  <article class="mf-cv-item">
+    <p class="mf-caption col-black-light">April 2021 &ndash; Present</p>
+    <p class="mf-title mb-5 col-black-default">Senior Front-End Developer</p>
+    <p class="mf-body mf-body-heavy col-black-light">University of Lincoln</p>
+    <p class="mf-body col-black-light mb-0">Building new digital experiences and improving the visual standards of the University's website by introducing a formal style guide and design system. Working with various stakeholders and collaborating with other departments in marketing activities.</p>
+  </article>
+  <article class="mf-cv-item">
+    <p class="mf-caption col-black-light">Nov 2020 &ndash; Present</p>
+    <p class="mf-title mb-5 col-black-default">Digital Platform Developer</p>
+    <p class="mf-body mf-body-heavy col-black-light">Lincolnshire County Council</p>
+    <p class="mf-body col-black-light mb-0">Working in a small team to deliver digital transformation work across various areas in the council. I was responsible for building and adding new components to the website using the Symfony framework.</p>
+  </article>
+  <article class="mf-cv-item">
+    <p class="mf-caption col-black-light">Jun 2017 &ndash; Nov 2020</p>
+    <p class="mf-title mb-5 col-black-default">Front-End Developer</p>
+    <p class="mf-body mf-body-heavy col-black-light">Tesco PLC</p>
+    <p class="mf-body col-black-light mb-0">Working collaboratively with marketing and businesses stakeholders to deliver excellent user experiences for customers with accessible, scalable and clean front-end codebases for Web and Email.</p>
+  </article>
+  <article class="mf-cv-item">
+    <p class="mf-caption col-black-light">May 2016 &ndash; Dec 2016</p>
+    <p class="mf-title mb-5 col-black-default">Front-End Developer</p>
+    <p class="mf-body mf-body-heavy col-black-light">Digital Results</p>
+    <p class="mf-body col-black-light mb-0">Working with a small team of designers, developers and copywriters to deliver leads and growth for businesses using a variety of web technologies, primarily PHP; building bespoke custom WordPress sites for small to medium businesses.</p>
+  </article>
+</section>
+<section class="mf-section mf-section--primary" data-callback="fadeUpEffect" data-fade-up>
+  <article class="mf-cv-intro">
+    <p class="mf-caption col-accent-one">#02</p>
+    <h2 class="mf-headline col-white-default">Education</h2>
+  </article>
+  <article class="mf-cv-item">
+    <p class="mf-caption col-white-darker">Sept 2013 &ndash; May 2016</p>
+    <p class="mf-title mb-5 col-white-default">2:1 Bsc Computer Science (Hons)</p>
+    <p class="mf-body col-white-darker">University of Hertfordshire</p>
+  </article>
+</section>
+<section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
+  <div class="mf-cv-intro mb-50">
+    <p class="mf-caption col-accent-one">#03</p>
+    <h2 class="mf-headline">Skills</h2>
+    <p class="mf-body col-black-light">I’ve made it easier for you to see if my skills are suitable for your needs.</p>
+    <p class="mf-body col-black-light">The dots in the experience column represent how much the skill has been used in my career.</p>
+  </div>
+  <div class="mf-skills">
+    <table class="mf-table" cellspacing="0" cellpadding="0">
+      <thead>
+        <th class="mf-table_header">Skill</th>
+        <th class="mf-table_header">Experience</th>
+      </thead>
+      <tbody>
+        <tr class="mf-table_row">
+          <td class="mf-table_cell">HTML</td>
+          <td class="mf-table_cell">
+            <span class="visually-hidden">5 out of 5</span>
+            {{skillPoint(5)}}
+          </td>
+        </tr>
+        <tr class="mf-table_row">
+          <td class="mf-table_cell">CSS</td>
+          <td class="mf-table_cell">
+            <span class="visually-hidden">5 out of 5</span>
+            {{skillPoint(5)}}
+          </td>
+        </tr>
+        <tr class="mf-table_row">
+          <td class="mf-table_cell">JavaScript</td>
+          <td class="mf-table_cell">
+            <span class="visually-hidden">4 out of 5</span>
+            {{skillPoint(4)}}
+          </td>
+        </tr>
+        <tr class="mf-table_row">
+          <td class="mf-table_cell">PHP</td>
+          <td class="mf-table_cell">
+            <span class="visually-hidden">3 out of 5</span>
+            {{skillPoint(3)}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="mf-table" cellspacing="0" cellpadding="0">
+      <thead>
+        <th class="mf-table_header">Framework</th>
+        <th class="mf-table_header">Experience</th>
+      </thead>
+      <tbody>
+        <tr class="mf-table_row">
+          <td class="mf-table_cell">Nunjucks</td>
+          <td class="mf-table_cell">
+            <span class="visually-hidden">5 out of 5</span>
+            {{skillPoint(5)}}
+          </td>
+        </tr>
+        <tr class="mf-table_row">
+          <td class="mf-table_cell">SCSS</td>
+          <td class="mf-table_cell">
+            <span class="visually-hidden">5 out of 5</span>
+            {{skillPoint(5)}}
+          </td>
+        </tr>
+        <tr class="mf-table_row">
+          <td class="mf-table_cell">React</td>
+          <td class="mf-table_cell">
+            <span class="visually-hidden">2 out of 5</span>
+            {{skillPoint(2)}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="mf-table" cellspacing="0" cellpadding="0">
+      <thead>
+        <th class="mf-table_header">Application</th>
+        <th class="mf-table_header">Experience</th>
+      </thead>
+      <tbody>
+        <tr class="mf-table_row">
+          <td class="mf-table_cell">Sketch</td>
+          <td class="mf-table_cell">
+            <span class="visually-hidden">4 out of 5</span>
+            {{skillPoint(4)}}
+          </td>
+        </tr>
+        <tr class="mf-table_row">
+          <td class="mf-table_cell">Figma</td>
+          <td class="mf-table_cell">
+            <span class="visually-hidden">4 out of 5</span>
+            {{skillPoint(4)}}
+          </td>
+        </tr>
+        <tr class="mf-table_row">
+          <td class="mf-table_cell">Photoshop</td>
+          <td class="mf-table_cell">
+            <span class="visually-hidden">2 out of 5</span>
+            {{skillPoint(2)}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

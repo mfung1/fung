@@ -2,7 +2,8 @@
 pageTitle: "Projects - Matt Fung - Lincoln UK"
 description: "Interesting pieces of work I've done in the past, or just fun things I've built on Codepen"
 title: "Projects"
-tags: page
+tags: webpage
+date: "2021-02-22"
 layout: 'layouts/base.njk'
 ---
 
@@ -10,46 +11,55 @@ layout: 'layouts/base.njk'
 {% from './_includes/layouts/components/atoms/_skill-point.njk' import skillPoint %}
 
 {% block pageContent %}
-<section class="mf-hero">
-  <h1 class="mf-h1">Projects</h1>
-  <p class="mf-body col-black-light">Interesting pieces of work I've done in the past, or just fun things I've built on <a href="#" class="mf-link mf-link-inline">Codepen</a>.</p>
+<hr class="mf-divider mf-divider--full-width" aria-hidden="true"/>
+<section class="mf-section">
+  <div class="mf-section_inner">
+    <h1 class="mf-display mb-50">Projects</h1>
+    <p class="mf-callout col-black-light">Pieces of work I've done in the past, or just fun things I've built on <a href="#" class="mf-link mf-link-inline">Codepen</a> and <a href="https://www.github.com/mfung1" class=" mf-link mf-link-inline">Github</a>.</p>
+  </div>
 </section>
 <hr class="mf-divider"/>
-<section class="mf-section" data-fade-up>
-  <h2 class="mf-h2">Client work</h2>
-  <ul class="mf-posts">
-    {% set latestPosts = collections.project|reverse %}
-    {% for project in latestPosts.slice(0, 6) %}
-    <li>
-      <a href="{{project.url}}" class="mf-post">
-        <img src="{{project.data.featuredImage}}" alt="" class="mf-post_image"/>
-        <div class="mf-post_copy">
-          <p class="mf-caption">{{project.data.topics}}</p>
-          <h2 class="mf-h2" data-matchHeights="postHeading">{{project.data.pageHeading}}</h2>
-          <span class="mf-cta"><span>View project</span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" fill="none" viewBox="0 0 15 30"><use xlink:href="#chevron"/></svg></span>
-        </div>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+<section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
+  <div class="mf-section_inner">
+    <h2 class="mf-headline mb-30">Client work</h2>
+    <ul class="mf-posts">
+      {% set latestPosts = collections.project|reverse %}
+      {% for project in latestPosts.slice(0, 6) %}
+      <li>
+        <a href="{{project.url}}" class="mf-post">
+          <div class="mf-post-image-cnt">
+            <img src="{{project.data.featuredImage}}" alt="" class="mf-post_image"/>
+          </div>
+          <div class="mf-post_copy">
+            <p class="mf-badge{%if project.data.topics%} mf-badge-{{project.data.topics}}{%endif%}">{{project.data.topics}}</p>
+            <h2 class="mf-subheader" data-matchHeights="clientHeading">{{project.data.pageHeading}}</h2>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 <hr class="mf-divider">
-<section class="mf-section" data-fade-up>
-  <h2 class="mf-h2">Codepen projects</h2>
-  <ul class="mf-posts">
-    {% set latestPens = collections.pen|reverse %}
-    {% for pen in latestPens.slice(0, 6) %}
-    <li>
-      <a href="{{pen.url}}" class="mf-post">
-        <img src="{{pen.data.featuredImage}}" alt="" class="mf-post_image"/>
-        <div class="mf-post_copy">
-          <p class="mf-caption">{{pen.data.topics}}</p>
-          <h2 class="mf-h2" data-matchHeights="postHeading">{{pen.data.pageHeading}}</h2>
-          <span class="mf-cta"><span>View pen</span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" fill="none" viewBox="0 0 15 30"><use xlink:href="#chevron"/></svg></span>
-        </div>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+<section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
+  <div class="mf-section_inner">
+    <h2 class="mf-headline mb-30">Codepen and Github projects</h2>
+    <ul class="mf-posts">
+      {% set latestPens = collections.pen|reverse %}
+      {% for pen in latestPens.slice(0, 6) %}
+      <li>
+        <a href="{{pen.url}}" class="mf-post">
+          <div class="mf-post-image-cnt">
+            <img src="{{pen.data.featuredImage}}" alt="" class="mf-post_image"/>
+          </div>
+          <div class="mf-post_copy">
+            <p class="mf-badge{%if pen.data.topics%} mf-badge-{{pen.data.topics}}{%endif%}">{{pen.data.topics}}</p>
+            <h2 class="mf-subheader" data-matchHeights="penHeading">{{pen.data.pageHeading}}</h2>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 {% endblock %}
