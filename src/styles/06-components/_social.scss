@@ -1,5 +1,20 @@
 .#{$namespace}-social {
   display: grid;
-  grid-template-columns: repeat(3, 60px);
-  grid-gap: 10px;
+  grid-template-columns:repeat(3,80px);
+  grid-gap:20px;
+   
+
+  a, svg {
+    display: block;
+  }
+  a {
+    border-radius:50px;
+    background-color:var(--fung-primary-default);
+    padding: 10px;
+  }
+   
+  svg {
+    color: var(--fung-white-default);
+  }
+
 }

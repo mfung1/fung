@@ -37,9 +37,6 @@
   table, th, td, caption {
     color: var(--fung-white-dark);
   }
-  .mf-image {
-    filter: brightness(0.6)
-  }
   .mf-body,
   .mf-caption:not([class*="col-"]) {
     color: var(--fung-white-darker);
@@ -60,7 +57,7 @@
       background-image: url('/images/topography-dark.svg');
     }
 
-    h1, svg {
+    h1 {
       color: var(--fung-white-dark);
     }
   }
@@ -88,6 +85,16 @@
   }
   .mf-post_copy {
     background-color: var(--fung-black-light);
+  }
+  .mf-post_image {
+    filter: brightness(0.6) contrast(1.2) grayscale(100%);
+  }
+  .mf-post:hover .mf-post_image {
+    filter: brightness(0.6) contrast(1.2) grayscale(0);
+  }
+  .mf-image,
+  img {
+    filter: brightness(0.6) contrast(1.2);
   }
   .mf-footer {
     background-color: var(--fung-black-light);
