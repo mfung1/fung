@@ -1,5 +1,23 @@
 .#{$namespace}-social {
   display: grid;
-  grid-template-columns: repeat(3, 60px);
-  grid-gap: 10px;
+  grid-template-columns:repeat(3,80px);
+  grid-gap:20px;
+  a:hover svg {
+    color: var(--fung-accent-one-default);
+  }
+  svg {
+    color: var(--fung-primary-default)
+  }
+}
+.#{$namespace}-social,
+.#{$namespace}-footer_social {
+  a, svg {
+    display: block;
+  }
+  a:hover svg {
+    transition: color .3s ease;
+  }
+  svg {
+    transition: color .3s ease;
+  }
 }
