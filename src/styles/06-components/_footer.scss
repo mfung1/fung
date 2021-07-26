@@ -39,5 +39,12 @@
         grid-template-columns: repeat(3, 30px);
         grid-gap: 10px;
         color: #fff;
+
+        svg {
+            color: var(--fung-white-dark);
+        }
+        a:hover svg {
+            color: var(--fung-accent-one-default);
+        }
     }
 }

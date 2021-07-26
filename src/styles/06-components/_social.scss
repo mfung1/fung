@@ -2,19 +2,22 @@
   display: grid;
   grid-template-columns:repeat(3,80px);
   grid-gap:20px;
-   
-
+  a:hover svg {
+    color: var(--fung-accent-one-default);
+  }
+  svg {
+    color: var(--fung-primary-default)
+  }
+}
+.#{$namespace}-social,
+.#{$namespace}-footer_social {
   a, svg {
     display: block;
   }
-  a {
-    border-radius:50px;
-    background-color:var(--fung-primary-default);
-    padding: 10px;
+  a:hover svg {
+    transition: color .3s ease;
   }
-   
   svg {
-    color: var(--fung-white-default);
+    transition: color .3s ease;
   }
-
 }

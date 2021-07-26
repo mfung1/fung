@@ -15,6 +15,12 @@
       color: var(--fung-white-dark)
     }
   }
+  .mf-table_cell .filled {
+    fill: var(--fung-accent-one-dark)
+  }
+  .mf-table_cell .unfilled {
+    fill: var(--fung-black-light)
+  }
   .mf-logo a, .mf-logo a use:first-of-type {
     color: var(--fung-white-default);
   }
@@ -98,5 +104,16 @@
   }
   .mf-footer {
     background-color: var(--fung-black-light);
+  }
+  .#{$namespace}-social,
+  .#{$namespace}-footer_social {
+    a:hover svg {
+      color: var(--fung-accent-one-default);
+      transition: color .3s ease;
+    }
+    svg {
+      color: var(--fung-white-default);
+      transition: color .3s ease;
+    }
   }
 }
