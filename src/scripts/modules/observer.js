@@ -17,9 +17,7 @@ const callBacks = {
   "playAnimation": function (entry) {
     if (entry.isIntersecting) {
       entry.target.setAttribute('data-animation', 'running');
-      console.log('Entry intersecting:' + entry.isIntersecting);
     } else {
-      console.log('Entry intersecting:' + entry.isIntersecting);
       entry.target.setAttribute('data-animation', 'paused');
     }
   }
