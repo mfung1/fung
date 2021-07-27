@@ -1,4 +1,4 @@
-import config from '../config';
+import config from "../config";
 
 const setAttributes = (menu, submenu) => {
   if (menu.getAttribute('aria-expanded') === 'false') {
@@ -11,17 +11,16 @@ const setAttributes = (menu, submenu) => {
     submenu.setAttribute('data-open', "false");
   }
 }
-const toggleMenu = () => {
-  const menu = document.querySelector(config.menu.buttonSelector);
-  const submenu = document.querySelector(config.menu.submenuSelector);
 
-  menu.addEventListener('click', () => {setAttributes(menu, submenu)});
-  menu.addEventListener('keydown', (e) => {
-    if (e.key === 'enter') {
-      setAttributes(menu, submenu)
-    }
+const toggleMenu = (button, submenu) => {
+  button.addEventListener('click', () => {
+    setAttributes(button, submenu)
   });
-  
+  button.addEventListener('keydown', (e) => {
+    if (e.key === 'enter') {
+      setAttributes(button, submenu)
+    }
+  }); 
 }
 
 export default toggleMenu;

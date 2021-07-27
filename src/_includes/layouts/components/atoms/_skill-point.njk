@@ -4,16 +4,16 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="70" height="10" fill="none" viewBox="0 0 70 10">
             {% if points == 5 %}
                 {% for i in range(0, points) %}
-                    <circle cx="{{positions[i]}}" cy="5" r="5" fill="#26284A"/>
+                    <circle cx="{{positions[i]}}" class="filled" cy="5" r="5" fill="#26284A"/>
                 {% endfor %}
             {% elseif points < 5 %}
                 {% for i in range(0, points) %}
-                    <circle cx="{{positions[i]}}" cy="5" r="5" fill="#26284A"/>
+                    <circle cx="{{positions[i]}}" class="filled" cy="5" r="5" fill="#26284A"/>
                 {% endfor %}
                 {% set unfilled= 5 - points %}
                 {% for i in range(0, unfilled)%}
                     {% set position=points+i %}
-                    <circle cx="{{positions[position]}}" cy="5" r="5" fill="#9394A4"/>
+                    <circle cx="{{positions[position]}}" class="unfilled" cy="5" r="5" fill="#9394A4"/>
                 {% endfor %}
             {% endif %}
         </svg>

@@ -3,6 +3,7 @@
   border: 2px solid $fung-primary-default;
   font-size: 16px;
   line-height: 20px;
+  font-family: $mfung-text-fonts;
 
   @include breakpoint('sm') {
     font-size: 20px;
