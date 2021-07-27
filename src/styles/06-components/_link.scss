@@ -1,6 +1,6 @@
 .#{$namespace}-navlink {
   border-left: 1px solid rgba($fung-white-default, .2);
-  
+
   &_text {
     display: block;
     background: none;
@@ -9,26 +9,32 @@
     font-family: $mfung-text-fonts;
     font-weight: bold;
     font-size: 1rem;
-    line-height: 20px;
+    line-height: 24px;
     padding: 10px 20px;
     text-decoration: none;
   }
 
   &:hover {
-    background-color: $fung-accent-one-default;
+    background-color: $fung-primary-light;
     border-left-color: transparent;
     transition: background-color .3s ease-in-out;
-
-    .#{$namespace}-navlink_text {
-      color: $fung-black-default;
-      transition: color .3s ease-in-out;
+  }
+  button.#{$namespace}-navlink_text:focus {
+    background-color: var(--fung-accent-one-default);
+    transition: background-color .3s ease-in-out;
+    svg {
+      background-color: var(--fung-black-default);
+    }
+    .dark,
+    .light {
+      fill: var(--fung-black-default)
     }
   }
-  .#{$namespace}-navlink_text:focus {
-    background-color: $fung-accent-one-default;
+  .#{$namespace}-navlink_text:not(button):focus {
+    background-color: $fung-primary-light;
     transition: background-color .3s ease-in-out;
     box-shadow: inset 0 2px 0 -2px $fung-primary-default;
-    color: $fung-black-default;
+    color: $fung-white-default;
     transition: color .3s ease-in-out;
   }
   span {

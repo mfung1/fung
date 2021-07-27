@@ -1,7 +1,10 @@
 const config = {
   "menu": {
-    "buttonSelector": "button.mf-navlink_text",
-    "submenuSelector": ".mf-mobile"
+    "buttonSelector": "#submenuButton",
+    "submenuSelector": "#mobile-menu"
+  },
+  "darkmode": {
+    "toggle": "#darkmodeButton",
   },
   "observerOptions": {
     root: null,

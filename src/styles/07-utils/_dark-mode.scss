@@ -1,9 +1,35 @@
-@media (prefers-color-scheme: dark) {
+[data-dark] * {
+  transition: background-color .3s ease, color .3s ease
+}
+[data-dark="false"] {
+  .light {
+    opacity: 1;
+    transition: opacity .6s ease;
+  }
+  .dark {
+    opacity: 0;
+    transition: opacity .6s ease;
+  }
+}
+[data-dark="true"] {
+  .light {
+    opacity: 0;
+    transition: opacity .6s ease;
+  }
+  .dark {
+    opacity: 1;
+    transition: opacity .6s ease;
+  }
   body {
     background: var(--fung-primary-darker);
   }
+
   .#{$namespace}-header {
     background-color: var(--fung-black-light);
+    button[aria-open="true"] {
+      background-color: var(--fung-accent-one-default);
+      color: var(--fung-black-default)
+    }
   }
   .#{$namespace}-navlink {
     border-left: 1px solid hsla(0,0%,0%,.2);
@@ -11,7 +37,7 @@
       background-color: var(--fung-black-lighter);
     }
 
-    &:hover .#{$namespace}-navlink_text {
+    &:hover .#{$namespace}-navlink_text:not([aria-open="true"]) {
       color: var(--fung-white-dark)
     }
   }

@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns:repeat(3,80px);
   grid-gap:20px;
-  a:hover svg {
+  a:hover svg,
+  a:focus svg {
     color: var(--fung-accent-one-default);
   }
   svg {
@@ -14,7 +15,8 @@
   a, svg {
     display: block;
   }
-  a:hover svg {
+  a:hover svg,
+  a:focus svg {
     transition: color .3s ease;
   }
   svg {
