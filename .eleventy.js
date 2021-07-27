@@ -14,21 +14,21 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/images');
 
   let favicons = [
-    'src/android-chrome-192x192.png',
-    'src/android-chrome-512x512.png',
-    'src/apple-touch-icon.png',
-    'src/browserconfig.xml',
-    'src/favicon-16x16.png',
-    'src/favicon-32x32.png',
-    'src/favicon.ico',
-    'src/html_code.html',
-    'src/mstile-70x70.png',
-    'src/mstile-144x144.png',
-    'src/mstile-150x150.png',
-    'src/mstile-310x150.png',
-    'src/mstile-310x310.png',
-    'src/safari-pinned-tab.svg',
-    'src/site.webmanifest'
+    'src/favicon/android-chrome-192x192.png',
+    'src/favicon/android-chrome-512x512.png',
+    'src/favicon/apple-touch-icon.png',
+    'src/favicon/browserconfig.xml',
+    'src/favicon/favicon-16x16.png',
+    'src/favicon/favicon-32x32.png',
+    'src/favicon/favicon.ico',
+    'src/favicon/html_code.html',
+    'src/favicon/mstile-70x70.png',
+    'src/favicon/mstile-144x144.png',
+    'src/favicon/mstile-150x150.png',
+    'src/favicon/mstile-310x150.png',
+    'src/favicon/mstile-310x310.png',
+    'src/favicon/safari-pinned-tab.svg',
+    'src/favicon/site.webmanifest'
   ];
 
   favicons.forEach(favicon => {
@@ -40,6 +40,10 @@ module.exports = function(eleventyConfig) {
       zone: "local",
     }).toLocaleString(DateTime.DATE_MED);
   });
+
+  eleventyConfig.addCollection("posts", function(collectionApi) {
+    return collectionApi.getFilteredByGlob(["./src/posts/*.md"]);
+  })
 
   eleventyConfig.addCollection("latest", function(collectionApi) {
     return collectionApi.getFilteredByGlob(["./src/posts/*.md", "./src/projects/**/*.md"]);
