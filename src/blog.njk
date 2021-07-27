@@ -23,7 +23,7 @@ layout: 'layouts/base.njk'
   <div class="mf-section_inner">
     <h2 class="mf-headline mb-30">Latest</h2>
     <ul class="mf-posts mf-posts-all">
-      {% set latestPosts = collections.latest|reverse %}
+      {% set latestPosts = collections.posts|reverse %}
       {% for post in latestPosts %}
       <li>
         <a href="{{post.url}}" class="mf-post">

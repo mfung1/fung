@@ -21,7 +21,7 @@
     transition: opacity .6s ease;
   }
   body {
-    background: var(--fung-primary-darker);
+    background: var(--fung-black-default);
   }
 
   .#{$namespace}-header {
@@ -89,15 +89,9 @@
     background-color: var(--fung-primary-light);
   }
   header {
-    background-color: var(--fung-primary-darker);
+    background-color: var(--fung-black-default);
   }
-  p, blockquote, pre,
-  dl, dd, ol, ul,
-  form, legend,
-  figure,
-  table, th, td, caption {
-    color: var(--fung-white-dark);
-  }
+
   .#{$namespace}-body,
   .#{$namespace}-caption:not([class*="col-"]) {
     color: var(--fung-white-darker);
@@ -132,7 +126,7 @@
     color: var(--fung-grey-default);
   }
   .#{$namespace}-section {
-    background-color: var(--fung-primary-darker);
+    background-color: var(--fung-black-default);
   }
   .#{$namespace}-section--primary {
     background-color: var(--fung-black-light);
@@ -158,7 +152,7 @@
     filter: brightness(0.6) contrast(1.2);
   }
   .#{$namespace}-footer {
-    background-color: var(--fung-black-light);
+    background-color: var(--fung-primary-darker);
   }
   .#{$namespace}-social,
   .#{$namespace}-footer_social {
