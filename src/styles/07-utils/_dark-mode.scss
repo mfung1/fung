@@ -1,36 +1,91 @@
-@media (prefers-color-scheme: dark) {
+[data-dark] * {
+  transition: background-color .3s ease, color .3s ease
+}
+[data-dark="false"] {
+  .light {
+    opacity: 1;
+    transition: opacity .6s ease;
+  }
+  .dark {
+    opacity: 0;
+    transition: opacity .6s ease;
+  }
+}
+[data-dark="true"] {
+  .light {
+    opacity: 0;
+    transition: opacity .6s ease;
+  }
+  .dark {
+    opacity: 1;
+    transition: opacity .6s ease;
+  }
   body {
     background: var(--fung-primary-darker);
   }
-  .mf-header {
+
+  .#{$namespace}-header {
     background-color: var(--fung-black-light);
+    button[aria-open="true"] {
+      background-color: var(--fung-accent-one-default);
+      color: var(--fung-black-default)
+    }
   }
-  .mf-navlink {
+  .#{$namespace}-navlink {
     border-left: 1px solid hsla(0,0%,0%,.2);
     &:hover {
       background-color: var(--fung-black-lighter);
     }
 
-    &:hover .mf-navlink_text {
+    &:hover .#{$namespace}-navlink_text:not([aria-open="true"]) {
       color: var(--fung-white-dark)
     }
   }
-  .mf-table_cell .filled {
+  .#{$namespace}-field {
+    border-color: transparent;
+    background-color: var(--fung-black-light);
+    color: var(--fung-grey-default);
+    &:focus {
+      outline-color: var(--fung-accent-one-default);
+      box-shadow: none;
+    }
+  }
+  .#{$namespace}-button-primary {
+    background-color: var(--fung-black-default);
+    color: var(--fung-accent-one-default);
+    border: 2px solid var(--fung-accent-one-default);
+
+    &:hover {
+      background-color: mf-tint($fung-black-default, 15);
+    }
+
+    &:focus {
+      background-color: var(--fung-accent-one-default);
+      // box-shadow: 0 0 0 2px var(--fung-accent-one-default);
+    }
+  }
+  .#{$namespace}-standfirst {
+    color: var(--fung-white-darker);
+  }
+  .#{$namespace}-label {
+    color: var(--fung-white-darker)
+  }
+  .#{$namespace}-table_cell .filled {
     fill: var(--fung-accent-one-dark)
   }
-  .mf-table_cell .unfilled {
+  .#{$namespace}-table_cell .unfilled {
     fill: var(--fung-black-light)
   }
-  .mf-logo a, .mf-logo a use:first-of-type {
+  .#{$namespace}-logo a, .#{$namespace}-logo a use:first-of-type {
     color: var(--fung-white-default);
   }
-  .mf-navlink_text {
+  .#{$namespace}-navlink_text {
     color: var(--fung-white-default);
   }
   h1,h2,h3,h4 {
     color: var(--fung-white-default);
   }
-  main .mf-divider {
+  main .#{$namespace}-divider {
     background-color: var(--fung-primary-light);
   }
   header {
@@ -43,8 +98,8 @@
   table, th, td, caption {
     color: var(--fung-white-dark);
   }
-  .mf-body,
-  .mf-caption:not([class*="col-"]) {
+  .#{$namespace}-body,
+  .#{$namespace}-caption:not([class*="col-"]) {
     color: var(--fung-white-darker);
   }
   .#{$namespace}-mobile {
@@ -53,7 +108,7 @@
       color: var(--fung-white-default)
     }
   }
-  .mf-hero--pink {
+  .#{$namespace}-hero--pink {
 
     background-color: var(--fung-black-default);
     background-image: none;
@@ -70,18 +125,18 @@
   .col-black-light {
     color: var(--fung-white-darker);
   }
-  .mf-table_header {
+  .#{$namespace}-table_header {
     color: var(--fung-white-default);
   }
-  .mf-table_cell {
+  .#{$namespace}-table_cell {
     color: var(--fung-grey-default);
   }
-  .mf-section {
+  .#{$namespace}-section {
     background-color: var(--fung-primary-darker);
   }
-  .mf-section--primary {
+  .#{$namespace}-section--primary {
     background-color: var(--fung-black-light);
-    .mf-callout {
+    .#{$namespace}-callout {
       color: var(--fung-grey-default);
     }
   }
@@ -89,20 +144,20 @@
   .col-black-default {
     color: var(--fung-white-default);
   }
-  .mf-post_copy {
+  .#{$namespace}-post_copy {
     background-color: var(--fung-black-light);
   }
-  .mf-post_image {
+  .#{$namespace}-post_image {
     filter: brightness(0.6) contrast(1.2) grayscale(100%);
   }
-  .mf-post:hover .mf-post_image {
+  .#{$namespace}-post:hover .#{$namespace}-post_image {
     filter: brightness(0.6) contrast(1.2) grayscale(0);
   }
-  .mf-image,
+  .#{$namespace}-image,
   img {
     filter: brightness(0.6) contrast(1.2);
   }
-  .mf-footer {
+  .#{$namespace}-footer {
     background-color: var(--fung-black-light);
   }
   .#{$namespace}-social,
