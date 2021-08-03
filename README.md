@@ -5,8 +5,11 @@
 My personal site, built using Eleventy, SCSS and hosting on Netlify. The purpose of the site is to showcase my work, blog posts I've written and about me as a developer.
 
 This build is forked from [Deventy](https://github.com/ianrose/deventy) by Ian Rose as it had everything that I needed, already configured.
+##Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/00aae9ab-4de4-4a32-82dc-1a1a00bbbb7a/deploy-status)](https://app.netlify.com/sites/matt-fung-dev/deploys)
 
-Features:
+##Features
+This site is built using:
 - [11ty](https://www.11ty.io/)
 - [Sass/SCSS](https://github.com/sass/node-sass)
 - [Webpack](https://webpack.js.org/)
