@@ -13,6 +13,28 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLib);
   eleventyConfig.addPassthroughCopy('src/images');
 
+  let favicons = [
+    './src/android-chrome-192x192.png',
+    './src/android-chrome-512x512.png',
+    './src/apple-touch-icon.png',
+    './src/browserconfig.xml',
+    './src/favicon-16x16.png',
+    './src/favicon-32x32.png',
+    './src/favicon.ico',
+    './src/html_code.html',
+    './src/mstile-70x70.png',
+    './src/mstile-144x144.png',
+    './src/mstile-150x150.png',
+    './src/mstile-310x150.png',
+    './src/mstile-310x310.png',
+    './src/safari-pinned-tab.svg',
+    './src/site.webmanifest'
+  ];
+
+  favicons.forEach(favicon => {
+    eleventyConfig.addPassthroughCopy(favicon);
+  })
+
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
       zone: "local",
