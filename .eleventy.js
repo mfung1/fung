@@ -32,7 +32,7 @@ module.exports = function(eleventyConfig) {
   ];
 
   favicons.forEach(favicon => {
-    eleventyConfig.addPassthroughCopy({favicon: '.'});
+    eleventyConfig.addPassthroughCopy(favicon, '.');
   })
 
   eleventyConfig.addFilter("postDate", (dateObj) => {
