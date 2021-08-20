@@ -70,6 +70,22 @@
   .#{$namespace}-label {
     color: var(--fung-white-darker)
   }
+  .#{$namespace}-badge-react {
+    background-color: var(--fung-accent-two-light);
+    color: var(--fung-accent-two-darker);
+  }
+  .#{$namespace}-badge-html {
+    background-color: var(--fung-error-light);
+    color: var(--fung-error-darker);
+  }
+  .#{$namespace}-badge-css {
+    background-color: var(--fung-success-light);
+    color: var(--fung-success-darker);
+  }
+  .#{$namespace}-badge-javascript {
+    background-color: var(--fung-warning-light);
+    color: var(--fung-warning-darker);
+  }
   .#{$namespace}-table_cell .filled {
     fill: var(--fung-accent-one-dark)
   }
@@ -130,7 +146,7 @@
   }
   .#{$namespace}-section--primary {
     background-color: var(--fung-black-light);
-    .#{$namespace}-callout {
+    .#{$namespace}-callout:not([class*="col-"]) {
       color: var(--fung-grey-default);
     }
   }

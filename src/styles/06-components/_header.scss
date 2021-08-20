@@ -16,16 +16,15 @@
     border-radius:100%;
   }
   
-  .#{$namespace}-navlink:nth-last-child(4),
-  .#{$namespace}-navlink:nth-last-child(3) {
+  .#{$namespace}-navlink:not(:last-of-type) {
     display: none;
   }
-  .#{$namespace}-navlink:last-of-type {
+  .#{$namespace}-navlink:last-of-type,
+  .#{$namespace}-navlink:nth-last-child(2) {
     display: block;
   }
   @include breakpoint('sm') {
-    .#{$namespace}-navlink:nth-last-child(4),
-    .#{$namespace}-navlink:nth-last-child(3) {
+    .#{$namespace}-navlink:not(:last-of-type) {
       display: block;
     }
     .#{$namespace}-navlink:nth-last-child(2) {
