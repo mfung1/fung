@@ -107,6 +107,9 @@
   header {
     background-color: var(--fung-black-default);
   }
+  pre {
+    background-color: var(--fung-black-light);
+  }
 
   .#{$namespace}-body,
   .#{$namespace}-caption:not([class*="col-"]) {

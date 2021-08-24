@@ -9,9 +9,9 @@ layout: layouts/base.njk
       <h1 class="mf-display">{{pageHeading}}</h1>
       <p class="mf-caption">{{page.date|postDate}} - {{length}} minute read</p>
     </div>
-  </article>
-  <hr class="mf-divider">
-  <article class="mf-section_inner">
-  {{content|safe}}
+    <hr class="mf-divider mf-divider--full-width">
+    <div>
+    {{content|safe}}
+    </div>
   </article>
 </section>

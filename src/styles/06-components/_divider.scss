@@ -3,9 +3,8 @@
   width: 100%;
   max-width: calc(100% - 80px);
   border: 0;
-  @include bottom-margin;
+  margin: 0 20px 50px;
   background-color: $fung-grey-light;
-  margin-bottom: 50px;
 
   &+.#{$namespace}-section {
     padding-top: 50px;
