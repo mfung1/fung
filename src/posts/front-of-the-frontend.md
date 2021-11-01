@@ -15,9 +15,31 @@ tags:
 ---
 
 ## Introduction {.mf-subheader}
-The web has changed a lot. It used to be that all you had to know was HTML, CSS and JavaScript. Since the launch of React, Vue and friends the focus has shifted to JavaScript, and HTML comes second. It might be alarming to know that the component you spent hours making, actually exists natively already. In this article, I'll take you through some new elements that you might know have heard about. {.mf-body}
+The web has changed a lot over the years. There was a clear difference between front-end and back-end developers, both in skillsets and knowledge.Nowadays, the lines have blurred. Since the launch of React, Vue and friends the focus has shifted to a JavaScript landscape, whilst people might retain the title of 'Front-End Developer', there's an emerging difference in their skillsets. {.mf-body}
 
-## What is Semantic HTML anyway? {.mf-subheader}
-In programming, Semantics refers to the meaning of a piece of code — for example "what effect does running that line of JavaScript have?", or "what purpose or role does that HTML element have" (rather than "what does it look like?".) {.mf-body}
+There's the developers who have always expressed a visual interest, specialising in creating lean and beautiful user experiences (with accessibility and usability in mind), and those who sit closer to a traditional software developer where their specialism is in creating performant and elegant logic and behaviour in the front end. {.mf-body}
 
-In HTML, for example, the ```<h1>``` element is a semantic element, which gives the text it wraps around the role (or meaning) of "a top level heading on your page." {.mf-body}
+<img src="../../images/paths.jpg" alt="A forest setting where a man is stood in front of a forking path." class="mf-image" height="426" width="640" />
+
+## A calling for specialists, not generalists {.mf-subheader}
+Big-Tech, particularly the likes of <a href="https://xd.adobe.com/ideas/career-tips/what-is-ux-engineer/" target="_blank" class="mf-link mf-link-inline">Adobe</a> and <a href="https://design.google/jobs/ux-engineer/" target="_blank" class="mf-link mf-link-inline">Google</a> have started using the term 'UX Engineer' (which is often synonymised with UI Developer, Frontend Designer, Design Engineer among others). This role acts as a middleman between Designers and Software Engineers:{.mf-body}
+
+
+- They understand UX principles and best practices, but they won't spend their time doing research, creating user flows etc.{.mf-list-item}
+- They have a keen eye for aesthetics, but won't spend time debating over font pairings, colours or creating artwork.{.mf-list-item}
+- They're technically minded, and can write traditional programming languages like JavaScript, PHP and friends but might not write application-levle code, debugging or hooking up middleware.{.mf-list-item}
+- They understand the need for backend development, but won't write logic, manage servers or load balance network traffic etc.{.mf-list-item}
+{.mf-list}
+
+Quite often in smaller businesses and organsations, designers and developers will wear several hats, some excel in designing but can also produce clean HTML, CSS and behavioural JavaScript (event handling, animations etc.). Or you might be a developer that could qualify as 'full-stack' though you prefer the UI & UX side of the web than the performance of an algorithm for example.{.mf-body}
+
+<a href="https://www.bradfrost.com" class="mf-link mf-link-inline">Brad Frost</a> is a well known and accredited speaker, web designer and writer, famous for his book called Atomic Design, he wrote a piece on this topic which inspired this post:{.mf-body}
+
+> HTML is not a programming language. CSS is not a programming language. But because HTML and CSS are still technically code, frontend development is often put in the same bucket as Python, Java, PHP, Ruby, C++, and other programming languages. This misunderstanding tends to give many frontend developers, myself included, a severe identity crisis.
+><cite class="visually-hidden">Brad Frost</cite>
+>{.mf-quote}
+
+It's a position that I find myself in, when I graduated from University back in 2016, I wasn't convinced that I was really a developer. I always liked aspects of design and coding, but was never really comfortable with classical programming (Object-Oriented, Functional etc.). I'm now in a bit of a identity crisis where I like both but I don't think I'll excel as a traditional developer. {.mf-body}
+
+Unfortunately, the career of a UX Engineer is a tough one to break into. Unless you live in a city where there are numerous companies, especially larger ones where they have the ability, and need to hire specialist roles; finding work as a UX Engineer can be tough (unless you're remote)
+{.mf-body}

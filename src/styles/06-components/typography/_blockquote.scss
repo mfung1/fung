@@ -1,0 +1,13 @@
+.mf-quote p {
+    font-size: 16px;
+    line-height: 20px;
+    font-style: italic;
+    padding: 20px;
+    border-left: 5px solid var(--fung-accent-one-default);
+
+    @include breakpoint ('sm') {
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 640px;
+    }
+}
