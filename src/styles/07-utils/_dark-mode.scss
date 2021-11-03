@@ -112,9 +112,12 @@
   }
 
   .#{$namespace}-body,
-  .#{$namespace}-caption:not([class*="col-"]) {
+  .#{$namespace}-caption:not([class*="col-"]),
+  .#{$namespace}-quote *,
+  .#{$namespace}-list-item {
     color: var(--fung-white-darker);
   }
+  
   .#{$namespace}-mobile {
     background-color: var(--fung-black-lighter);
     .#{$namespace}-navlink_text {
