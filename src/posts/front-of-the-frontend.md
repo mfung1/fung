@@ -29,7 +29,7 @@ Not every website is the same, and not every business or organisation is able to
 
 The issue therefore is what skills you list any applicant needs to be able to do the role, do you just list everything web related, or list the things you need and hope the developer will learn new things while they're there?{.mf-body}
 
-Personally, I think it's a case by case basis. We have those who are working with non-JS based websites (PHP, ) that need different skillsets than a React based website might need, there's evidently a necessity for a blended approach to recruitment but there's also another role that can sit between the Designers and the Engineers.{.mf-body}
+Personally, I think it's a case by case basis. We have those who are working with non-JS based websites (PHP, ASP.net, Rails, Python) that need different skillsets than a React based website might need, there's evidently a necessity for a blended approach to recruitment but there's also another role that can sit between the Designers and the Engineers.{.mf-body}
 
 ## A calling for specialists, not generalists {.mf-subheader}
 Big-Tech, particularly the likes of <a href="https://xd.adobe.com/ideas/career-tips/what-is-ux-engineer/" target="_blank" class="mf-link mf-link-inline">Adobe</a> and <a href="https://design.google/jobs/ux-engineer/" target="_blank" class="mf-link mf-link-inline">Google</a> have started using the term 'UX Engineer' (which is often synonymised with UI Developer, Frontend Designer, Design Engineer among others). This role acts as a middleman between Designers and Software Engineers:{.mf-body}
@@ -52,16 +52,5 @@ Quite often in smaller businesses and organsations, designers and developers wil
 It's a position that I find myself in, when I graduated from University back in 2016, I wasn't convinced that I was really a developer. I always liked aspects of design and coding, but was never really comfortable with classical programming (Object-Oriented, Functional etc.). I'm now in a bit of a identity crisis where I like both but I don't think I'll excel as a traditional developer. {.mf-body}
 
 Unfortunately, the career of a UX Engineer is a tough one to break into. Unless you live in a city where there are numerous companies, especially larger ones where they have the ability, and need to hire specialist roles; finding work as a UX Engineer can be tough (unless you're remote).{.mf-body}
-
-## Circular patterns in technology {.mf-subheader}
-
-One of the key principles in software development is the concept of ***seperation of concerns***. It's related somewhat to the ***Single Responsibility Principle*** in object-oriented programming. {.mf-body}
-
-The general idea is that you should avoid having things in the code or design in the same place. For example, the way your content is structured (HTML) and how it is presented to the user (CSS) should be separated so that each aspect is easier to maintain and less likely to violate the DRY principle. It's this reason why CSS is typically loaded from a seperate file, even though you can write inline styling.{.mf-body}
-
-If you search for "React and CSS" you'll tend to find articles on DEV, Medium etc. about what the best practice of styling React Components is, or why someone hates CSS with a burning passion. The common theme is that there's frustration of styling things at all. {.mf-body}
-
-I think some of this frustration stems from new developers entering the Web Industry without being a front-end developer before these libraries came about, and they didn't learn CSS before markup was in JavaScript. This is probably why, initially (and I'm sure it still exists today) people were inlining their CSS in their React Components.{.mf-body}
-
 
 
