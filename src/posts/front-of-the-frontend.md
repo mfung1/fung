@@ -44,7 +44,7 @@ Personally, I call myself a front-end developer because I build things on the **
 
 Understandtably, having diverging skillsets and specialisms can make hiring a 'Front-End Developer' a confusing task. When a company posts the position as available, how do they know what type of Developer they need?{.mf-body}
 
-Not every website is the same, and not every business or organisation is able to use the 'latest and greatest' techonlogies, so there's a need for developers to be able to still make WordPress based websites, or websites without UI Frameworks like React, Vue etc.{.mf-body}
+Not every website is the same, and not every business or organisation is able to use the 'latest and greatest' technologies, so there's a need for developers to be able to still make WordPress based websites, or websites without UI Frameworks like React, Vue etc.{.mf-body}
 
 The issue therefore is what skills you list any applicant needs to be able to do the role, do you just list everything web related, or list the things you need and hope the developer will learn new things while they're there?{.mf-body}
 
@@ -60,9 +60,9 @@ Big-Tech, particularly the likes of <a href="https://xd.adobe.com/ideas/career-t
 - They understand the need for backend development, but won't write logic, manage servers or load balance network traffic etc.{.mf-list-item}
   {.mf-list}
 
-Quite often in smaller businesses and organsations, designers and developers will wear several hats, some excel in designing but can also produce clean HTML, CSS and behavioural JavaScript (event handling, animations etc.). Or you might be a developer that could qualify as 'full-stack' though you prefer the UI & UX side of the web than the performance of an algorithm for example.{.mf-body}
+Quite often in smaller businesses and organizations, designers and developers will wear several hats, some excel in designing but can also produce clean HTML, CSS and behavioural JavaScript (event handling, animations etc.). Or you might be a developer that could qualify as 'full-stack' though you prefer the UI & UX side of the web than the performance of an algorithm for example.{.mf-body}
 
-<a href="https://www.bradfrost.com" class="mf-link mf-link-inline">Brad Frost</a> is a well known and accredited speaker, web designer and writer, famous for his book called Atomic Design, he wrote a piece on this topic which inspired this post:{.mf-body}
+<a href="https://www.bradfrost.com" class="mf-link mf-link-inline">Brad Frost</a> is a well-known and accredited speaker, web designer and writer, famous for his book called Atomic Design, he wrote a piece on this topic which inspired this post:{.mf-body}
 
 > HTML is not a programming language. CSS is not a programming language. But because HTML and CSS are still technically code, frontend development is often put in the same bucket as Python, Java, PHP, Ruby, C++, and other programming languages. This misunderstanding tends to give many frontend developers, myself included, a severe identity crisis.
 > <cite class="visually-hidden">Brad Frost</cite>
