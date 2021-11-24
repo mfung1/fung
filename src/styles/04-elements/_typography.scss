@@ -1,15 +1,34 @@
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: $mfung-heading-fonts;
   color: var(--fung-black-default);
 }
-
-p, blockquote, pre,
-dl, dd, ol, ul,
-form, legend,
+h1,
+h2 {
+  font-weight: 700;
+}
+h3,
+h4 {
+  font-weight: 500;
+}
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+legend,
 figure,
-table, th, td, caption {
+table,
+th,
+td,
+caption {
   font-family: $mfung-text-fonts;
-  color: var(--fung-black-default);
+  color: var(--fung-black-lighter);
 }
 
 p + p:last-child {

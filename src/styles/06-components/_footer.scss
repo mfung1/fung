@@ -1,50 +1,53 @@
 .#{$namespace}-footer {
-    background-color: $fung-primary-default;
-    padding: 30px 0;
-    text-align: center;
+  background-color: $fung-primary-default;
+  padding: 30px 0;
+  text-align: center;
 
-    @include breakpoint('sm') {
-        text-align: left;
+  @include breakpoint("sm") {
+    text-align: left;
+  }
+
+  .#{$namespace}-link {
+    color: var(--fung-accent-one-default);
+  }
+
+  &_inner {
+    @include wrapper;
+  }
+
+  &_row {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 10px;
+
+    > svg:first-child {
+      margin-bottom: 20px;
     }
 
-    &_inner {
-        @include wrapper;
+    @include breakpoint("sm") {
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+
+      > svg:first-child {
+        margin-bottom: 0;
+      }
     }
+  }
 
-    &_row {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        margin-bottom: 10px;
+  &_social {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    grid-gap: 10px;
+    color: #fff;
 
-        > svg:first-child {
-            margin-bottom: 20px;
-        }
-
-        @include breakpoint('sm') {
-            flex-flow: row;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-
-            > svg:first-child {
-                margin-bottom: 0;
-            }
-            
-        }
+    svg {
+      color: var(--fung-white-dark);
     }
-
-    &_social {
-        display: grid;
-        grid-template-columns: repeat(3, 30px);
-        grid-gap: 10px;
-        color: #fff;
-
-        svg {
-            color: var(--fung-white-dark);
-        }
-        a:hover svg {
-            color: var(--fung-accent-one-default);
-        }
+    a:hover svg {
+      color: var(--fung-accent-one-default);
     }
+  }
 }
