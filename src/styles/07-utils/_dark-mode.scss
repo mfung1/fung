@@ -1,24 +1,24 @@
 [data-dark] * {
-  transition: background-color .3s ease, color .3s ease
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 [data-dark="false"] {
   .light {
     opacity: 1;
-    transition: opacity .6s ease;
+    transition: opacity 0.6s ease;
   }
   .dark {
     opacity: 0;
-    transition: opacity .6s ease;
+    transition: opacity 0.6s ease;
   }
 }
 [data-dark="true"] {
   .light {
     opacity: 0;
-    transition: opacity .6s ease;
+    transition: opacity 0.6s ease;
   }
   .dark {
     opacity: 1;
-    transition: opacity .6s ease;
+    transition: opacity 0.6s ease;
   }
   body {
     background: var(--fung-black-default);
@@ -28,18 +28,21 @@
     background-color: var(--fung-black-light);
     button[aria-open="true"] {
       background-color: var(--fung-accent-one-default);
-      color: var(--fung-black-default)
+      color: var(--fung-black-default);
     }
   }
   .#{$namespace}-navlink {
-    border-left: 1px solid hsla(0,0%,0%,.2);
+    border-left: 1px solid hsla(0, 0%, 0%, 0.2);
     &:hover {
       background-color: var(--fung-black-lighter);
     }
 
     &:hover .#{$namespace}-navlink_text:not([aria-open="true"]) {
-      color: var(--fung-white-dark)
+      color: var(--fung-white-dark);
     }
+  }
+  .#{$namespace}-link-inline {
+    color: var(--fung-accent-one-default);
   }
   .#{$namespace}-field {
     border-color: transparent;
@@ -68,7 +71,7 @@
     color: var(--fung-white-darker);
   }
   .#{$namespace}-label {
-    color: var(--fung-white-darker)
+    color: var(--fung-white-darker);
   }
   .#{$namespace}-badge-react {
     background-color: var(--fung-accent-two-light);
@@ -87,18 +90,22 @@
     color: var(--fung-warning-darker);
   }
   .#{$namespace}-table_cell .filled {
-    fill: var(--fung-accent-one-dark)
+    fill: var(--fung-accent-one-dark);
   }
   .#{$namespace}-table_cell .unfilled {
-    fill: var(--fung-black-light)
+    fill: var(--fung-black-light);
   }
-  .#{$namespace}-logo a, .#{$namespace}-logo a use:first-of-type {
+  .#{$namespace}-logo a,
+  .#{$namespace}-logo a use:first-of-type {
     color: var(--fung-white-default);
   }
   .#{$namespace}-navlink_text {
     color: var(--fung-white-default);
   }
-  h1,h2,h3,h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: var(--fung-white-default);
   }
   main .#{$namespace}-divider {
@@ -114,24 +121,23 @@
   .#{$namespace}-body,
   .#{$namespace}-caption:not([class*="col-"]),
   .#{$namespace}-quote *,
-  .#{$namespace}-list-item {
+  .#{$namespace}-list-item,
+  figcaption {
     color: var(--fung-white-darker);
   }
-  
   .#{$namespace}-mobile {
     background-color: var(--fung-black-lighter);
     .#{$namespace}-navlink_text {
-      color: var(--fung-white-default)
+      color: var(--fung-white-default);
     }
   }
   .#{$namespace}-hero--pink {
-
     background-color: var(--fung-black-default);
     background-image: none;
     animation-play-state: paused;
 
     &::before {
-      background-image: url('/images/topography-dark.svg');
+      background-image: url("/images/topography-dark.svg");
     }
 
     h1 {
@@ -156,7 +162,7 @@
       color: var(--fung-grey-default);
     }
   }
-  
+
   .col-black-default {
     color: var(--fung-white-default);
   }
@@ -164,14 +170,14 @@
     background-color: var(--fung-black-light);
   }
   .#{$namespace}-post_image {
-    filter: brightness(0.6) contrast(1.2) grayscale(100%);
+    filter: brightness(0.85) grayscale(100%);
   }
   .#{$namespace}-post:hover .#{$namespace}-post_image {
-    filter: brightness(0.6) contrast(1.2) grayscale(0);
+    filter: brightness(0.85) grayscale(0);
   }
   .#{$namespace}-image,
   img {
-    filter: brightness(0.6) contrast(1.2);
+    filter: brightness(0.85);
   }
   .#{$namespace}-footer {
     background-color: var(--fung-primary-darker);
@@ -180,11 +186,11 @@
   .#{$namespace}-footer_social {
     a:hover svg {
       color: var(--fung-accent-one-default);
-      transition: color .3s ease;
+      transition: color 0.3s ease;
     }
     svg {
       color: var(--fung-white-default);
-      transition: color .3s ease;
+      transition: color 0.3s ease;
     }
   }
 }

@@ -4,11 +4,19 @@
   max-width: 640px;
   margin-bottom: 50px;
 
+  img {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+  }
+
   &--hero {
     object-fit: cover;
     max-height: 350px;
     max-width: 100%;
   }
+
   figcaption {
     text-align: center;
     margin-top: 10px;

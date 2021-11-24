@@ -38,14 +38,17 @@
     color: $fung-white-default;
     transition: color 0.3s ease-in-out;
   }
+
   span {
     margin-right: 10px;
     vertical-align: top;
   }
+
   span,
   svg {
     display: inline-block;
   }
+
   svg {
     vertical-align: middle;
   }

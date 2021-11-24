@@ -78,7 +78,7 @@ My view is that we won't _always_ be using the latest and greatest(?) technologi
 
 Selfishly, I'd love to sit in a team as a UX/UI Engineer focusing purely on the visuals and accessibility of software but the reality is that almost always, if you're the person that can put shit on the web you're bound to wear other hats too. We won't ever see a Front, Middle and Back to the web development world because there are too many variables (no pun intended) to ever have an industry wide career.{.mf-body}
 
-<hr class="mf-divider mf-divider-full-width"/>
+<hr class="mf-divider mf-divider--full-width"/>
 
 ### Related links {.mf-subheader}
 

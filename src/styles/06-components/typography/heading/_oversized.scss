@@ -3,14 +3,13 @@
   line-height: 50px;
   margin-bottom: 30px;
   max-width: 640px;
-  @include breakpoint('md') {
+  @include breakpoint("md") {
     font-size: 64px;
     line-height: 70px;
     max-width: 100%;
   }
-  @include breakpoint('xl') {
+  @include breakpoint("xl") {
     font-size: 82px;
     line-height: 90px;
-    
-  } 
+  }
 }
