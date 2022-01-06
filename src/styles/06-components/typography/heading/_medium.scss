@@ -1,0 +1,9 @@
+.#{$namespace}-m {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  
+  @include breakpoint('md') {
+    font-size: 24px;
+  }
+}

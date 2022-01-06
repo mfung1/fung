@@ -9,7 +9,7 @@
 <nav class="mf-header">
   <ul class="mf-header_links">
     {% for webpage in collections.webpage %}  
-    <li class="mf-navlink" {% if webpage.url == page.url %}aria-current="true"{% endif %}><a href="{{webpage.url}}" class="mf-navlink_text">{{webpage.data.title}}</a></li>
+    <li class="mf-navlink" {% if webpage.url == page.url %}aria-current="true"{% endif %}><a href="{{webpage.url}}" class="mf-navlink_text">{{webpage.data.title}}<svg class="mf-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><use xlink:href="#arrow-right"/></svg></a></li>
     {% endfor %}
   </ul>
 </nav>

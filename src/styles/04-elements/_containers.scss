@@ -14,19 +14,29 @@ fieldset {
   border: 0;
 }
 header {
-  padding: 50px 10px;
+  padding: 0 10px;
   text-align: right;
-  max-width: 248px;
-  justify-self: end;
+  max-width: 100%;
+  @include breakpoint('md') {
+    max-width: 248px;
+    justify-self: end;
+  }
 }
 
 body {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr;
   gap: 123px;
   background-color: #fff;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 50px 10px;
+  @include breakpoint ('md') {
+    grid-template-columns: 1fr 3fr;
+    padding: 50px 20px;
+  }
 }
 main {
   background-color: #fff;
-  border: 2px solid red;
+  padding: 0 10px;
 }
