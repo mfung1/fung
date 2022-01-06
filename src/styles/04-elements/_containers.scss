@@ -13,3 +13,20 @@ fieldset {
   padding: 0;
   border: 0;
 }
+header {
+  padding: 50px 10px;
+  text-align: right;
+  max-width: 248px;
+  justify-self: end;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 123px;
+  background-color: #fff;
+}
+main {
+  background-color: #fff;
+  border: 2px solid red;
+}

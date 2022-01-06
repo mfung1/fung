@@ -1,14 +1,8 @@
 .#{$namespace}-header {
-  background-color: $fung-primary-default;
-  max-height: 44px;
+  max-width: 25%;
 
   &_links {
     @include wrapper;
-    max-height: 44px;
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
-    justify-content: flex-end;
   }
 
   .#{$namespace}-navlink_text[aria-label="toggle dark mode"] svg {
