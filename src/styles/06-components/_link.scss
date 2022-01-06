@@ -1,57 +1,20 @@
 .#{$namespace}-navlink {
-  border-left: 1px solid rgba($fung-white-default, 0.2);
+  padding-top: 20px;
+  display: block;
+  font-family: Neue Haas Grotesk Text Pro;
+  font-weight: bold;
+  border-top: 1px solid #E9E9E9;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 30px;
 
   &_text {
-    display: block;
-    background: none;
-    outline: none;
-    color: $fung-white-default;
-    font-family: $mfung-text-fonts;
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 24px;
-    padding: 10px 20px;
+    color: #000;
     text-decoration: none;
+    font-size: 24px;
+    line-height: 30px;
   }
 
-  &:hover {
-    background-color: $fung-primary-light;
-    border-left-color: transparent;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  button.#{$namespace}-navlink_text:focus {
-    background-color: var(--fung-accent-one-default);
-    transition: background-color 0.3s ease-in-out;
-    svg {
-      background-color: var(--fung-black-default);
-    }
-    .dark,
-    .light {
-      fill: var(--fung-black-default);
-    }
-  }
-  .#{$namespace}-navlink_text:not(button):focus {
-    background-color: $fung-primary-light;
-    transition: background-color 0.3s ease-in-out;
-    box-shadow: inset 0 2px 0 -2px $fung-primary-default;
-    color: $fung-white-default;
-    transition: color 0.3s ease-in-out;
-  }
-
-  span {
-    margin-right: 10px;
-    vertical-align: top;
-  }
-
-  span,
-  svg {
-    display: inline-block;
-  }
-
-  svg {
-    vertical-align: middle;
-  }
 }
 
 .#{$namespace}-link {
