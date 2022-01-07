@@ -238,6 +238,46 @@ $fung-error-lighter: mf-colour("error", "lighter") !default;
 $fung-error-lightest: mf-colour("error", "lightest") !default;
 
 //============================
+// Link
+//============================
+
+/// Link - Default
+///
+/// @type Colour
+/// @access public
+$fung-link-light-default: mf-colour("link-light", "default") !default;
+
+/// Link - Hover
+///
+/// @type Colour
+/// @access public
+$fung-link-light-hover: mf-colour("link-light", "hover") !default;
+
+/// Link - Visited
+///
+/// @type Colour
+/// @access public
+$fung-link-light-visited: mf-colour("link-light", "visited") !default;
+
+/// Link - Default
+///
+/// @type Colour
+/// @access public
+$fung-link-dark-default: mf-colour("link-dark", "default") !default;
+
+/// Link - Hover
+///
+/// @type Colour
+/// @access public
+$fung-link-dark-hover: mf-colour("link-dark", "hover") !default;
+
+/// Link - Visited
+///
+/// @type Colour
+/// @access public
+$fung-link-dark-visited: mf-colour("link-dark", "visited") !default;
+ 
+//============================
 // Grey
 //============================
 
@@ -368,6 +408,9 @@ $css-vars-use-native: true;
   --fung-error-light: $fung-error-light,
   --fung-error-lighter: $fung-error-lighter,
   --fung-error-lightest: $fung-error-lightest,
+  --fung-link-light-default: $fung-link-light-default,
+  --fung-link-light-hover: $fung-link-light-hover,
+  --fung-link-light-visited: $fung-link-light-visited,
   --fung-grey-darker: $fung-grey-darker,
   --fung-grey-dark: $fung-grey-dark,
   --fung-grey-default: $fung-grey-default,
