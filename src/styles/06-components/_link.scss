@@ -33,6 +33,8 @@
     font-size: inherit;
     line-height: inherit;
     display: inline;
+    text-decoration-thickness: #{'max(1px, .0625rem)'};
+    text-underline-offset: 0.1em;
 
     &:hover {
       text-decoration: none;

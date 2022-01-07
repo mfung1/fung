@@ -3,7 +3,7 @@
   width: 100%;
   max-width: calc(100% - 80px);
   border: 0;
-  margin: 0 20px 50px;
+  margin: 0 20px 30px;
   background-color: $fung-grey-light;
 
   &+.#{$namespace}-section {
@@ -12,6 +12,6 @@
 
   &--full-width {
     max-width: 100%;
-    margin: 0 0 50px;
+    margin: 0 0 30px;
   }
 }
