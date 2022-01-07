@@ -35,16 +35,12 @@
     // .#{$namespace}-caption {
     //   color: $fung-accent-one-light;
     // }
-    .#{$namespace}-callout {
-      color: $fung-accent-two-default;
-    }
+    // .#{$namespace}-callout {
+    //   color: $fung-accent-two-default;
+    // }
     // .#{$namespace}-body-heavy {
     //   color: $fung-accent-two-lighter;
     // }
-  }
-
-  &--accent-two-lightest {
-    background-color: $fung-accent-two-lightest;
   }
 
 }

@@ -1,5 +1,5 @@
 import config from './config';
-import {toggleMenu, getAttributes} from './modules/menu';
+// import {toggleMenu, getAttributes} from './modules/menu';
 import debounce from './modules/debounce';
 import matchHeights from './modules/match-heights';
 import observeItems from './modules/observeItems';
@@ -20,8 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
         menuButton = document.querySelector(config.menu.buttonSelector),
         submenu = document.querySelector(config.menu.submenuSelector),
         toggle = document.querySelector(config.darkmode.toggle);
-  toggleMenu(menuButton, submenu);
-  toggleDarkMode(toggle, document.documentElement);
+  // toggleMenu(menuButton, submenu);
+  // toggleDarkMode(toggle, document.documentElement);
   if (!reducedMotion.matches) {
     init();
     const swup = new Swup();
