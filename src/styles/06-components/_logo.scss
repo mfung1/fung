@@ -14,13 +14,17 @@
     use:last-of-type {
       color: $fung-accent-one-default;
     }
-  }
-  a:focus {
-    outline: 0;
-    background-color: $fung-accent-one-default;
-    use:first-of-type,
-    use:last-of-type {
-      color: $fung-black-default;
+
+    &:hover {
+      border-bottom: #{'max(1px, 0.0625rem)'} solid currentColor;
+    }
+    &:focus {
+      outline: 0;
+      background-color: $fung-accent-one-default;
+      use:first-of-type,
+      use:last-of-type {
+        color: $fung-black-default;
+      }
     }
   }
 }

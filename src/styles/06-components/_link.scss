@@ -13,8 +13,16 @@
     text-decoration: none;
     font-size: 24px;
     line-height: 30px;
-  }
 
+    &:focus {
+      outline: 0;
+      background-color: $fung-accent-one-default;
+      text-decoration: underline;
+      text-underline-offset: 0.1em;
+      text-decoration-thickness: #{'max(4px, .0625rem)'};
+      color: $fung-black-default;
+    }
+  }
 }
 
 .#{$namespace}-link {
@@ -26,6 +34,7 @@
   &:focus {
     outline: 0;
     background-color: $fung-accent-one-default;
+    text-decoration-thickness: #{'max(4px, .0625rem)'};
     color: $fung-black-default;
   }
 

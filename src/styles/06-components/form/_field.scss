@@ -1,18 +1,29 @@
 .#{$namespace}-field {
   padding: 5px;
-  border: 2px solid $fung-primary-default;
+  border: 2px solid $fung-black-default;
   font-size: 16px;
   line-height: 20px;
   font-family: $mfung-text-fonts;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 100%;
+
+  @include breakpoint("sm") {
+    max-width: 480px;
+  }
 
   @include breakpoint('sm') {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 25px;
   }
 
   &:focus {
     outline: 3px solid $fung-accent-one-default;
     outline-offset: 0;
-    box-shadow: inset 0 0 0 2px $fung-primary-default;
+    box-shadow: inset 0 0 0 2px $fung-black-default;
   }
+}
+textPath.#{$namespace}-field {
+  resize: vertical;
+  min-height: 140px;
 }
