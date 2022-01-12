@@ -9,10 +9,21 @@
   line-height: 30px;
 
   &_text {
-    color: #000;
-    text-decoration: none;
+    color: var(--fung-link-light-default);
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+    text-decoration-thickness: #{'max(1px, .0625rem)'};
     font-size: 24px;
     line-height: 30px;
+
+    &:hover {
+      color: var(--fung-link-light-hover);
+      text-decoration-thickness: #{'max(4px, .0625rem)'};
+
+      svg {
+        stroke: var(--fung-link-light-hover);
+      }
+    }
 
     &:focus {
       outline: 0;
@@ -22,6 +33,10 @@
       text-decoration-thickness: #{'max(4px, .0625rem)'};
       color: $fung-black-default;
     }
+  }
+
+  svg {
+    stroke: var(--fung-link-light-default);
   }
 }
 
