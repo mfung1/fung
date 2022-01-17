@@ -1,21 +1,42 @@
 .#{$namespace}-navlink {
-  padding-top: 20px;
-  display: block;
+  display: inline-block;
   font-family: Neue Haas Grotesk Text Pro;
   font-weight: bold;
-  border-top: 1px solid #E9E9E9;
-  margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  border-top: 0;
+  padding: 20px 0;
+  
+  margin-bottom: 0;
+  border-bottom: 4px solid var(--fung-black-lightest);
+
+  @include breakpoint ('md') {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    &:nth-child(2) {
+      display: block;
+    }
+  }
 
   &_text {
     color: var(--fung-link-light-default);
-    text-decoration: underline;
-    text-underline-offset: 0.1em;
-    text-decoration-thickness: #{'max(1px, .0625rem)'};
-    font-size: 24px;
-    line-height: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
 
+    @include breakpoint('md') {
+      font-size: 24px;
+      line-height: 30px;
+      text-decoration: underline;
+      text-underline-offset: 0.1em;
+      text-decoration-thickness: #{'max(1px, .0625rem)'};
+    }
     &:hover {
       color: var(--fung-link-light-hover);
       text-decoration-thickness: #{'max(4px, .0625rem)'};
@@ -34,9 +55,18 @@
       color: $fung-black-default;
     }
   }
+  &:nth-child(2) {
+    display: none;
+  }
 
   svg {
+    display: none;
     stroke: var(--fung-link-light-default);
+
+    @include breakpoint('md') {
+      display: inline-block;
+
+    }
   }
 }
 
@@ -61,7 +91,8 @@
     text-underline-offset: 0.1em;
 
     &:hover {
-      text-decoration: none;
+      color: var(--fung-link-light-hover);
+      text-decoration-thickness: #{'max(4px, .0625rem)'};
     }
   }
 }

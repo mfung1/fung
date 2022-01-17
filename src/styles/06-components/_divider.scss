@@ -7,7 +7,7 @@
   background-color: $fung-white-darker;
 
   &+.#{$namespace}-section {
-    padding-top: 50px;
+    padding-top: 0;
   }
 
   &--full-width {

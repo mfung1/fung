@@ -1,59 +1,25 @@
 .#{$namespace}-header {
-  max-width: 25%;
+  
 
   &_links {
-    @include wrapper;
+    display: grid;
+    grid-template-columns: repeat(3, 73px);
+    justify-items: center;
+    grid-gap: 30px;
+    width: 100%;
+    background-color: var(--fung-white-darker);
+    
+    @include breakpoint ('md') {
+      @include wrapper;
+      background: none;
+      display: block;
+    }  
   }
 
-  .#{$namespace}-navlink_text[aria-label="toggle dark mode"] svg {
-    display: block;
-    border-radius:100%;
-  }
-  
-  .#{$namespace}-navlink:not(:last-of-type) {
-    display: none;
-  }
-  .#{$namespace}-navlink:last-of-type,
-  .#{$namespace}-navlink:nth-last-child(2) {
-    display: block;
-  }
-  @include breakpoint('sm') {
-    .#{$namespace}-navlink:not(:last-of-type) {
+  @include breakpoint('md') {
+    .#{$namespace}-navlink:nth-last-child(2) {
       display: block;
     }
-    .#{$namespace}-navlink:nth-last-child(2) {
-      display: none;
-    }
   }
   
-}
-
-.#{$namespace}-mobile {
-  background-color: $fung-grey-lighter;
-  padding: 20px;
-  display: none;
-
-  &[data-open="true"] {
-    display: block;
-
-    @include breakpoint('sm') {
-      display: none;
-    }
-  }
-
-  &-links {
-    display: grid;
-    max-width: 1260px;
-    margin: 0 auto;
-    grid-gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    list-style-type: none;
-  }
-  .#{$namespace}-navlink {
-    padding: 10px;
-  }
-  .#{$namespace}-navlink_text {
-    padding: 0px;
-    color: $fung-black-light;
-  }
 }

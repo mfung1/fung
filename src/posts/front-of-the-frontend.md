@@ -14,7 +14,7 @@ tags:
   - post
 ---
 
-## Introduction {.mf-l}
+## Introduction {.mf-heading-l}
 
 The web has changed a lot over the years. There was a clear difference between front-end and back-end developers, both in skillsets and knowledge. Nowadays, the lines have blurred. Since the launch of React, Vue and friends the focus has shifted to a JavaScript landscape, whilst people might retain the title of 'Front-End Developer', there's an emerging difference in their skillsets. {.mf-body}
 
@@ -25,7 +25,7 @@ There's the developers who have always expressed a visual interest, specialising
 <figcaption class="mf-terms">Photo by <a href="https://unsplash.com/@gcalebjones" class="mf-link mf-link-inline">Dai KE</a> on <a href="https://unsplash.com" class="mf-link mf-link-inline">Unsplash</a></figcaption>
 </figure>
 
-## Am I a Front-End Developer?{.mf-m}
+## Am I a Front-End Developer?{.mf-heading-m}
 
 This question should be easier than it is these days, there's been loads of discussion of the differences in opinion and how, if it at all the role of 'Front-End Developer' can have different responsibilities:{.mf-body}
 
@@ -40,7 +40,7 @@ When I was at University, I always felt that I sat somewhere in between typical 
 
 Personally, I call myself a front-end developer because I build things on the **front-end** of the web, I _develop_ it. Regardless of what I use to do it, that's I'm doing. Until my role sits closer to **UX Design** or research, I'm not _really_ a **UX Engineer**. {.mf-body}
 
-## A nightmare for HR {.mf-m}
+## A nightmare for HR {.mf-heading-m}
 
 Understandtably, having diverging skillsets and specialisms can make hiring a 'Front-End Developer' a confusing task. When a company posts the position as available, how do they know what type of Developer they need?{.mf-body}
 
@@ -50,7 +50,7 @@ The issue therefore is what skills you list any applicant needs to be able to do
 
 Personally, I think it's a case by case basis. We have those who are working with non-JS based websites (PHP, ASP.&zwnj;NET, Rails, Python) that need different skillsets than a React based website might need, there's evidently a necessity for a blended approach to recruitment but there's also another role that can sit between the Designers and the Engineers.{.mf-body}
 
-## A calling for specialists, not generalists{.mf-m}
+## A calling for specialists, not generalists{.mf-heading-m}
 
 Big-Tech, particularly the likes of <a href="https://xd.adobe.com/ideas/career-tips/what-is-ux-engineer/" target="_blank" class="mf-link mf-link-inline">Adobe</a> and <a href="https://design.google/jobs/ux-engineer/" target="_blank" class="mf-link mf-link-inline">Google</a> have started using the term 'UX Engineer' (which is often synonymised with UI Developer, Frontend Designer, Design Engineer among others). This role acts as a middleman between Designers and Software Engineers:{.mf-body}
 
@@ -70,7 +70,7 @@ Quite often in smaller businesses and organizations, designers and developers wi
 
 Unfortunately, the career of a UX Engineer/Front End Designer/UI Engineer is a tough one to break into as it's so niche. Unless you live in a city where there are numerous companies, especially larger ones where they have the ability, and need to hire specialist roles; finding work as a UX Engineer can be tough (unless you're remote).{.mf-body}
 
-## What does the future look like then?{.mf-m}
+## What does the future look like then?{.mf-heading-m}
 
 It's hard to say. I'd like to imagine a utopia where there's a relationship between, design and engineers that is coupled with middlemen. But office politics, budgets and software makes it much more confusing and opinionated.{.mf-body}
 
@@ -80,7 +80,7 @@ Selfishly, I'd love to sit in a team as a UX/UI Engineer focusing purely on the 
 
 <hr class="mf-divider mf-divider--full-width"/>
 
-### Related links {.mf-s}
+### Related links {.mf-heading-s}
 
 - <a href="https://css-tricks.com/the-great-divide/" class="mf-link mf-link-inline">The Great Divide</a> by Chris Coyier {.mf-list-item}
 - <a href="https://rachelandrew.co.uk/archives/2019/01/30/html-css-and-our-vanishing-industry-entry-points/" class="mf-link mf-link-inline">HTML, CSS and our vanishing industry entry points</a> by Rachel Andrew {.mf-list-item}

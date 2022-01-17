@@ -1,8 +1,8 @@
 .#{$namespace}-section {
   // @include wrapper;
-  padding: 50px 0;
+  padding: 0;
   @include breakpoint('sm') {
-    padding: 100px 0;
+    padding: 0;
   }
 
   &_inner {
