@@ -1,13 +1,27 @@
 .#{$namespace}-logo {
   margin-bottom: 20px;
-  
-  a, svg {
+  padding: 0 20px;
+
+  a,
+  svg {
     max-width: 150px;
     max-height: 90px;
     display: block;
   }
+  path {
+    fill: var(--fung-white-default);
+
+    @include breakpoint("md") {
+      fill: var(--fung-black-default);
+    }
+  }
   a {
+    margin-left: auto;
     color: $fung-primary-default;
+
+    @include breakpoint("md") {
+      margin-left: 0;
+    }
     use:first-of-type {
       color: $fung-primary-default;
     }
@@ -19,7 +33,7 @@
     &:hover {
       outline: 0;
       background-color: $fung-accent-one-default;
-      border-bottom: #{'max(1px, 0.0625rem)'} solid currentColor;
+      border-bottom: #{"max(1px, 0.0625rem)"} solid currentColor;
       use:first-of-type,
       use:last-of-type {
         color: $fung-black-default;

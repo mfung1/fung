@@ -14,12 +14,12 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f2858e">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <title>{{ pageTitle }}</title>
+  <title>{%if pageTitle%}{{ pageTitle }}{%endif%} - Matthew Fung</title>
   {% include "./_styles.njk" %}
 </head>
 <body>
   {% include "./_svgs.njk" %}
-  <header>
+  <header class="mf-header">
     {% include "./components/organisms/header.njk"%}
   </header>
   <main id="swup" class="transition-fade">

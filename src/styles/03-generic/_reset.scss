@@ -2,6 +2,8 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 html {
@@ -13,6 +15,7 @@ body {
   background-color: var(--fung-white-dark);
   margin: 0;
 }
+
 main,
 section {
   display: block; // Not block level in IE..
@@ -21,6 +24,7 @@ section {
 header {
   background-color: var(--fung-white-default);
 }
+
 p,
 a {
   font-size: 1rem;

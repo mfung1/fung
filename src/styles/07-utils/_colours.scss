@@ -1,39 +1,39 @@
 .col-primary-default {
-  color: $fung-primary-default;
+  color: var(--fung-primary-default);
 }
 .col-accent-one {
-  color: $fung-accent-one-default;
+  color: var(--fung-accent-one-default);
 }
 .col-accent-one-dark {
-  color: $fung-accent-one-dark;
+  color: var(--fung-accent-one-dark);
 }
 .col-accent-one-darker {
-  color: $fung-accent-one-darker;
+  color: var(--fung-accent-one-darker);
 }
 .col-accent-one-lightest {
-  color: $fung-accent-one-lightest;
+  color: var(--fung-accent-one-lightest);
 }
 .col-white-default {
-  color: $fung-white-default;
+  color: var(--fung-white-default);
 }
 .col-white-dark {
-  color: $fung-white-dark;
+  color: var(--fung-white-dark);
 }
 .col-white-darker {
-  color: $fung-white-darker;
+  color: var(--fung-white-darker);
 }
 .col-black-default {
-  color: $fung-black-default;
+  color: var(--fung-black-default);
 }
 .col-black-light {
-  color: $fung-black-light;
+  color: var(--fung-black-light);
 }
 .col-black-lighter {
-  color: $fung-black-lighter;
+  color: var(--fung-black-lighter);
 }
 .bg-col-primary-default {
-  background-color: $fung-primary-default;
+  background-color: var(--fung-primary-default);
 }
 .bg-col-accent-one-dark {
-  background-color: $fung-accent-one-dark;
+  background-color: var(--fung-accent-one-dark);
 }

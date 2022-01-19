@@ -1,20 +1,22 @@
 .#{$namespace}-navlink {
-  display: inline-block;
-  font-family: Neue Haas Grotesk Text Pro;
+  display: block;
+  font-family: $mfung-text-fonts;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   border-top: 0;
-  padding: 20px 0;
-  
+  padding: 20px 0 10px;
+  width: 100%;
+  text-align: center;
   margin-bottom: 0;
   border-bottom: 4px solid var(--fung-black-lightest);
 
-  @include breakpoint ('md') {
+  @include breakpoint("md") {
     display: block;
     font-size: 24px;
     line-height: 30px;
-    border-top: 1px solid #E9E9E9;
+    text-align: right;
+    border-top: 1px solid #e9e9e9;
     border-bottom: 0;
     padding-top: 20px;
     padding-bottom: 0;
@@ -30,16 +32,16 @@
     font-size: 16px;
     line-height: 20px;
 
-    @include breakpoint('md') {
+    @include breakpoint("md") {
       font-size: 24px;
       line-height: 30px;
       text-decoration: underline;
       text-underline-offset: 0.1em;
-      text-decoration-thickness: #{'max(1px, .0625rem)'};
+      text-decoration-thickness: #{"max(1px, .0625rem)"};
     }
     &:hover {
       color: var(--fung-link-light-hover);
-      text-decoration-thickness: #{'max(4px, .0625rem)'};
+      text-decoration-thickness: #{"max(4px, .0625rem)"};
 
       svg {
         stroke: var(--fung-link-light-hover);
@@ -51,7 +53,7 @@
       background-color: $fung-accent-one-default;
       text-decoration: underline;
       text-underline-offset: 0.1em;
-      text-decoration-thickness: #{'max(4px, .0625rem)'};
+      text-decoration-thickness: #{"max(4px, .0625rem)"};
       color: $fung-black-default;
     }
   }
@@ -63,9 +65,8 @@
     display: none;
     stroke: var(--fung-link-light-default);
 
-    @include breakpoint('md') {
+    @include breakpoint("md") {
       display: inline-block;
-
     }
   }
 }
@@ -79,7 +80,7 @@
   &:focus {
     outline: 0;
     background-color: $fung-accent-one-default;
-    text-decoration-thickness: #{'max(4px, .0625rem)'};
+    text-decoration-thickness: #{"max(4px, .0625rem)"};
     color: $fung-black-default;
   }
 
@@ -87,12 +88,12 @@
     font-size: inherit;
     line-height: inherit;
     display: inline;
-    text-decoration-thickness: #{'max(1px, .0625rem)'};
+    text-decoration-thickness: #{"max(1px, .0625rem)"};
     text-underline-offset: 0.1em;
 
     &:hover {
       color: var(--fung-link-light-hover);
-      text-decoration-thickness: #{'max(4px, .0625rem)'};
+      text-decoration-thickness: #{"max(4px, .0625rem)"};
     }
   }
 }

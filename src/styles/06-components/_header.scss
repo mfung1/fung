@@ -1,25 +1,26 @@
 .#{$namespace}-header {
-  
+  background-color: var(--fung-primary-default);
 
   &_links {
     display: grid;
-    grid-template-columns: repeat(3, 73px);
+    grid-template-columns: repeat(3, minmax(73px, 1fr));
+    padding: 0 20px;
     justify-items: center;
     grid-gap: 30px;
     width: 100%;
     background-color: var(--fung-white-darker);
-    
-    @include breakpoint ('md') {
+
+    @include breakpoint("md") {
       @include wrapper;
       background: none;
       display: block;
-    }  
+    }
   }
 
-  @include breakpoint('md') {
+  @include breakpoint("md") {
+    background: none;
     .#{$namespace}-navlink:nth-last-child(2) {
       display: block;
     }
   }
-  
 }
