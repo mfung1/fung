@@ -15,13 +15,15 @@ header {
 }
 
 body {
+  background-color: var(--fung-white-default);
+}
+.#{$namespace}-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
-  background-color: var(--fung-white-default);
   max-width: 1080px;
   margin: 0 auto;
-  
+
   @include breakpoint ('md') {
     gap: 123px;
     grid-template-columns: 1fr 3fr;

@@ -15,7 +15,7 @@
       @if $type == "min" {
         @media (min-width: #{$point}) { @content ; }
       } @else if $type == "max" {
-        @media (min-width: #{$point}) { @content ; }
+        @media (max-width: #{$point}) { @content ; }
       } @else {
         @error "Unknown type #{$type}"
       }

@@ -55,6 +55,10 @@
     z-index: 2;
   }
 
+  .#{$namespace}-cv-item:last-of-type {
+    padding-bottom: 50px;
+  }
+
   @include breakpoint('md') {
     .#{$namespace}-cv-intro,
     .#{$namespace}-cv-item {

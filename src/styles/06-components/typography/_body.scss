@@ -3,7 +3,7 @@
   line-height: 25px;
   margin: 0 0 20px;
   max-width: 100%;
-  color: var(--fung-black-lighter);
+  color: var(--fung-black-light);
 
   @include breakpoint("sm") {
     max-width: 640px;
@@ -26,7 +26,7 @@
   line-height: 25px;
   margin: 0 0 30px;
   max-width: 100%;
-  color: var(--fung-black-lighter);
+  color: var(--fung-black-light);
 
   @include breakpoint("sm") {
     font-size: 20px;
@@ -39,7 +39,7 @@
   line-height: 40px;
   font-weight: 600;
   margin-bottom: 30px;
-  color: var(--fung-black-lighter);
+  color: var(--fung-black-light);
 }
 .#{$namespace}-code-html {
   color: var(--fung-accent-one-default);

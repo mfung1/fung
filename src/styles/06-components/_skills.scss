@@ -5,7 +5,11 @@
     align-items: start;
     @include wrapper;
     
-    @include breakpoint('md') {
+    @include breakpoint('lg') {
         grid-template-columns: repeat(2, 241px);
+    }
+
+    circle.filled {
+        fill: var(--fung-primary-default);
     }
 }

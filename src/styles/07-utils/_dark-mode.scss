@@ -13,8 +13,20 @@
   body {
     background: var(--fung-black-default);
   }
+  .#{$namespace}-header_links {
+    background-color: var(--fung-black-light)
+  }
+  .#{$namespace}-logo a use:last-of-type {
+    color: var(--fung-black-default);
+
+    @include breakpoint("md") {
+      color: var(--fung-primary-default);
+    }
+  }
+  
   .#{$namespace}-navlink {
     color: var(--fung-link-dark-default);
+    border-bottom-color: var(--fung-link-dark-default);
     svg {
       stroke: var(--fung-link-dark-default);
     }

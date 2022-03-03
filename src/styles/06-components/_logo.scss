@@ -26,7 +26,13 @@
       color: $fung-primary-default;
     }
     use:last-of-type {
-      color: $fung-accent-one-default;
+      color: var(--fung-white-default);
+    }
+    @include breakpoint ('md') {
+      use:last-of-type {
+        color: var(--fung-primary-default);
+      }
+      
     }
 
     &:focus,
