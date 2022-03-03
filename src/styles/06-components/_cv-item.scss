@@ -6,9 +6,6 @@
 .#{$namespace}-cv-item {
   margin-bottom: 50px;
 }
-.#{$namespace}-cv-item:last-of-type {
-  padding-bottom: 50px;
-}
 .#{$namespace}-cv-item .#{$namespace}-body+.#{$namespace}-body:last-of-type {
   margin-bottom: 0;
 }

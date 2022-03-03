@@ -14,7 +14,11 @@
     background: var(--fung-black-default);
   }
   .#{$namespace}-header_links {
-    background-color: var(--fung-black-light)
+    background-color: var(--fung-black-light);
+
+    @include breakpoint('md') {
+      background-color: var(--fung-black-default);
+    }
   }
   .#{$namespace}-logo a use:last-of-type {
     color: var(--fung-black-default);
