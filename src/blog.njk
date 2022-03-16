@@ -29,7 +29,7 @@ layout: 'layouts/base.njk'
         <img src="{{post.data.featuredImage}}" width="248" height="140" class="mf-post-thumbnail" />
         <span class="mf-post-copy">
           <span class="mf-post-link">{{post.data.pageHeading}}</span>
-          <span class="mf-post-date">Date published: DD/MM/YYYY</span>
+          <span class="mf-post-date">Date published: {{post.data.lastUpdated | postDate}}</span>
         </span>
         </a>
       </li>

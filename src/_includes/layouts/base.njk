@@ -18,16 +18,20 @@
   {% include "./_styles.njk" %}
 </head>
 <body>
+  {# {% include "./components/organisms/utility-bar.njk" %} #}
   <div class="mf-container">
     {% include "./_svgs.njk" %}
-    <header class="mf-header">
-      {% include "./components/organisms/header.njk"%}
-    </header>
+    <section class="mf-sidebar">
+      <header class="mf-header">
+        {% include "./components/organisms/header.njk"%}
+      </header>
+    </section>
     <main id="swup" class="transition-fade">
     {{content|safe}}
+    {% include "./components/organisms/footer.njk"%}
     </main>
   </div>
-  {% include "./components/organisms/footer.njk"%}
+  
   {% include "./_scripts.njk" %}
 </body>
 </html>
