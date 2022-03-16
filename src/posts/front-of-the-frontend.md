@@ -6,7 +6,7 @@ pageTitle: "Job Title: Undefined"
 pageHeading: "Job Title: Undefined"
 description: "With diverging paths in web development growing further apart, I'm not really sure where I belong or what my role is anymore."
 length: 5
-date: 2021-03-02
+lastUpdated: 2021-03-02
 topics:
   - javascript
 
