@@ -60,18 +60,19 @@
   }
 
   @include breakpoint('md') {
+    padding-left: 40px;
     .#{$namespace}-cv-intro,
     .#{$namespace}-cv-item {
       padding-left: 0;
     }
     &::before {
-      left: -40px;
+      left: 0;
     }
     &::after {
-      left: -50px;
+      left: -10px;
     }
     .#{$namespace}-cv-intro::after {
-      left: -46px;
+      left: -6px;
     }
     .#{$namespace}-cv-item::after {
       left: -50px;

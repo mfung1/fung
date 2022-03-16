@@ -1,7 +1,20 @@
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fung-primary-default: var(--fung-accent-one-default);
+// @media (prefers-color-scheme: dark) {
+[data-dark] * {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+[data-dark="false"] {
+  .light {
+    opacity: 1;
+    transition: opacity 0.6s ease;
   }
+  .dark {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+}
+[data-dark="true"] {
+  --fung-primary-default: var(--fung-accent-one-default);
+
   .light {
     opacity: 0;
     transition: opacity 0.6s ease;
@@ -13,13 +26,12 @@
   body {
     background: var(--fung-black-default);
   }
-  .#{$namespace}-header_links {
-    background-color: var(--fung-black-light);
-
-    @include breakpoint('md') {
-      background-color: var(--fung-black-default);
+  @include breakpoint('756px', 'max') {
+    .#{$namespace}-header_links {
+      background-color: var(--fung-black-light);
     }
   }
+
   .#{$namespace}-logo a use:last-of-type {
     color: var(--fung-black-default);
 

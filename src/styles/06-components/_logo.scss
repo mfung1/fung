@@ -1,48 +1,39 @@
 .#{$namespace}-logo {
   margin-bottom: 20px;
-  padding: 0 20px;
-
-  a,
+  
   svg {
-    max-width: 150px;
-    max-height: 90px;
+    max-width: 200px;
+    max-height: 100px;
     display: block;
   }
-  path {
-    fill: var(--fung-white-default);
-
-    @include breakpoint("md") {
-      fill: var(--fung-black-default);
-    }
-  }
   a {
+    display: block;
     margin-left: auto;
-    color: $fung-primary-default;
+    padding: 20px 100px 20px 20px;
+    color: var(--fung-white-default);
+
+    &:hover use {
+      color: var(--fung-primary-default);
+    }
 
     @include breakpoint("md") {
       margin-left: 0;
-    }
-    use:first-of-type {
-      color: $fung-primary-default;
-    }
-    use:last-of-type {
-      color: var(--fung-white-default);
-    }
-    @include breakpoint ('md') {
-      use:last-of-type {
-        color: var(--fung-primary-default);
+      &:hover {
+        background-color: var(--fung-primary-hover);
+        use {
+          color: var(--fung-white-default);
+        }
       }
-      
     }
 
-    &:focus,
-    &:hover {
+    
+    &:focus {
       outline: 0;
-      background-color: $fung-accent-one-default;
-      border-bottom: #{"max(1px, 0.0625rem)"} solid currentColor;
+      background-color: var(--fung-accent-one-default);
+      border-bottom: #{"max(1px, 0.0625rem)"} solid var(--fung-black-default);
       use:first-of-type,
       use:last-of-type {
-        color: $fung-black-default;
+        color: var(--fung-black-default);
       }
     }
   }

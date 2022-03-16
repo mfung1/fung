@@ -8,16 +8,14 @@
   $point: quote($point);
   $type: quote($type);
   $breakpoint: map-get($mfung-breakpoints, $point);
-  @if not $breakpoint {
-    @error "Unknown breakpoint #{$point}";
-  } @else if isNumber($point) {
+  @if isNumber($point) {
     @if isRelativeUnit($point) or isFixedUnit($point) {
       @if $type == "min" {
         @media (min-width: #{$point}) { @content ; }
       } @else if $type == "max" {
         @media (max-width: #{$point}) { @content ; }
       } @else {
-        @error "Unknown type #{$type}"
+        @error "Unknown type #{$type}";
       }
     }
   } @else {

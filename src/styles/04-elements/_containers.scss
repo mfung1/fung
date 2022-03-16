@@ -5,13 +5,8 @@ fieldset {
   border: 0;
 }
 header {
-  padding: 0 10px;
-  text-align: right;
+  text-align: left;
   max-width: 100%;
-  @include breakpoint('md') {
-    max-width: 248px;
-    justify-self: end;
-  }
 }
 
 body {
@@ -21,23 +16,24 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
-  max-width: 1080px;
-  margin: 0 auto;
 
   @include breakpoint ('md') {
-    gap: 123px;
+    gap: 30px;
     grid-template-columns: 1fr 3fr;
   }
 }
+
 header {
   padding: 50px 0 0;
 }
+
 main {
   padding: 0 20px 0;
 }
+
 main, header {
   @include breakpoint('md') {
-    padding: 50px 10px 0;
+    padding: 50px 0 0;
   }
 }
 @include breakpoint('md') {

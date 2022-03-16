@@ -14,6 +14,12 @@
 /// @access public
 $fung-primary-default: mf-colour("primary", "default") !default;
 
+/// Primary - Hover
+///
+/// @type Colour
+/// @access public
+$fung-primary-hover: mf-colour("primary", "hover") !default;
+
 //============================
 // Accent One
 //============================
@@ -271,6 +277,7 @@ $css-vars-use-native: true;
 @include css-vars(
   (
     --fung-primary-default: $fung-primary-default,
+    --fung-primary-hover: $fung-primary-hover,
     --fung-accent-one-darker: $fung-accent-one-darker,
     --fung-accent-one-dark: $fung-accent-one-dark,
     --fung-accent-one-default: $fung-accent-one-default,

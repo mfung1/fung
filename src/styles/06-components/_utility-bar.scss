@@ -1,0 +1,102 @@
+.mf-utility {
+  background-color: #26284a;
+  max-height: 44px;
+
+  &_links {
+    margin: 0 20px;
+    max-height: 44px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    @include breakpoint('lg') {
+      max-width:1008px;
+      margin: 0 auto
+    }
+
+    @include breakpoint('xl') {
+      max-width:1180px;
+      margin: 0 auto
+    }
+  }
+
+  &-link {
+    border-left: 1px solid hsla(0,0%,100%,.2);
+
+    &:not(:last-of-type) {
+      display: none
+    }
+    &:last-of-type,
+    &:nth-last-child(2) {
+      display: block
+    }
+
+    @include breakpoint('sm') {
+      &:not(:last-of-type) {
+        display:block
+      }
+      &:nth-last-child(2) {
+        display: none
+      }
+    }
+    &:hover {
+      background-color: #4d4f66;
+      border-left-color: transparent;
+      transition: background-color .3s ease-in-out
+    }
+    
+    button.mf-navlink_text:focus {
+      background-color: var(--fung-accent-one-default);
+      transition: background-color .3s ease-in-out;
+
+      svg {
+        background-color: var(--fung-black-default)
+      }
+
+      .dark,
+      .light {
+        fill: var(--fung-black-default)
+      }
+    }
+  }
+  &-link_text {
+    display: block;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 24px;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    &[aria-label="toggle dark mode"] svg {
+      display: block;
+      border-radius: 100%
+    }
+
+    svg {
+      vertical-align: middle
+    }
+
+    span {
+      margin-right: 10px;
+      vertical-align: top
+    }
+
+    span,.mf-navlink svg {
+      display: inline-block
+    }
+
+    &:not(button):focus {
+      background-color: #4d4f66;
+      transition: background-color .3s ease-in-out;
+      box-shadow: inset 0 2px 0 -2px #26284a;
+      color: #fff;
+      transition: color .3s ease-in-out
+    }
+  }
+}
+

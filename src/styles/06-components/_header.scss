@@ -1,5 +1,18 @@
+.#{$namespace}-sidebar {
+  background-color: var(--fung-black-default);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include breakpoint ('md') {
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-height: 100vh;
+  }
+}
 .#{$namespace}-header {
-  background-color: var(--fung-primary-default);
+  background-color: var(--fung-black-default);
 
   &_links {
     display: grid;
@@ -11,16 +24,45 @@
     background-color: var(--fung-white-darker);
 
     @include breakpoint("md") {
-      @include wrapper;
       background: none;
+      padding: 0;
       display: block;
     }
   }
 
   @include breakpoint("md") {
-    background: none;
     .#{$namespace}-navlink:nth-last-child(2) {
       display: block;
     }
+  }
+}
+
+.#{$namespace}-mobile {
+  background-color: var(--fung-black-lighter);
+  padding: 20px;
+  display: none;
+
+  &[data-open="true"] {
+    display: block;
+
+    @include breakpoint('sm') {
+      display: none;
+    }
+  }
+
+  &-links {
+    display: grid;
+    max-width: 1260px;
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+  }
+  .#{$namespace}-utility-link {
+    padding: 10px;
+  }
+  .#{$namespace}-utility-link_text {
+    padding: 0px;
+    color: $fung-black-light;
   }
 }
