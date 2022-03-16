@@ -16,10 +16,10 @@ const init = () => {
   window.addEventListener("resize", debounce(matchHeights, 100, false), false);
 }
 window.addEventListener('DOMContentLoaded', () => {
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)"),
-        menuButton = document.querySelector(config.menu.buttonSelector),
-        submenu = document.querySelector(config.menu.submenuSelector),
-        toggle = document.querySelector(config.darkmode.toggle);
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        // menuButton = document.querySelector(config.menu.buttonSelector),
+        // submenu = document.querySelector(config.menu.submenuSelector),
+        // toggle = document.querySelector(config.darkmode.toggle);
   // toggleMenu(menuButton, submenu);
   // toggleDarkMode(toggle, document.documentElement);
   if (!reducedMotion.matches) {
