@@ -1,5 +1,5 @@
 ---
-pageTitle: "Blog - Matt Fung - Lincoln UK"
+pageTitle: "Blog"
 description: "Articles about front-end web development, design and the web industry and anything I find interesting."
 title: "Blog"
 date: "2021-02-21"
@@ -11,28 +11,26 @@ layout: 'layouts/base.njk'
 {% from './_includes/layouts/components/atoms/_skill-point.njk' import skillPoint %}
 
 {% block pageContent %}
-<hr class="mf-divider mf-divider--full-width" aria-hidden="true"/>
 <section class="mf-section">
   <div class="mf-section_inner">
-    <h1 class="mf-display mb-20">{{title}}</h1>
+    <h1 class="mf-heading-xl mb-20">{{title}}</h1>
     <p class="mf-standfirst col-black-light">I like to write about whatever springs to mind but it’s usually web industry related (design, development, culture etc.). You can also find my posts over on <a href="#" class="mf-link mf-link-inline">Medium</a>.</p>
   </div>
 </section>
-<hr class="mf-divider" aria-hidden="true"/>
+<hr class="mf-divider mf-divider--full-width" aria-hidden="true"/>
 <section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
   <div class="mf-section_inner">
-    <h2 class="mf-headline mb-30">Latest</h2>
+    <h2 class="mf-heading-l mb-30">Featured Posts</h2>
     <ul class="mf-posts mf-posts-all">
       {% set latestPosts = collections.posts|reverse %}
       {% for post in latestPosts %}
       <li>
         <a href="{{post.url}}" class="mf-post">
-          <img src="{{post.data.featuredImage}}" width="380" height="210" alt="" class="mf-post_image"/>
-          <div class="mf-post_copy">
-            <p class="mf-badge{%if post.data.topics%} mf-badge-{{post.data.topics}}{%endif%}">{{post.data.topics}}</p>
-            <h3 class="mf-subheader" data-matchHeights="postHeading">{{post.data.pageHeading}}</h3>
-            <p class="mf-body">{{post.data.length}} minutes – {{post.data.date|postDate}}</p>
-          </div>
+        <img src="{{post.data.featuredImage}}" width="248" height="140" class="mf-post-thumbnail" />
+        <span class="mf-post-copy">
+          <span class="mf-post-link">{{post.data.pageHeading}}</span>
+          <span class="mf-post-date">Date published: {{post.data.lastUpdated | postDate}}</span>
+        </span>
         </a>
       </li>
       {% endfor %}

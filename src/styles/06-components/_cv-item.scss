@@ -1,8 +1,11 @@
 .#{$namespace}-cv-intro,
 .#{$namespace}-cv-item {
-  @include wrapper;
+  // @include wrapper;
 }
 .#{$namespace}-cv-intro,
 .#{$namespace}-cv-item {
   margin-bottom: 50px;
+}
+.#{$namespace}-cv-item .#{$namespace}-body+.#{$namespace}-body:last-of-type {
+  margin-bottom: 0;
 }

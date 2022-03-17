@@ -1,0 +1,13 @@
+.#{$namespace}-heading-xl {
+  font-size: 42px;
+  line-height: 50px;
+  margin-bottom: 30px;
+  max-width: 640px;
+  font-weight: 600;
+  
+  @include breakpoint("md") {
+    font-size: 48px;
+    line-height: 50px;
+    max-width: 100%;
+  }
+}

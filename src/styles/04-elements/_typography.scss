@@ -13,6 +13,12 @@ h3,
 h4 {
   font-weight: 500;
 }
+a {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+a:hover {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
 p,
 blockquote,
 pre,
@@ -28,7 +34,7 @@ th,
 td,
 caption {
   font-family: $mfung-text-fonts;
-  color: var(--fung-black-lighter);
+  color: var(--fung-black-light);
 }
 
 p + p:last-child {

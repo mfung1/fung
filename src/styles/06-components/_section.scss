@@ -1,8 +1,8 @@
 .#{$namespace}-section {
   // @include wrapper;
-  padding: 50px 0;
+  padding: 0;
   @include breakpoint('sm') {
-    padding: 100px 0;
+    padding: 0;
   }
 
   &_inner {
@@ -35,16 +35,12 @@
     // .#{$namespace}-caption {
     //   color: $fung-accent-one-light;
     // }
-    .#{$namespace}-callout {
-      color: $fung-accent-two-default;
-    }
+    // .#{$namespace}-callout {
+    //   color: $fung-accent-two-default;
+    // }
     // .#{$namespace}-body-heavy {
     //   color: $fung-accent-two-lighter;
     // }
-  }
-
-  &--accent-two-lightest {
-    background-color: $fung-accent-two-lightest;
   }
 
 }

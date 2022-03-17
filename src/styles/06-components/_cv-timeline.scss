@@ -1,0 +1,81 @@
+.#{$namespace}-cv-timeline {
+  position: relative;
+  
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: var(--fung-black-light);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    height: 4px;
+    width: 24px;
+    background-color: var(--fung-black-light);
+  }
+  .#{$namespace}-cv-intro {
+    padding-left: 50px;
+  }
+
+  .#{$namespace}-cv-intro::after {
+    width: 12px;
+    height:12px;
+    top: 0;
+    left: 19px;
+    transform: rotate(45deg);
+    position: absolute;
+    content: '';
+    border-left: 4px solid  var(--fung-black-light);
+    border-top: 4px solid  var(--fung-black-light);
+  }
+
+  .#{$namespace}-cv-item {
+    position: relative;
+    padding-left: 50px;
+  }
+
+  .#{$namespace}-cv-item::after {
+    position: absolute;
+    left: 15px;
+    top: 32px;
+    width: 16px;
+    height: 16px;
+    border-radius: 25px;
+    border: 4px solid var(--fung-black-default);
+    content: '';
+    background-color: var(--fung-white-default);
+    z-index: 2;
+  }
+
+  .#{$namespace}-cv-item:last-of-type {
+    padding-bottom: 50px;
+  }
+
+  @include breakpoint('md') {
+    padding-left: 40px;
+    .#{$namespace}-cv-intro,
+    .#{$namespace}-cv-item {
+      padding-left: 0;
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      left: -10px;
+    }
+    .#{$namespace}-cv-intro::after {
+      left: -6px;
+    }
+    .#{$namespace}-cv-item::after {
+      left: -50px;
+    }
+  }
+}

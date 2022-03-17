@@ -1,3 +1,4 @@
+// @media (prefers-color-scheme: dark) {
 [data-dark] * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -12,6 +13,8 @@
   }
 }
 [data-dark="true"] {
+  --fung-primary-default: var(--fung-accent-one-default);
+
   .light {
     opacity: 0;
     transition: opacity 0.6s ease;
@@ -23,33 +26,44 @@
   body {
     background: var(--fung-black-default);
   }
-
-  .#{$namespace}-header {
-    background-color: var(--fung-black-light);
-    button[aria-open="true"] {
-      background-color: var(--fung-accent-one-default);
-      color: var(--fung-black-default);
+  @include breakpoint('756px', 'max') {
+    .#{$namespace}-header_links {
+      background-color: var(--fung-black-light);
     }
   }
-  .#{$namespace}-navlink {
-    border-left: 1px solid hsla(0, 0%, 0%, 0.2);
-    &:hover {
-      background-color: var(--fung-black-lighter);
-    }
 
-    &:hover .#{$namespace}-navlink_text:not([aria-open="true"]) {
-      color: var(--fung-white-dark);
+  .#{$namespace}-logo a use:last-of-type {
+    color: var(--fung-black-default);
+
+    @include breakpoint("md") {
+      color: var(--fung-primary-default);
+    }
+  }
+  
+  .#{$namespace}-navlink {
+    color: var(--fung-link-dark-default);
+    border-bottom-color: var(--fung-link-dark-default);
+    svg {
+      stroke: var(--fung-link-dark-default);
+    }
+    &:focus {
+      svg {
+        stroke: var(--fung-black-default);
+      }
+      color: var(--fung-black-default);
+      text-decoration-color: var(--fung-accent-one-default);
     }
   }
   .#{$namespace}-link-inline {
-    color: var(--fung-accent-one-default);
+    color: var(--fung-link-dark-default);
   }
   .#{$namespace}-field {
-    border-color: transparent;
+    border-color: var(--fung-black-lighter);
     background-color: var(--fung-black-light);
     color: var(--fung-grey-default);
     &:focus {
       outline-color: var(--fung-accent-one-default);
+      border-color: var(--fung-accent-one-default);
       box-shadow: none;
     }
   }
@@ -96,11 +110,11 @@
     fill: var(--fung-black-light);
   }
   .#{$namespace}-logo a,
-  .#{$namespace}-logo a use:first-of-type {
-    color: var(--fung-white-default);
+  .#{$namespace}-logo a path {
+    fill: var(--fung-white-default);
   }
   .#{$namespace}-navlink_text {
-    color: var(--fung-white-default);
+    color: var(--fung-link-dark-default);
   }
   h1,
   h2,
@@ -109,7 +123,7 @@
     color: var(--fung-white-default);
   }
   main .#{$namespace}-divider {
-    background-color: var(--fung-primary-light);
+    background-color: var(--fung-accent-one-default);
   }
   header {
     background-color: var(--fung-black-default);
@@ -122,9 +136,11 @@
   .#{$namespace}-caption:not([class*="col-"]),
   .#{$namespace}-quote *,
   .#{$namespace}-list-item,
+  .#{$namespace}-terms,
   figcaption {
     color: var(--fung-white-darker);
   }
+
   .#{$namespace}-mobile {
     background-color: var(--fung-black-lighter);
     .#{$namespace}-navlink_text {
@@ -166,12 +182,19 @@
   .col-black-default {
     color: var(--fung-white-default);
   }
-  .#{$namespace}-post_copy {
-    background-color: var(--fung-black-light);
+  .#{$namespace}-post .#{$namespace}-post-date {
+    color: var(--fung-white-dark);
+  }
+  .#{$namespace}-post-link {
+    color: var(--fung-link-dark-default);
+    &:hover {
+      color: var(--fung-link-dark-hover);
+    }
   }
   .#{$namespace}-post_image {
     filter: brightness(0.85) grayscale(100%);
   }
+
   .#{$namespace}-post:hover .#{$namespace}-post_image {
     filter: brightness(0.85) grayscale(0);
   }

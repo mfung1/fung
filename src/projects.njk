@@ -1,5 +1,5 @@
 ---
-pageTitle: "Projects - Matt Fung - Lincoln UK"
+pageTitle: "Projects"
 description: "Interesting pieces of work I've done in the past, or just fun things I've built on Codepen"
 title: "Projects"
 tags: webpage
@@ -11,19 +11,21 @@ layout: 'layouts/base.njk'
 {% from './_includes/layouts/components/atoms/_skill-point.njk' import skillPoint %}
 
 {% block pageContent %}
-<hr class="mf-divider mf-divider--full-width" aria-hidden="true"/>
 <section class="mf-section">
   <div class="mf-section_inner">
-    <h1 class="mf-display mb-20">Projects</h1>
+    <h1 class="mf-heading-xl mb-20">Projects</h1>
     <p class="mf-standfirst col-black-light">Pieces of work I've done in the past, or just fun things I've built on <a href="#" class="mf-link mf-link-inline">Codepen</a> and <a href="https://www.github.com/mfung1" class=" mf-link mf-link-inline">Github</a>.</p>
   </div>
 </section>
-<hr class="mf-divider"/>
+<hr class="mf-divider mf-divider--full-width"/>
+{% set latestPosts = collections.project|reverse %}
+
 <section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
   <div class="mf-section_inner">
-    <h2 class="mf-headline mb-30">Client work</h2>
+    <h2 class="mf-heading-l mb-30">Github</h2>
+    {% if (latestPosts.length > 0) %}
     <ul class="mf-posts">
-      {% set latestPosts = collections.project|reverse %}
+      
       {% for project in latestPosts.slice(0, 6) %}
       <li>
         <a href="{{project.url}}" class="mf-post">
@@ -38,14 +40,20 @@ layout: 'layouts/base.njk'
       </li>
       {% endfor %}
     </ul>
+    {% else %}
+    <p class="mf-standfirst col-black-light">No projects have been added to this site yet.</p>
+    {% endif %}
   </div>
 </section>
-<hr class="mf-divider">
+
+{% set latestPens = collections.pen|reverse %}
+
+<hr class="mf-divider mf-divider-full-width">
 <section class="mf-section" data-callback="fadeUpEffect" data-fade-up>
   <div class="mf-section_inner">
-    <h2 class="mf-headline mb-30">Codepen and Github projects</h2>
+    <h2 class="mf-heading-l mb-30">Codepen projects</h2>
+    {% if latestPens.length > 0 %}
     <ul class="mf-posts">
-      {% set latestPens = collections.pen|reverse %}
       {% for pen in latestPens.slice(0, 6) %}
       <li>
         <a href="{{pen.url}}" class="mf-post">
@@ -60,6 +68,9 @@ layout: 'layouts/base.njk'
       </li>
       {% endfor %}
     </ul>
+    {% else %}
+    <p class="mf-standfirst col-black-light">No pens have been added to this site yet.</p>
+    {% endif %}
   </div>
 </section>
 {% endblock %}

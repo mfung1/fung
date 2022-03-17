@@ -14,18 +14,24 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f2858e">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <title>{{ pageTitle }}</title>
+  <title>{%if pageTitle%}{{ pageTitle }}{%endif%} - Matthew Fung</title>
   {% include "./_styles.njk" %}
 </head>
 <body>
-  {% include "./_svgs.njk" %}
-  <header>
-    {% include "./components/organisms/header.njk"%}
-  </header>
-  <main id="swup" class="transition-fade">
-  {{content|safe}}
-  </main>
-  {% include "./components/organisms/footer.njk"%}
+  {# {% include "./components/organisms/utility-bar.njk" %} #}
+  <div class="mf-container">
+    {% include "./_svgs.njk" %}
+    <section class="mf-sidebar">
+      <header class="mf-header">
+        {% include "./components/organisms/header.njk"%}
+      </header>
+    </section>
+    <main id="swup" class="transition-fade">
+    {{content|safe}}
+    {% include "./components/organisms/footer.njk"%}
+    </main>
+  </div>
+  
   {% include "./_scripts.njk" %}
 </body>
 </html>

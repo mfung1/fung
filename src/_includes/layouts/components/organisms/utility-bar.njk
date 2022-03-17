@@ -1,0 +1,29 @@
+<div class="mf-utility">
+  <ul class="mf-utility_links">
+    <li class="mf-utility-link">
+      <a class="mf-utility-link_text" href="/about-this-site">About this site</a>
+    </li>
+    <li class="mf-utility-link">
+      <a class="mf-utility-link_text" href="/about-this-site">Accessibility</a>
+    </li>
+    <li class="mf-utility-link">
+      <button class="mf-utility-link_text" id="submenuButton" role="button" aria-haspopup="true" aria-expanded="false" aria-label="mobile menu">
+        <span>Menu</span>
+        <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="mf-navlink_arrow"><use xlink:href="#menu-arrow"></use></svg>
+      </button>
+    </li>
+    <li class="mf-utility-link mf-toggle">
+      <button id="darkmodeButton" class="mf-utility-link_text" role="button" aria-label="toggle dark mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path class="light" fill="var(--fung-white-default)" d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm2 0c0-5.514 4.486-10 10-10v20c-5.514 0-10-4.486-10-10z"></path>
+          <path class="dark" fill="var(--fung-accent-one-default)" d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm2 0c0-5.514 4.486-10 10-10v20c-5.514 0-10-4.486-10-10z"></path>
+        </svg>
+      </button>
+    </li>
+</div>
+<div class="mf-mobile" id="mobile-menu" data-open="false">
+  <ul class="mf-mobile-links">
+      <li class="mf-navlink"><a href="/about-this-site" class="mf-navlink_text">About this site</a></li>
+      <li class="mf-navlink"><a href="/projects/" class="mf-navlink_text">Accessibility</a></li>
+  </ul>
+</div>

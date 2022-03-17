@@ -1,6 +1,7 @@
 .#{$namespace}-footer {
-  background-color: $fung-primary-default;
+  border-top: 2px solid var(--fung-black-default);
   padding: 30px 0;
+  margin-top: 100px;
   text-align: center;
 
   @include breakpoint("sm") {
@@ -8,11 +9,11 @@
   }
 
   .#{$namespace}-link {
-    color: var(--fung-accent-one-default);
+    color: var(--fung-link-dark-default);
   }
 
   &_inner {
-    @include wrapper;
+    padding: 0 20px;
   }
 
   &_row {
@@ -41,13 +42,13 @@
     display: grid;
     grid-template-columns: repeat(3, 30px);
     grid-gap: 10px;
-    color: #fff;
+    color: var(--fung-black-default);
 
     svg {
-      color: var(--fung-white-dark);
+      color: var(--fung-black-default);
     }
     a:hover svg {
-      color: var(--fung-accent-one-default);
+      color: var(--fung-primary-default);
     }
   }
 }

@@ -1,41 +1,44 @@
+.#{$namespace}-sidebar {
+  background-color: var(--fung-black-default);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include breakpoint ('md') {
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-height: 100vh;
+  }
+}
 .#{$namespace}-header {
-  background-color: $fung-primary-default;
-  max-height: 44px;
+  background-color: var(--fung-black-default);
 
   &_links {
-    @include wrapper;
-    max-height: 44px;
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
+    display: grid;
+    grid-template-columns: repeat(3, minmax(73px, 1fr));
+    padding: 0 20px;
+    justify-items: center;
+    grid-gap: 30px;
+    width: 100%;
+    background-color: var(--fung-white-darker);
 
-  .#{$namespace}-navlink_text[aria-label="toggle dark mode"] svg {
-    display: block;
-    border-radius:100%;
-  }
-  
-  .#{$namespace}-navlink:not(:last-of-type) {
-    display: none;
-  }
-  .#{$namespace}-navlink:last-of-type,
-  .#{$namespace}-navlink:nth-last-child(2) {
-    display: block;
-  }
-  @include breakpoint('sm') {
-    .#{$namespace}-navlink:not(:last-of-type) {
+    @include breakpoint("md") {
+      background: none;
+      padding: 0;
       display: block;
     }
+  }
+
+  @include breakpoint("md") {
     .#{$namespace}-navlink:nth-last-child(2) {
-      display: none;
+      display: block;
     }
   }
-  
 }
 
 .#{$namespace}-mobile {
-  background-color: $fung-grey-lighter;
+  background-color: var(--fung-black-lighter);
   padding: 20px;
   display: none;
 
@@ -55,10 +58,10 @@
     grid-template-columns: repeat(2, 1fr);
     list-style-type: none;
   }
-  .#{$namespace}-navlink {
+  .#{$namespace}-utility-link {
     padding: 10px;
   }
-  .#{$namespace}-navlink_text {
+  .#{$namespace}-utility-link_text {
     padding: 0px;
     color: $fung-black-light;
   }

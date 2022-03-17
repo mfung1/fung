@@ -13,33 +13,31 @@
 
 $_mfung-colour-palette: (
   "primary": (
-    "darker": #101120,
-    "dark": #1F213D,
-    "default": #26284A,
-    "light": #4D4F66,
-    "lighter": #C7C8CF,
-    "lightest": #E9E9EC,
+    "default":#3f9d5e,
+    "hover": #54BB77
   ),
   "accent-one": (
     "darker": #794347,
     "dark": #B6646A,
-    "default": #F2858E,
+    "default": #F2D06B,
     "light": #F9C2C7,
     "lighter": #FCE1E3,
     "lightest": #FEF3F4
   ),
-  "accent-two": (
-    "darker": #474D57,
-    "dark": #6A7382,
-    "default": #8D99AE,
-    "light": #C6CCD7,
-    "lighter": #E3E5EB,
-    "lightest": #F4F5F7
+  "link-light": (
+    "default": #0C72AD,
+    "hover": #10547A,
+    "visited": #4C107A
+  ),
+  "link-dark": (
+    "default": #65B3E0,
+    "hover": #437694,
+    "visited": #4C107A
   ),
   "success": (
     "darker": #1E611D,
     "dark": #2A8729,
-    "default": #3CC13B,
+    "default": #36734B,
     "light": #9DE09D,
     "lighter": #CEEFCE,
     "lightest": #EBF9EB
@@ -47,7 +45,7 @@ $_mfung-colour-palette: (
   "warning": (
     "darker": #7A5E0E,
     "dark": #AA8314,
-    "default": #F3BB1C,
+    "default": #FFDD00,
     "light": #F9DD8D,
     "lighter": #FCEEC6,
     "lightest": #FEF8E8
@@ -55,29 +53,21 @@ $_mfung-colour-palette: (
   "error": (
     "darker": #781B1C,
     "dark": #A82727,
-    "default": #F03738,
+    "default": #D4351C,
     "light": #F89B9B,
     "lighter": #FBCDCD,
     "lightest": #FDEBEB
   ),
-  "grey": (
-    "darker": #616569,
-    "dark": #92979D,
-    "default": #C2C9D1,
-    "light": #F0F2F3,
-    "lighter": #F0F2F3,
-    "lightest": #F9FAFA
-  ),
   "black": (
-    "default": #111827,
-    "light": #374151,
-    "lighter": #6B7280,
-    "lightest": #9CA3AF 
+    "default": #303133,
+    "light": #616166,
+    "lighter": #919199,
+    "lightest": #C2C2CC 
   ),
   "white": (
-    "default": #FFFFFF,
-    "dark": #F9FAFB,
-    "darker": #E5E7EB,
-    "darkest": #D1D5DB 
+    "default": #FCFCFC,
+    "dark": #F6F6F6,
+    "darker": #EFEFEF,
+    "darkest": #E5E5E5 
   )
 );

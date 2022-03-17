@@ -2,14 +2,12 @@
 <footer class="mf-footer">
     <div class="mf-footer_inner">
         <div class="mf-footer_row">
-            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="40" fill="none" viewBox="0 0 180 80">
-                <use xlink:href="#logoDark" />
-            </svg>
+            <div>
+            <p class="mf-terms col-black-default" aria-hidden="true">Matt Fung <span id="footerYear">2021</span></p>
+            </div>
             <div class="mf-footer_social">
                 {% for socialIcon in socialIcons %}<a href="{{socialIcon.link}}" rel="external"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 30 30"><use xlink:href="#{{socialIcon.platform}}" /></svg></a>{% endfor %}
             </div>
         </div>
-        <p class="mf-terms col-white-default" aria-hidden="true">Matt Fung <span id="footerYear">2021</span></p>
-        <p class="mf-terms col-white-default">The code for this site is available on <a href="https://github.com/mfung1/fung" class="mf-link mf-link-inline">Github</a></p>
     </div>
 </footer>

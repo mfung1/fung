@@ -1,11 +1,10 @@
-@import './display',
-        './headline',
-        './subheader',
-        './title',
-        './oversized';
+@import './extra-large',
+        './large',
+        './medium',
+        './small';
 
-.#{$namespace}-headline:hover .#{$namespace}-heading-link,
-.#{$namespace}-subheader:hover .#{$namespace}-heading-link,
-.#{$namespace}-title:hover .#{$namespace}-heading-link {
-  display: inline;
-}
+// .#{$namespace}-headline:hover .#{$namespace}-heading-link,
+// .#{$namespace}-subheader:hover .#{$namespace}-heading-link,
+// .#{$namespace}-title:hover .#{$namespace}-heading-link {
+//   display: inline;
+// }

@@ -1,5 +1,5 @@
 ---
-pageTitle: "Home - Fung"
+pageTitle: "Home"
 description: "A front-end web developer with 4 years experience in the web industry"
 title: "Homepage"
 layout: 'layouts/base.njk'
@@ -9,61 +9,39 @@ layout: 'layouts/base.njk'
 {% from './_includes/layouts/components/atoms/_skill-point.njk' import skillPoint %}
 
 {% set socialIcons = [{platform:"twitter",link:"https://twitter.com/MattFung_"}, {platform:"github",link:"https://github.com/mfung1"}, {platform:"linkedin", link:"https://www.linkedin.com/in/matthewfungwd/"}] %}
-
-<section class="mf-hero mf-hero--pink" data-callback="playAnimation">
-  <div class="mf-hero_inner">
-    <h1 class="mf-oversized col-primary-default">Hey, I’m <span class="col-accent-one">Matt Fung</span>. Senior Front-End Developer at the <span class="col-accent-one">University of Lincoln</span>.</h1>
-    <div class="mf-social">
-      {% for socialIcon in socialIcons %}<a href="{{socialIcon.link}}" rel="external"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 30 30"><use xlink:href="#{{socialIcon.platform}}" /></svg></a>{% endfor %}
-    </div>
-  </div>
+<section>
+<h1 class="mf-heading-xl">Hey, my name is <span class="col-primary-default">Matthew Fung</span>. I work as a <span class="col-primary-default">Senior Front-End Developer</span> at the University of Lincoln.</h1>
 </section>
-<section class="mf-section mf-section--primary" >
-  <div class="mf-section_inner">
-    <h2 class="mf-caption mf-caption-lg col-accent-one">About</h2>
-    <p class="mf-callout col-white">I have 4 years of experience building websites in different industries. <span class="col-white-dark">I am a creative developer based in Lincoln, UK. Passsionate about excellent user experiences.</span></p>
-  </div>
+<hr class="mf-divider mf-divider--full-width"/>
+<section>
+<h2 class="mf-heading-l">About</h2>
+<p class="mf-body">I have 4 years of experience building websites in different industries. I am a front of the front-end developer based in Lincoln, UK. Passsionate about excellent user experiences.</p>
+<p class="mf-body">I'm a massive fan of <a href="#" class="mf-link mf-link-inline">GDS</a> and their work in the accessibility and design systems space.</p>
+<p class="mf-body">Visit my <a href="/about/" class="mf-link mf-link-inline">about page</a> if you want to learn more about me (including my CV).</p>
 </section>
-<section class="mf-section bg-col-accent-two-lightest">
-  <div class="mf-section_inner" data-callback="fadeUpEffect" data-fade-up>
-  {% set latestPosts = collections.post|reverse %}
-    {% if latestPosts.length > 0 %}
-    <h2 class="mf-headline mb-50">Latest posts</h2>
-    <ul class="mf-posts mb-100">  
-      {% for post in latestPosts.slice(0, 6) %}
+<hr class="mf-divider mf-divider--full-width"/>
+<section>
+<h2 class="mf-heading-l">Latest Posts</h2>
+<p class="mf-body">I write about all things, web, design and anything else that comes to mind. You can subscribe to my posts through my <a href="#" class="mf-link mf-link-inline">newsletter</a> which I send every month.</p>
+<p class="mf-body">The posts listed below are featured ones, the rest of my posts are <a href="#" class="mf-link mf-link-inline">available on the archive</a>.</p>
+<ul class="mf-posts">
+  {% set latestPosts = collections.posts|reverse %}
+    {% for post in latestPosts %}
       <li>
         <a href="{{post.url}}" class="mf-post">
-          <img src="{{post.data.featuredImage}}" width="380" height="210" alt="" class="mf-post_image"/>
-          <div class="mf-post_copy">
-            <p class="mf-badge{%if post.data.topics%} mf-badge-{{post.data.topics}}{%endif%}">{{post.data.topics}}</p>
-            <h3 class="mf-subheader" data-matchHeights="postHeading">{{post.data.pageHeading}}</h3>
-            <p class="mf-body">{{post.data.length}} minutes – {{post.data.date|postDate}}</p>
-          </div>
+        <img src="{{post.data.featuredImage}}" width="248" height="140" class="mf-post-thumbnail" />
+        <span class="mf-post-copy">
+          <span class="mf-post-link">{{post.data.pageHeading}}</span>
+          <span class="mf-post-date">Date published: {{post.data.lastUpdated | postDate}}</span>
+        </span>
         </a>
       </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-    <h2 class="mf-headline mb-50">Featured Projects</h2>
-    {% set featuredProjects = collections.featuredProjects %}
-    {% if featuredProjects.length > 0 %} 
-    <ul class="mf-posts mb-100">  
-      {% for project in featuredProjects.slice(0, 3) %}
-      <li>
-        <a href="{{project.url}}" class="mf-post">
-          <img src="{{project.data.featuredImage}}" width="380" height="210" alt="" class="mf-post_image"/>
-          <div class="mf-post_copy">
-            <p class="mf-badge{%if project.data.topics%} mf-badge-{{project.data.topics}}{%endif%}">{{project.data.topics}}</p>
-            <h3 class="mf-subheader" data-matchHeights="postHeading">{{project.data.pageHeading}}</h3>
-            <p class="mf-body">{{project.data.length}} minutes – {{project.data.date|postDate}}</p>
-          </div>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}
-      <p class="mf-body">No projects have been documented here yet, but I have some misc stuff on my <a href="https://github.com/mfung1/fung" class="mf-link mf-link-inline">GitHub</a> and <a href="https://codepen.io/mfung1" class="mf-link mf-link-inline">CodePen</a>.</p>
-    {% endif %}
-  </div>
+    {% endfor %}
+</ul>
 </section>
-
+<hr class="mf-divider mf-divider--full-width"/>
+<section>
+  <h2 class="mf-heading-l">Get in Touch</h2>
+  <p class="mf-body">I'm passionate about everything that I do. If you want to talk shop, or have an opportunity you think I'd suit, please get in touch using the form below.</p>
+  {% include './_includes/layouts/components/organisms/contact-form.njk' %}
+</section>

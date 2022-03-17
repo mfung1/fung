@@ -4,6 +4,8 @@
   font-size: 16px;
   line-height: 25px;
   color: $fung-black-default;
+  font-family: $mfung-heading-fonts;
+  font-weight: 700;
 
   @include breakpoint('sm') {
     font-size: 18px;

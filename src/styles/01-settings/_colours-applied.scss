@@ -1,4 +1,4 @@
-//// 
+////
 /// @group settings/colours
 ////
 
@@ -8,29 +8,17 @@
 // Primary
 //============================
 
-/// Primary - Darker
-///
-/// @type Colour
-/// @access public
-$fung-primary-darker: mf-colour("primary", "darker") !default;
-
 /// Primary - Default
 ///
 /// @type Colour
 /// @access public
 $fung-primary-default: mf-colour("primary", "default") !default;
 
-/// Primary - Light
+/// Primary - Hover
 ///
 /// @type Colour
 /// @access public
-$fung-primary-light: mf-colour("primary", "light") !default;
-
-/// Primary - Lighter
-///
-/// @type Colour
-/// @access public
-$fung-primary-lighter: mf-colour("primary", "lighter") !default;
+$fung-primary-hover: mf-colour("primary", "hover") !default;
 
 //============================
 // Accent One
@@ -66,53 +54,11 @@ $fung-accent-one-light: mf-colour("accent-one", "light") !default;
 /// @access public
 $fung-accent-one-lighter: mf-colour("accent-one", "lighter") !default;
 
-
 /// Accent One - Lightest
 ///
 /// @type Colour
 /// @access public
 $fung-accent-one-lightest: mf-colour("accent-one", "lightest") !default;
-
-//============================
-// Accent Two
-//============================
-
-/// Accent Two - Darker
-///
-/// @type Colour
-/// @access public
-$fung-accent-two-darker: mf-colour("accent-two", "darker") !default;
-
-/// Accent Two - Darker
-///
-/// @type Colour
-/// @access public
-$fung-accent-two-dark: mf-colour("accent-two", "dark") !default;
-
-/// Accent Two - Default
-///
-/// @type Colour
-/// @access public
-$fung-accent-two-default: mf-colour("accent-two", "default") !default;
-
-/// Accent Two - Light
-///
-/// @type Colour
-/// @access public
-$fung-accent-two-light: mf-colour("accent-two", "light") !default;
-
-/// Accent Two - Lighter
-///
-/// @type Colour
-/// @access public
-$fung-accent-two-lighter: mf-colour("accent-two", "lighter") !default;
-
-
-/// Accent Two - Lightest
-///
-/// @type Colour
-/// @access public
-$fung-accent-two-lightest: mf-colour("accent-two", "lightest") !default;
 
 //============================
 // Success
@@ -147,7 +93,6 @@ $fung-success-light: mf-colour("success", "light") !default;
 /// @type Colour
 /// @access public
 $fung-success-lighter: mf-colour("success", "lighter") !default;
-
 
 /// Success - Lightest
 ///
@@ -189,7 +134,6 @@ $fung-warning-light: mf-colour("warning", "light") !default;
 /// @access public
 $fung-warning-lighter: mf-colour("warning", "lighter") !default;
 
-
 /// Warning - Lightest
 ///
 /// @type Colour
@@ -230,7 +174,6 @@ $fung-error-light: mf-colour("error", "light") !default;
 /// @access public
 $fung-error-lighter: mf-colour("error", "lighter") !default;
 
-
 /// Error - Lightest
 ///
 /// @type Colour
@@ -238,45 +181,44 @@ $fung-error-lighter: mf-colour("error", "lighter") !default;
 $fung-error-lightest: mf-colour("error", "lightest") !default;
 
 //============================
-// Grey
+// Link
 //============================
 
-/// Grey - Darker
+/// Link - Default
 ///
 /// @type Colour
 /// @access public
-$fung-grey-darker: mf-colour("grey", "darker") !default;
+$fung-link-light-default: mf-colour("link-light", "default") !default;
 
-/// Grey - Dark
+/// Link - Hover
 ///
 /// @type Colour
 /// @access public
-$fung-grey-dark: mf-colour("grey", "dark") !default;
+$fung-link-light-hover: mf-colour("link-light", "hover") !default;
 
-/// Grey - Default
+/// Link - Visited
 ///
 /// @type Colour
 /// @access public
-$fung-grey-default: mf-colour("grey", "default") !default;
+$fung-link-light-visited: mf-colour("link-light", "visited") !default;
 
-/// Grey - Light
+/// Link - Default
 ///
 /// @type Colour
 /// @access public
-$fung-grey-light: mf-colour("grey", "light") !default;
+$fung-link-dark-default: mf-colour("link-dark", "default") !default;
 
-/// Grey - Lighter
+/// Link - Hover
 ///
 /// @type Colour
 /// @access public
-$fung-grey-lighter: mf-colour("grey", "lighter") !default;
+$fung-link-dark-hover: mf-colour("link-dark", "hover") !default;
 
-
-/// Grey - Lightest
+/// Link - Visited
 ///
 /// @type Colour
 /// @access public
-$fung-grey-lightest: mf-colour("grey", "lightest") !default;
+$fung-link-dark-visited: mf-colour("link-dark", "visited") !default;
 
 //============================
 // Black
@@ -299,7 +241,6 @@ $fung-black-light: mf-colour("black", "light") !default;
 /// @type Colour
 /// @access public
 $fung-black-lighter: mf-colour("black", "lighter") !default;
-
 
 /// Black - Lightest
 ///
@@ -331,54 +272,48 @@ $fung-white-darker: mf-colour("white", "darker") !default;
 
 $css-vars-use-native: true;
 
-@import '../02-tools/css-vars';
+@import "../02-tools/css-vars";
 
-@include css-vars((
-  --fung-primary-darker: $fung-primary-darker,
-  --fung-primary-default: $fung-primary-default,
-  --fung-primary-light: $fung-primary-light,
-  --fung-primary-lighter: $fung-primary-lighter,
-  --fung-accent-one-darker: $fung-accent-one-darker,
-  --fung-accent-one-dark: $fung-accent-one-dark,
-  --fung-accent-one-default: $fung-accent-one-default,
-  --fung-accent-one-light: $fung-accent-one-light,
-  --fung-accent-one-lighter: $fung-accent-one-lighter,
-  --fung-accent-one-lightest: $fung-accent-one-lightest,
-  --fung-accent-two-darker: $fung-accent-two-darker,
-  --fung-accent-two-dark: $fung-accent-two-dark,
-  --fung-accent-two-default: $fung-accent-two-default,
-  --fung-accent-two-light: $fung-accent-two-light,
-  --fung-accent-two-lighter: $fung-accent-two-lighter,
-  --fung-accent-two-lightest: $fung-accent-two-lightest,
-  --fung-success-darker: $fung-success-darker,
-  --fung-success-dark: $fung-success-dark,
-  --fung-success-default: $fung-success-default,
-  --fung-success-light: $fung-success-light,
-  --fung-success-lighter: $fung-success-lighter,
-  --fung-success-lightest: $fung-success-lightest,
-  --fung-warning-darker: $fung-warning-darker,
-  --fung-warning-dark: $fung-warning-dark,
-  --fung-warning-default: $fung-warning-default,
-  --fung-warning-light: $fung-warning-light,
-  --fung-warning-lighter: $fung-warning-lighter,
-  --fung-warning-lightest: $fung-warning-lightest,
-  --fung-error-darker: $fung-error-darker,
-  --fung-error-dark: $fung-error-dark,
-  --fung-error-default: $fung-error-default,
-  --fung-error-light: $fung-error-light,
-  --fung-error-lighter: $fung-error-lighter,
-  --fung-error-lightest: $fung-error-lightest,
-  --fung-grey-darker: $fung-grey-darker,
-  --fung-grey-dark: $fung-grey-dark,
-  --fung-grey-default: $fung-grey-default,
-  --fung-grey-light: $fung-grey-light,
-  --fung-grey-lighter: $fung-grey-lighter,
-  --fung-grey-lightest: $fung-grey-lightest,
-  --fung-black-default: $fung-black-default,
-  --fung-black-light: $fung-black-light,
-  --fung-black-lighter: $fung-black-lighter,
-  --fung-black-lightest: $fung-black-lightest,
-  --fung-white-darker: $fung-white-darker,
-  --fung-white-dark: $fung-white-dark,
-  --fung-white-default: $fung-white-default,
-));
+@include css-vars(
+  (
+    --fung-primary-default: $fung-primary-default,
+    --fung-primary-hover: $fung-primary-hover,
+    --fung-accent-one-darker: $fung-accent-one-darker,
+    --fung-accent-one-dark: $fung-accent-one-dark,
+    --fung-accent-one-default: $fung-accent-one-default,
+    --fung-accent-one-light: $fung-accent-one-light,
+    --fung-accent-one-lighter: $fung-accent-one-lighter,
+    --fung-accent-one-lightest: $fung-accent-one-lightest,
+    --fung-success-darker: $fung-success-darker,
+    --fung-success-dark: $fung-success-dark,
+    --fung-success-default: $fung-success-default,
+    --fung-success-light: $fung-success-light,
+    --fung-success-lighter: $fung-success-lighter,
+    --fung-success-lightest: $fung-success-lightest,
+    --fung-warning-darker: $fung-warning-darker,
+    --fung-warning-dark: $fung-warning-dark,
+    --fung-warning-default: $fung-warning-default,
+    --fung-warning-light: $fung-warning-light,
+    --fung-warning-lighter: $fung-warning-lighter,
+    --fung-warning-lightest: $fung-warning-lightest,
+    --fung-error-darker: $fung-error-darker,
+    --fung-error-dark: $fung-error-dark,
+    --fung-error-default: $fung-error-default,
+    --fung-error-light: $fung-error-light,
+    --fung-error-lighter: $fung-error-lighter,
+    --fung-error-lightest: $fung-error-lightest,
+    --fung-link-light-default: $fung-link-light-default,
+    --fung-link-light-hover: $fung-link-light-hover,
+    --fung-link-light-visited: $fung-link-light-visited,
+    --fung-link-dark-default: $fung-link-dark-default,
+    --fung-link-dark-hover: $fung-link-dark-hover,
+    --fung-link-dark-visited: $fung-link-dark-visited,
+    --fung-black-default: $fung-black-default,
+    --fung-black-light: $fung-black-light,
+    --fung-black-lighter: $fung-black-lighter,
+    --fung-black-lightest: $fung-black-lightest,
+    --fung-white-darker: $fung-white-darker,
+    --fung-white-dark: $fung-white-dark,
+    --fung-white-default: $fung-white-default,
+  )
+);
